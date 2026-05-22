@@ -37,13 +37,16 @@ export function QRCodeDisplay({ url, size = 200 }: QRCodeDisplayProps) {
   };
 
   return (
-    <div className="flex flex-col items-center">
-      <canvas ref={canvasRef} className="rounded-xl shadow-sm border border-slate-100" />
+    <div className="flex flex-col items-center group">
+      <div className="relative">
+        <canvas ref={canvasRef} className="rounded-[2rem] shadow-xl border-4 border-white" />
+        <div className="absolute inset-0 rounded-[2rem] border-2 border-slate-100/50 pointer-events-none" />
+      </div>
       <button 
         onClick={downloadQR}
-        className="mt-6 text-sm font-bold text-amber-600 hover:text-amber-700 underline"
+        className="mt-8 text-xs font-black text-amber-500 hover:text-amber-600 uppercase tracking-widest border-b-2 border-amber-200 hover:border-amber-500 transition-all pb-1"
       >
-        Download High-Res QR Code
+        Download High-Res PNG
       </button>
     </div>
   );

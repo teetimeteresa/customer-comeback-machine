@@ -150,14 +150,19 @@ export default function OnboardingForm() {
           {/* Step 1: Basic Info */}
           {currentStep === 1 && (
             <div className="space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-500">
-              <div>
-                <h2 className="text-3xl font-extrabold text-slate-900 tracking-tight">Let's start with the basics</h2>
-                <p className="mt-2 text-lg text-slate-600">Tell us about your business so we can set up your account.</p>
+              <div className="flex items-center gap-4">
+                <div className="h-14 w-14 rounded-2xl bg-amber-100 flex items-center justify-center text-amber-600">
+                  <Building2 size={32} />
+                </div>
+                <div>
+                  <h2 className="text-3xl font-black text-slate-900 tracking-tight">Let's start with the basics</h2>
+                  <p className="text-slate-500">Tell us about your business so we can set up your account.</p>
+                </div>
               </div>
 
               <div className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
                 <div className="sm:col-span-2">
-                  <label htmlFor="name" className="block text-sm font-bold text-slate-700 uppercase tracking-wider">Business Name</label>
+                  <label htmlFor="name" className="block text-xs font-black text-slate-400 uppercase tracking-[0.2em] mb-2">Business Name</label>
                   <input
                     type="text"
                     name="name"
@@ -165,97 +170,86 @@ export default function OnboardingForm() {
                     required
                     value={formData.name}
                     onChange={handleChange}
-                    className="mt-2 block w-full rounded-2xl border-slate-200 bg-slate-50 px-4 py-4 text-slate-900 focus:border-amber-500 focus:ring-amber-500 outline-none transition-all"
+                    className="block w-full rounded-2xl border-2 border-slate-100 bg-slate-50/50 px-6 py-4 text-lg font-semibold text-slate-900 focus:border-amber-500 focus:ring-amber-500 outline-none transition-all"
                     placeholder="e.g. Sunnyvale Boutique"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="type" className="block text-sm font-bold text-slate-700 uppercase tracking-wider">Business Type</label>
-                  <select
-                    name="type"
-                    id="type"
-                    value={formData.type}
-                    onChange={handleChange}
-                    className="mt-2 block w-full rounded-2xl border-slate-200 bg-slate-50 px-4 py-4 text-slate-900 focus:border-amber-500 focus:ring-amber-500 outline-none transition-all appearance-none"
-                  >
-                    {businessTypes.map(type => (
-                      <option key={type} value={type}>{type}</option>
-                    ))}
-                  </select>
+                  <label htmlFor="type" className="block text-xs font-black text-slate-400 uppercase tracking-[0.2em] mb-2">Business Type</label>
+                  <div className="relative">
+                    <select
+                      name="type"
+                      id="type"
+                      value={formData.type}
+                      onChange={handleChange}
+                      className="block w-full rounded-2xl border-2 border-slate-100 bg-slate-50/50 px-6 py-4 text-lg font-semibold text-slate-900 focus:border-amber-500 focus:ring-amber-500 outline-none transition-all appearance-none"
+                    >
+                      {businessTypes.map(type => (
+                        <option key={type} value={type}>{type}</option>
+                      ))}
+                    </select>
+                    <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-6 text-slate-400">
+                      <ChevronRight size={20} className="transform rotate-90" />
+                    </div>
+                  </div>
                 </div>
 
                 <div>
-                  <label htmlFor="website" className="block text-sm font-bold text-slate-700 uppercase tracking-wider">Website (Optional)</label>
+                  <label htmlFor="website" className="block text-xs font-black text-slate-400 uppercase tracking-[0.2em] mb-2">Website (Optional)</label>
                   <input
                     type="url"
                     name="website"
                     id="website"
                     value={formData.website}
                     onChange={handleChange}
-                    className="mt-2 block w-full rounded-2xl border-slate-200 bg-slate-50 px-4 py-4 text-slate-900 focus:border-amber-500 focus:ring-amber-500 outline-none transition-all"
+                    className="block w-full rounded-2xl border-2 border-slate-100 bg-slate-50/50 px-6 py-4 text-lg font-semibold text-slate-900 focus:border-amber-500 focus:ring-amber-500 outline-none transition-all"
                     placeholder="https://yourwebsite.com"
                   />
                 </div>
-
-                <div>
-                  <label htmlFor="city" className="block text-sm font-bold text-slate-700 uppercase tracking-wider">City</label>
-                  <input
-                    type="text"
-                    name="city"
-                    id="city"
-                    required
-                    value={formData.city}
-                    onChange={handleChange}
-                    className="mt-2 block w-full rounded-2xl border-slate-200 bg-slate-50 px-4 py-4 text-slate-900 focus:border-amber-500 focus:ring-amber-500 outline-none transition-all"
-                    placeholder="Sunnyvale"
-                  />
+                
+                <div className="sm:col-span-2 grid grid-cols-2 gap-4">
+                  <div>
+                    <label htmlFor="city" className="block text-xs font-black text-slate-400 uppercase tracking-[0.2em] mb-2">City</label>
+                    <input
+                      type="text"
+                      name="city"
+                      id="city"
+                      required
+                      value={formData.city}
+                      onChange={handleChange}
+                      className="block w-full rounded-2xl border-2 border-slate-100 bg-slate-50/50 px-6 py-4 text-lg font-semibold text-slate-900 focus:border-amber-500 focus:ring-amber-500 outline-none transition-all"
+                      placeholder="Sunnyvale"
+                    />
+                  </div>
+                  <div>
+                    <label htmlFor="state" className="block text-xs font-black text-slate-400 uppercase tracking-[0.2em] mb-2">State</label>
+                    <input
+                      type="text"
+                      name="state"
+                      id="state"
+                      required
+                      value={formData.state}
+                      onChange={handleChange}
+                      className="block w-full rounded-2xl border-2 border-slate-100 bg-slate-50/50 px-6 py-4 text-lg font-semibold text-slate-900 focus:border-amber-500 focus:ring-amber-500 outline-none transition-all"
+                      placeholder="CA"
+                    />
+                  </div>
                 </div>
 
-                <div>
-                  <label htmlFor="state" className="block text-sm font-bold text-slate-700 uppercase tracking-wider">State</label>
-                  <input
-                    type="text"
-                    name="state"
-                    id="state"
-                    required
-                    value={formData.state}
-                    onChange={handleChange}
-                    className="mt-2 block w-full rounded-2xl border-slate-200 bg-slate-50 px-4 py-4 text-slate-900 focus:border-amber-500 focus:ring-amber-500 outline-none transition-all"
-                    placeholder="CA"
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="phone" className="block text-sm font-bold text-slate-700 uppercase tracking-wider">Business Phone</label>
-                  <input
-                    type="tel"
-                    name="phone"
-                    id="phone"
-                    required
-                    value={formData.phone}
-                    onChange={handleChange}
-                    className="mt-2 block w-full rounded-2xl border-slate-200 bg-slate-50 px-4 py-4 text-slate-900 focus:border-amber-500 focus:ring-amber-500 outline-none transition-all"
-                    placeholder="(555) 000-0000"
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="email" className="block text-sm font-bold text-slate-700 uppercase tracking-wider">Business Email</label>
-                  <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    required
-                    value={formData.email}
-                    onChange={handleChange}
-                    className="mt-2 block w-full rounded-2xl border-slate-200 bg-slate-50 px-4 py-4 text-slate-900 focus:border-amber-500 focus:ring-amber-500 outline-none transition-all"
-                    placeholder="hello@yourbusiness.com"
-                  />
-                </div>
-
-                <div className="sm:col-span-2">
-                  <label htmlFor="mailingAddress" className="block text-sm font-bold text-slate-700 uppercase tracking-wider">Physical Mailing Address (Required for Email Compliance)</label>
+                <div className="sm:col-span-2 border-t border-slate-100 pt-8 mt-4">
+                  <div className="flex items-center gap-4 mb-8 bg-amber-50 p-6 rounded-3xl border border-amber-100">
+                    <div className="h-12 w-12 rounded-2xl bg-amber-500 flex items-center justify-center text-white flex-shrink-0 shadow-lg shadow-amber-500/20">
+                      <Mail size={24} />
+                    </div>
+                    <div>
+                      <p className="text-xs font-black text-amber-800 uppercase tracking-widest mb-1">Legal Requirement</p>
+                      <p className="text-sm font-medium text-amber-900 leading-tight">
+                        A physical mailing address is required by law to send marketing emails. This will appear in your email footer.
+                      </p>
+                    </div>
+                  </div>
+                  <label htmlFor="mailingAddress" className="block text-xs font-black text-slate-400 uppercase tracking-[0.2em] mb-2">Physical Mailing Address</label>
                   <input
                     type="text"
                     name="mailingAddress"
@@ -263,7 +257,7 @@ export default function OnboardingForm() {
                     required
                     value={formData.mailingAddress}
                     onChange={handleChange}
-                    className="mt-2 block w-full rounded-2xl border-slate-200 bg-slate-50 px-4 py-4 text-slate-900 focus:border-amber-500 focus:ring-amber-500 outline-none transition-all"
+                    className="block w-full rounded-2xl border-2 border-slate-100 bg-slate-50/50 px-6 py-4 text-lg font-semibold text-slate-900 focus:border-amber-500 focus:ring-amber-500 outline-none transition-all"
                     placeholder="123 Main St, Suite 100, City, State, ZIP"
                   />
                 </div>
@@ -274,14 +268,19 @@ export default function OnboardingForm() {
           {/* Step 2: Social & Links */}
           {currentStep === 2 && (
             <div className="space-y-8 animate-in fade-in slide-in-from-right-4 duration-500">
-              <div>
-                <h2 className="text-3xl font-extrabold text-slate-900 tracking-tight">Connect your socials</h2>
-                <p className="mt-2 text-lg text-slate-600">We'll use these to help customers find you and leave reviews.</p>
+              <div className="flex items-center gap-4">
+                <div className="h-14 w-14 rounded-2xl bg-blue-100 flex items-center justify-center text-blue-600">
+                  <Globe size={32} />
+                </div>
+                <div>
+                  <h2 className="text-3xl font-black text-slate-900 tracking-tight">Connect your socials</h2>
+                  <p className="text-slate-500">We'll use these to help customers find you and leave reviews.</p>
+                </div>
               </div>
 
               <div className="space-y-6">
                 <div>
-                  <label htmlFor="googleReviewLink" className="flex items-center gap-2 text-sm font-bold text-slate-700 uppercase tracking-wider">
+                  <label htmlFor="googleReviewLink" className="flex items-center gap-2 text-xs font-black text-slate-400 uppercase tracking-[0.2em] mb-2">
                     <Star className="h-4 w-4 text-amber-500" />
                     Google Review Link
                   </label>
@@ -291,14 +290,14 @@ export default function OnboardingForm() {
                     id="googleReviewLink"
                     value={formData.googleReviewLink}
                     onChange={handleChange}
-                    className="mt-2 block w-full rounded-2xl border-slate-200 bg-slate-50 px-4 py-4 text-slate-900 focus:border-amber-500 focus:ring-amber-500 outline-none transition-all"
+                    className="block w-full rounded-2xl border-2 border-slate-100 bg-slate-50/50 px-6 py-4 text-lg font-semibold text-slate-900 focus:border-amber-500 focus:ring-amber-500 outline-none transition-all"
                     placeholder="https://g.page/r/your-id/review"
                   />
-                  <p className="mt-1 text-xs text-slate-500">This is crucial for our review request automation!</p>
+                  <p className="mt-2 text-xs text-slate-400 font-medium">This is crucial for our review request automation!</p>
                 </div>
 
                 <div>
-                  <label htmlFor="facebookPage" className="flex items-center gap-2 text-sm font-bold text-slate-700 uppercase tracking-wider">
+                  <label htmlFor="facebookPage" className="flex items-center gap-2 text-xs font-black text-slate-400 uppercase tracking-[0.2em] mb-2">
                     <Share2 className="h-4 w-4 text-blue-600" />
                     Facebook Page
                   </label>
@@ -308,13 +307,13 @@ export default function OnboardingForm() {
                     id="facebookPage"
                     value={formData.facebookPage}
                     onChange={handleChange}
-                    className="mt-2 block w-full rounded-2xl border-slate-200 bg-slate-50 px-4 py-4 text-slate-900 focus:border-amber-500 focus:ring-amber-500 outline-none transition-all"
+                    className="block w-full rounded-2xl border-2 border-slate-100 bg-slate-50/50 px-6 py-4 text-lg font-semibold text-slate-900 focus:border-amber-500 focus:ring-amber-500 outline-none transition-all"
                     placeholder="https://facebook.com/yourbusiness"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="instagramPage" className="flex items-center gap-2 text-sm font-bold text-slate-700 uppercase tracking-wider">
+                  <label htmlFor="instagramPage" className="flex items-center gap-2 text-xs font-black text-slate-400 uppercase tracking-[0.2em] mb-2">
                     <Camera className="h-4 w-4 text-pink-600" />
                     Instagram Page
                   </label>
@@ -324,7 +323,7 @@ export default function OnboardingForm() {
                     id="instagramPage"
                     value={formData.instagramPage}
                     onChange={handleChange}
-                    className="mt-2 block w-full rounded-2xl border-slate-200 bg-slate-50 px-4 py-4 text-slate-900 focus:border-amber-500 focus:ring-amber-500 outline-none transition-all"
+                    className="block w-full rounded-2xl border-2 border-slate-100 bg-slate-50/50 px-6 py-4 text-lg font-semibold text-slate-900 focus:border-amber-500 focus:ring-amber-500 outline-none transition-all"
                     placeholder="https://instagram.com/yourbusiness"
                   />
                 </div>
@@ -335,25 +334,30 @@ export default function OnboardingForm() {
           {/* Step 3: Brand Tone */}
           {currentStep === 3 && (
             <div className="space-y-8 animate-in fade-in slide-in-from-right-4 duration-500">
-              <div>
-                <h2 className="text-3xl font-extrabold text-slate-900 tracking-tight">Your brand's personality</h2>
-                <p className="mt-2 text-lg text-slate-600">This helps our AI write messages that sound exactly like you.</p>
+              <div className="flex items-center gap-4">
+                <div className="h-14 w-14 rounded-2xl bg-purple-100 flex items-center justify-center text-purple-600">
+                  <Sparkles size={32} />
+                </div>
+                <div>
+                  <h2 className="text-3xl font-black text-slate-900 tracking-tight">Your brand's personality</h2>
+                  <p className="text-slate-500">This helps our AI write messages that sound exactly like you.</p>
+                </div>
               </div>
 
-              <div className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
-                <div className="sm:col-span-2">
-                  <label htmlFor="brandTone" className="block text-sm font-bold text-slate-700 uppercase tracking-wider">Brand Tone</label>
-                  <div className="mt-3 grid grid-cols-2 sm:grid-cols-3 gap-3">
+              <div className="grid grid-cols-1 gap-y-8">
+                <div>
+                  <label className="block text-xs font-black text-slate-400 uppercase tracking-[0.2em] mb-4">Select Your Tone</label>
+                  <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
                     {brandTones.map((tone) => (
                       <button
                         key={tone}
                         type="button"
                         onClick={() => setFormData(prev => ({ ...prev, brandTone: tone }))}
                         className={`
-                          px-4 py-3 rounded-xl border-2 font-semibold transition-all text-sm
+                          px-4 py-4 rounded-2xl border-2 font-bold transition-all text-sm
                           ${formData.brandTone === tone 
-                            ? 'border-amber-500 bg-amber-50 text-amber-700 ring-2 ring-amber-500/20' 
-                            : 'border-slate-100 bg-white text-slate-600 hover:border-slate-200'}
+                            ? 'border-amber-500 bg-amber-50 text-amber-700 shadow-md transform scale-[1.02]' 
+                            : 'border-slate-100 bg-white text-slate-500 hover:border-slate-200'}
                         `}
                       >
                         {tone}
@@ -362,69 +366,70 @@ export default function OnboardingForm() {
                   </div>
                 </div>
 
-                <div className="sm:col-span-2">
-                  <label htmlFor="mainProducts" className="block text-sm font-bold text-slate-700 uppercase tracking-wider">Main Products / Services</label>
+                <div>
+                  <label htmlFor="mainProducts" className="block text-xs font-black text-slate-400 uppercase tracking-[0.2em] mb-2">Main Products / Services</label>
                   <textarea
                     name="mainProducts"
                     id="mainProducts"
                     rows={3}
                     value={formData.mainProducts}
                     onChange={handleChange}
-                    className="mt-2 block w-full rounded-2xl border-slate-200 bg-slate-50 px-4 py-4 text-slate-900 focus:border-amber-500 focus:ring-amber-500 outline-none transition-all resize-none"
-                    placeholder="e.g. Handmade jewelry, organic candles, custom flower arrangements"
+                    className="block w-full rounded-2xl border-2 border-slate-100 bg-slate-50/50 px-6 py-4 text-lg font-semibold text-slate-900 focus:border-amber-500 focus:ring-amber-500 outline-none transition-all resize-none"
+                    placeholder="e.g. Handmade jewelry, organic candles..."
                   />
                 </div>
 
-                <div className="sm:col-span-2">
-                  <label htmlFor="idealCustomer" className="block text-sm font-bold text-slate-700 uppercase tracking-wider">Ideal Customer</label>
+                <div>
+                  <label htmlFor="idealCustomer" className="block text-xs font-black text-slate-400 uppercase tracking-[0.2em] mb-2">Ideal Customer</label>
                   <input
                     type="text"
                     name="idealCustomer"
                     id="idealCustomer"
                     value={formData.idealCustomer}
                     onChange={handleChange}
-                    className="mt-2 block w-full rounded-2xl border-slate-200 bg-slate-50 px-4 py-4 text-slate-900 focus:border-amber-500 focus:ring-amber-500 outline-none transition-all"
+                    className="block w-full rounded-2xl border-2 border-slate-100 bg-slate-50/50 px-6 py-4 text-lg font-semibold text-slate-900 focus:border-amber-500 focus:ring-amber-500 outline-none transition-all"
                     placeholder="e.g. Modern women looking for unique, sustainable gifts"
                   />
                 </div>
 
-                <div className="sm:col-span-2">
-                  <label htmlFor="specialThing" className="block text-sm font-bold text-slate-700 uppercase tracking-wider">What makes your business special?</label>
-                  <textarea
+                <div>
+                  <label htmlFor="specialThing" className="block text-xs font-black text-slate-400 uppercase tracking-[0.2em] mb-2">What makes you special?</label>
+                  <input
+                    type="text"
                     name="specialThing"
                     id="specialThing"
-                    rows={2}
                     value={formData.specialThing}
                     onChange={handleChange}
-                    className="mt-2 block w-full rounded-2xl border-slate-200 bg-slate-50 px-4 py-4 text-slate-900 focus:border-amber-500 focus:ring-amber-500 outline-none transition-all resize-none"
-                    placeholder="e.g. Everything is locally sourced and crafted with love in small batches."
+                    className="block w-full rounded-2xl border-2 border-slate-100 bg-slate-50/50 px-6 py-4 text-lg font-semibold text-slate-900 focus:border-amber-500 focus:ring-amber-500 outline-none transition-all"
+                    placeholder="e.g. Locally sourced and crafted with love in small batches."
                   />
                 </div>
 
-                <div>
-                  <label htmlFor="wordsLiked" className="block text-sm font-bold text-slate-700 uppercase tracking-wider">Words you LOVE (Optional)</label>
-                  <input
-                    type="text"
-                    name="wordsLiked"
-                    id="wordsLiked"
-                    value={formData.wordsLiked}
-                    onChange={handleChange}
-                    className="mt-2 block w-full rounded-2xl border-slate-200 bg-slate-50 px-4 py-4 text-slate-900 focus:border-amber-500 focus:ring-amber-500 outline-none transition-all"
-                    placeholder="e.g. Magical, curated, local"
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="wordsDisliked" className="block text-sm font-bold text-slate-700 uppercase tracking-wider">Words you HATE (Optional)</label>
-                  <input
-                    type="text"
-                    name="wordsDisliked"
-                    id="wordsDisliked"
-                    value={formData.wordsDisliked}
-                    onChange={handleChange}
-                    className="mt-2 block w-full rounded-2xl border-slate-200 bg-slate-50 px-4 py-4 text-slate-900 focus:border-amber-500 focus:ring-amber-500 outline-none transition-all"
-                    placeholder="e.g. Cheap, discount, corporate"
-                  />
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label htmlFor="wordsLiked" className="block text-xs font-black text-slate-400 uppercase tracking-[0.2em] mb-2">Words you LOVE</label>
+                    <input
+                      type="text"
+                      name="wordsLiked"
+                      id="wordsLiked"
+                      value={formData.wordsLiked}
+                      onChange={handleChange}
+                      className="block w-full rounded-2xl border-2 border-slate-100 bg-slate-50/50 px-6 py-4 text-lg font-semibold text-slate-900 focus:border-amber-500 focus:ring-amber-500 outline-none transition-all"
+                      placeholder="e.g. Magical, curated, local"
+                    />
+                  </div>
+                  <div>
+                    <label htmlFor="wordsDisliked" className="block text-xs font-black text-slate-400 uppercase tracking-[0.2em] mb-2">Words you HATE</label>
+                    <input
+                      type="text"
+                      name="wordsDisliked"
+                      id="wordsDisliked"
+                      value={formData.wordsDisliked}
+                      onChange={handleChange}
+                      className="block w-full rounded-2xl border-2 border-slate-100 bg-slate-50/50 px-6 py-4 text-lg font-semibold text-slate-900 focus:border-amber-500 focus:ring-amber-500 outline-none transition-all"
+                      placeholder="e.g. Cheap, discount, corporate"
+                    />
+                  </div>
                 </div>
               </div>
             </div>

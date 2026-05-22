@@ -2,7 +2,6 @@
 import { v4 as uuidv4 } from 'uuid';
 import { turso } from './turso';
 
-export { TABLES, generateId, timestamp, businessFromDb, customerFromDb, subscriptionFromDb, leadFromDb };
 export type { DbUser, DbBusiness, DbCustomer, DbLead, DbSubscription, DbOnboarding };
 
 // Helper to execute team-db queries using Turso client
@@ -24,7 +23,7 @@ export async function teamDb(query: string): Promise<any[] | null> {
 }
 
 // Database table names
-export const TABLES = {
+const TABLE_NAMES = {
   USERS: 'users',
   BUSINESSES: 'businesses',
   CUSTOMERS: 'customers',
