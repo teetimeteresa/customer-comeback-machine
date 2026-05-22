@@ -20,12 +20,14 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
         const password = credentials.password as string;
 
         try {
-          // Query user from database via team-db
-          const result = await teamDb(
-            `SELECT id, email, password, name, role FROM users WHERE email = '${email}'`
-          );
+          // Query user from database via team-db with parameterized query
+          const result = await teamDb({
+            sql: 'SELECT id, email, password, name, role FROM users WHERE email = ?',
+            args: [email]
+          });
 
           if (!result || result.length === 0) {
+            console.log('No user found with email:', email);
             return null;
           }
 
@@ -33,6 +35,7 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
           const isPasswordValid = await bcrypt.compare(password, user.password);
 
           if (!isPasswordValid) {
+            console.log('Invalid password for user:', email);
             return null;
           }
 
@@ -43,7 +46,7 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
             role: user.role,
           };
         } catch (error) {
-          console.error('Auth error:', error);
+          console.error('Auth error in authorize:', error);
           return null;
         }
       },
@@ -72,4 +75,5 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
   session: {
     strategy: 'jwt',
   },
+  secret: process.env.NEXTAUTH_SECRET || 'development-secret',
 });

@@ -3,8 +3,29 @@
 import { Navbar } from '@/components/Navbar';
 import { Button } from '@/components/Button';
 import { ArrowRight, Lock } from 'lucide-react';
+import { login } from './actions';
+import { useState } from 'react';
 
 export default function LoginPage() {
+  const [error, setError] = useState<string | null>(null);
+  const [isPending, setIsPending] = useState(false);
+
+  async function handleSubmit(formData: FormData) {
+    setIsPending(true);
+    setError(null);
+    try {
+      const result = await login(formData);
+      if (result?.error) {
+        setError(result.error);
+        setIsPending(false);
+      }
+    } catch (e) {
+      // In Next.js, redirect throws an error which is caught here
+      // If it's not handled, the redirect works. If we set isPending(false),
+      // we might flash the form before the redirect happens.
+    }
+  }
+
   return (
     <div className="min-h-screen bg-slate-50 font-sans text-slate-900">
       <Navbar />
@@ -19,12 +40,19 @@ export default function LoginPage() {
             <p className="mt-2 text-slate-500">Log in to manage your customer comeback.</p>
           </div>
 
-          <form className="space-y-6">
+          <form action={handleSubmit} className="space-y-6">
+            {error && (
+              <div className="p-4 bg-red-50 text-red-600 rounded-xl text-sm font-medium border border-red-100">
+                {error}
+              </div>
+            )}
+            
             <div>
               <label htmlFor="email" className="block text-sm font-semibold text-slate-700">Email Address</label>
               <input
                 type="email"
                 id="email"
+                name="email"
                 className="mt-1 block w-full rounded-xl border-slate-200 bg-slate-50 px-4 py-3 focus:border-amber-500 focus:ring-amber-500 outline-none"
                 placeholder="joe@example.com"
                 required
@@ -39,15 +67,16 @@ export default function LoginPage() {
               <input
                 type="password"
                 id="password"
+                name="password"
                 className="mt-1 block w-full rounded-xl border-slate-200 bg-slate-50 px-4 py-3 focus:border-amber-500 focus:ring-amber-500 outline-none"
                 placeholder="••••••••"
                 required
               />
             </div>
 
-            <Button size="lg" className="w-full">
-              Log In
-              <ArrowRight className="ml-2 h-5 w-5" />
+            <Button size="lg" className="w-full" disabled={isPending}>
+              {isPending ? 'Logging In...' : 'Log In'}
+              {!isPending && <ArrowRight className="ml-2 h-5 w-5" />}
             </Button>
           </form>
 
