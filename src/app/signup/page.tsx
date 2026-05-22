@@ -3,8 +3,34 @@
 import { Navbar } from '@/components/Navbar';
 import { Button } from '@/components/Button';
 import { ArrowRight, CheckCircle2, Store, Sparkles, MessageSquare } from 'lucide-react';
+import { signup } from './actions';
+import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 
 export default function SignupPage() {
+  const [error, setError] = useState<string | null>(null);
+  const [isPending, setIsPending] = useState(false);
+  const router = useRouter();
+
+  async function handleSubmit(formData: FormData) {
+    setIsPending(true);
+    setError(null);
+    try {
+      const result = await signup(formData);
+      if (result.error) {
+        setError(result.error);
+        setIsPending(false);
+      } else {
+        // Since it's a new account, we usually log them in here, 
+        // but for now let's just go to onboarding
+        router.push('/onboarding');
+      }
+    } catch (e) {
+      setError('Something went wrong. Please try again.');
+      setIsPending(false);
+    }
+  }
+
   return (
     <div className="min-h-screen bg-slate-50 font-sans text-slate-900">
       <Navbar />
@@ -36,12 +62,18 @@ export default function SignupPage() {
         </div>
 
         <div className="w-full max-w-md bg-white rounded-3xl p-8 sm:p-12 shadow-xl border border-slate-100">
-          <form className="space-y-6">
+          <form action={handleSubmit} className="space-y-6">
+            {error && (
+              <div className="p-4 bg-red-50 text-red-600 rounded-xl text-sm font-medium border border-red-100">
+                {error}
+              </div>
+            )}
             <div>
               <label htmlFor="name" className="block text-sm font-semibold text-slate-700">Full Name</label>
               <input
                 type="text"
                 id="name"
+                name="name"
                 className="mt-1 block w-full rounded-xl border-slate-200 bg-slate-50 px-4 py-3 focus:border-amber-500 focus:ring-amber-500 outline-none"
                 placeholder="Joe Shopowner"
                 required
@@ -53,6 +85,7 @@ export default function SignupPage() {
               <input
                 type="email"
                 id="email"
+                name="email"
                 className="mt-1 block w-full rounded-xl border-slate-200 bg-slate-50 px-4 py-3 focus:border-amber-500 focus:ring-amber-500 outline-none"
                 placeholder="joe@example.com"
                 required
@@ -64,15 +97,16 @@ export default function SignupPage() {
               <input
                 type="password"
                 id="password"
+                name="password"
                 className="mt-1 block w-full rounded-xl border-slate-200 bg-slate-50 px-4 py-3 focus:border-amber-500 focus:ring-amber-500 outline-none"
                 placeholder="••••••••"
                 required
               />
             </div>
 
-            <Button size="lg" className="w-full">
-              Create My Account
-              <ArrowRight className="ml-2 h-5 w-5" />
+            <Button size="lg" className="w-full" disabled={isPending}>
+              {isPending ? 'Creating Account...' : 'Create My Account'}
+              {!isPending && <ArrowRight className="ml-2 h-5 w-5" />}
             </Button>
           </form>
 
