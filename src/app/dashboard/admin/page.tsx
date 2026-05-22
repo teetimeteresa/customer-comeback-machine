@@ -28,6 +28,11 @@ export default async function AdminDashboard() {
     `SELECT * FROM subscriptions`
   );
 
+  // Fetch all leads
+  const leads = await teamDb(
+    `SELECT * FROM leads`
+  );
+
   const totalMRR = subscriptions
     .filter(s => s.status === 'active')
     .reduce((acc, s) => {
@@ -40,8 +45,8 @@ export default async function AdminDashboard() {
   const stats = [
     { label: 'Total Users', value: users.length.toString() },
     { label: 'Total Businesses', value: businesses.length.toString() },
-    { label: 'MRR', value: `$${totalMRR}` },
-    { label: 'Active Subs', value: subscriptions.filter(s => s.status === 'active').length.toString() },
+    { label: 'Total Leads', value: leads.length.toString() },
+    { label: 'MRR', value: `${totalMRR}` },
   ];
 
   return (
