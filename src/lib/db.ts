@@ -1,20 +1,24 @@
 // Database utilities for team-db (Turso)
-import { execSync } from 'child_process';
 import { v4 as uuidv4 } from 'uuid';
+import { turso } from './turso';
 
 export { TABLES, generateId, timestamp, businessFromDb, customerFromDb, subscriptionFromDb, leadFromDb };
 export type { DbUser, DbBusiness, DbCustomer, DbLead, DbSubscription, DbOnboarding };
 
-// Helper to execute team-db queries
-export function teamDb(query: string): any[] | null {
+// Helper to execute team-db queries using Turso client
+export async function teamDb(query: string): Promise<any[] | null> {
   try {
-    const result = execSync(`team-db "${query.replace(/"/g, '\\"')}"`, {
-      encoding: 'utf-8',
-      maxBuffer: 10 * 1024 * 1024,
+    const result = await turso.execute(query);
+    // Convert Rows to plain objects
+    return result.rows.map(row => {
+      const obj: any = {};
+      result.columns.forEach((col, i) => {
+        obj[col] = row[i];
+      });
+      return obj;
     });
-    return JSON.parse(result);
   } catch (error) {
-    console.error('team-db error:', error);
+    console.error('Turso error:', error);
     return null;
   }
 }
@@ -41,7 +45,7 @@ export function timestamp(): string {
   return new Date().toISOString();
 }
 
-// Database row types (for when we retrieve data)
+// Database row types
 export interface DbUser {
   id: string;
   email: string;
