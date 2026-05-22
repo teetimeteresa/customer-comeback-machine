@@ -1,22 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { stripe } from '@/lib/stripe';
 import { getPlanFromPriceId } from '@/lib/stripe';
-import { execSync } from 'child_process';
-import { generateId, timestamp } from '@/lib/db';
-
-// Helper to query team-db
-async function dbQuery(query: string) {
-  try {
-    const result = execSync(`team-db "${query.replace(/"/g, '\\"')}"`, {
-      encoding: 'utf-8',
-      maxBuffer: 10 * 1024 * 1024,
-    });
-    return JSON.parse(result);
-  } catch (error) {
-    console.error('DB error:', error);
-    return null;
-  }
-}
+import { generateId, timestamp, teamDb } from '@/lib/db';
 
 export async function POST(request: NextRequest) {
   const body = await request.text();
@@ -44,9 +29,8 @@ export async function POST(request: NextRequest) {
   try {
     switch (event.type) {
       case 'checkout.session.completed': {
-        const session = event.data.object;
+        const session = event.data.object as any;
         const userId = session.metadata?.userId;
-        const planType = session.metadata?.planType;
 
         if (session.mode === 'subscription' && session.subscription) {
           // Get subscription details
@@ -58,14 +42,14 @@ export async function POST(request: NextRequest) {
           const subId = generateId();
           const planName = getPlanFromPriceId(subscription.items.data[0].price.id) || 'starter';
           
-          await dbQuery(`
+          await teamDb(`
             INSERT INTO subscriptions (id, business_id, stripe_customer_id, stripe_subscription_id, plan, status, current_period_start, current_period_end, created_at, updated_at)
             VALUES ('${subId}', '${userId}', '${session.customer}', '${subscription.id}', '${planName}', 'active', '${new Date(subscription.current_period_start * 1000).toISOString()}', '${new Date(subscription.current_period_end * 1000).toISOString()}', '${now}', '${now}')
           `);
         } else if (session.mode === 'payment') {
           // One-time payment (Done-for-You Setup)
           const subId = generateId();
-          await dbQuery(`
+          await teamDb(`
             INSERT INTO subscriptions (id, business_id, stripe_customer_id, plan, status, created_at, updated_at)
             VALUES ('${subId}', '${userId}', '${session.customer}', 'doneForYou', 'active', '${now}', '${now}')
           `);
@@ -74,10 +58,10 @@ export async function POST(request: NextRequest) {
       }
 
       case 'customer.subscription.updated': {
-        const subscription = event.data.object;
+        const subscription = event.data.object as any;
         const customerId = subscription.customer as string;
         
-        await dbQuery(`
+        await teamDb(`
           UPDATE subscriptions 
           SET status = '${subscription.status}',
               current_period_start = '${new Date(subscription.current_period_start * 1000).toISOString()}',
@@ -89,10 +73,10 @@ export async function POST(request: NextRequest) {
       }
 
       case 'customer.subscription.deleted': {
-        const subscription = event.data.object;
+        const subscription = event.data.object as any;
         const customerId = subscription.customer as string;
         
-        await dbQuery(`
+        await teamDb(`
           UPDATE subscriptions 
           SET status = 'canceled',
               canceled_at = '${now}',
@@ -103,10 +87,10 @@ export async function POST(request: NextRequest) {
       }
 
       case 'invoice.payment_failed': {
-        const invoice = event.data.object;
+        const invoice = event.data.object as any;
         const customerId = invoice.customer as string;
         
-        await dbQuery(`
+        await teamDb(`
           UPDATE subscriptions 
           SET status = 'past_due',
               updated_at = '${now}'

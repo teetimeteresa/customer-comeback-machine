@@ -1,19 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { stripe } from '@/lib/stripe';
-import { execSync } from 'child_process';
-
-async function dbQuery(query: string) {
-  try {
-    const result = execSync(`team-db "${query.replace(/"/g, '\\"')}"`, {
-      encoding: 'utf-8',
-      maxBuffer: 10 * 1024 * 1024,
-    });
-    return JSON.parse(result);
-  } catch (error) {
-    console.error('DB error:', error);
-    return null;
-  }
-}
+import { teamDb } from '@/lib/db';
 
 export async function POST(request: NextRequest) {
   try {
@@ -22,11 +9,6 @@ export async function POST(request: NextRequest) {
     if (!customerId) {
       return NextResponse.json({ error: 'No customer ID provided' }, { status: 400 });
     }
-
-    // Find the Stripe customer ID from our database
-    const subscriptions = await dbQuery(
-      `SELECT stripe_customer_id FROM subscriptions WHERE stripe_customer_id IS NOT NULL AND stripe_customer_id != '' LIMIT 1`
-    );
 
     // For now, create portal session with the provided customer ID
     const portalSession = await stripe.billingPortal.sessions.create({

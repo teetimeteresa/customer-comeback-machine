@@ -1,19 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { generateId, timestamp } from '@/lib/db';
-import { execSync } from 'child_process';
-
-async function dbQuery(query: string) {
-  try {
-    const result = execSync(`team-db "${query.replace(/"/g, '\\"')}"`, {
-      encoding: 'utf-8',
-      maxBuffer: 10 * 1024 * 1024,
-    });
-    return JSON.parse(result);
-  } catch (error) {
-    console.error('DB error:', error);
-    return null;
-  }
-}
+import { generateId, timestamp, teamDb } from '@/lib/db';
 
 // Content templates based on tone
 const contentTemplates: Record<string, Record<string, string[]>> = {
@@ -188,13 +174,6 @@ function customizeContent(
   
   const businessLabel = businessTypeMap[businessType] || 'shop';
   
-  // Customize for customer action
-  const actionPhrases: Record<string, string> = {
-    bought_product: ['purchase', 'find your new favorite', 'take home'],
-    booked_service: ['booking', 'appointment', 'visit'],
-    just_browsed: ['stop in', 'visit', 'swing by'],
-  };
-  
   customized = customized
     .replace(/\[Business Type\]/gi, businessLabel)
     .replace(/{name}/g, businessName || 'there')
@@ -273,7 +252,7 @@ export async function POST(request: NextRequest) {
       goalSpecificMessage,
     });
 
-    await dbQuery(`
+    await teamDb(`
       INSERT INTO leads (id, email, business_type, customer_type, what_customer_bought, tone, goal, generated_content, sales_email_sent, created_at)
       VALUES ('${leadId}', '${email}', '${businessType}', '${customerType}', '${whatCustomerBought}', '${tone}', '${goal}', '${generatedContent.replace(/'/g, "''")}', 0, '${now}')
     `);

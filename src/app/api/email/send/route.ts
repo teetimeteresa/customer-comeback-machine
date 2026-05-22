@@ -1,6 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { generateId, timestamp } from '@/lib/db';
-import { execSync } from 'child_process';
+import { generateId, timestamp, teamDb } from '@/lib/db';
 import { sendEmail, generateUnsubscribeUrl, generateEmailFooter } from '@/lib/email';
 
 // Email sequence timing (in days after opt-in)
@@ -12,42 +11,10 @@ const EMAIL_SEQUENCE = [
   { day: 45, type: 'win_back', subject: 'We miss your face' },
 ];
 
-interface DbCustomer {
-  id: string;
-  business_id: string;
-  first_name: string;
-  last_name: string;
-  email: string;
-  created_at: string;
-}
-
-interface DbBusiness {
-  id: string;
-  name: string;
-  brand_tone: string;
-  mailing_address: string;
-  google_review_link: string;
-  current_offer: string;
-  preferred_cta: string;
-}
-
-async function dbQuery(query: string) {
-  try {
-    const result = execSync(`team-db "${query.replace(/"/g, '\\"')}"`, {
-      encoding: 'utf-8',
-      maxBuffer: 10 * 1024 * 1024,
-    });
-    return JSON.parse(result);
-  } catch (error) {
-    console.error('DB error:', error);
-    return null;
-  }
-}
-
 function generateEmailBody(
   type: string,
-  business: DbBusiness,
-  customer: DbCustomer
+  business: any,
+  customer: any
 ): { subject: string; html: string } {
   const firstName = customer.first_name || 'there';
   const unsubscribeUrl = generateUnsubscribeUrl(customer.email, business.id);
@@ -136,15 +103,16 @@ function generateEmailBody(
     },
   };
 
-  return templates[type] || templates.welcome;
+  const selected = templates[type] || templates.welcome;
+  return { subject: selected.subject, html: selected.body };
 }
 
 export async function POST(request: NextRequest) {
   try {
-    const { businessId, customerId, type, forceResend } = await request.json();
+    const { businessId, customerId, type } = await request.json();
 
     // Get customer and business data
-    const customers = await dbQuery(
+    const customers = await teamDb(
       `SELECT * FROM customers WHERE id = '${customerId}' AND business_id = '${businessId}'`
     );
     
@@ -154,7 +122,7 @@ export async function POST(request: NextRequest) {
     
     const customer = customers[0];
 
-    const businesses = await dbQuery(
+    const businesses = await teamDb(
       `SELECT * FROM businesses WHERE id = '${businessId}'`
     );
     
@@ -171,13 +139,13 @@ export async function POST(request: NextRequest) {
     const emailId = generateId();
     const now = timestamp();
 
-    await dbQuery(`
+    await teamDb(`
       INSERT INTO emails (id, business_id, customer_id, type, subject, body, status, sent_at, created_at)
-      VALUES ('${emailId}', '${businessId}', '${customerId}', '${type}', '${emailContent.subject.replace(/'/g, "''")}', '${emailContent.body.replace(/'/g, "''")}', 'sent', '${now}', '${now}')
+      VALUES ('${emailId}', '${businessId}', '${customerId}', '${type}', '${emailContent.subject.replace(/'/g, "''")}', '${emailContent.html.replace(/'/g, "''")}', 'sent', '${now}', '${now}')
     `);
 
     // Update customer's last email sent
-    await dbQuery(`
+    await teamDb(`
       UPDATE customers 
       SET last_email_sent = '${now}', last_email_type = '${type}', updated_at = '${now}'
       WHERE id = '${customerId}'
@@ -187,7 +155,7 @@ export async function POST(request: NextRequest) {
     await sendEmail({
       to: customer.email,
       subject: emailContent.subject,
-      html: emailContent.body,
+      html: emailContent.html,
     });
 
     return NextResponse.json({
@@ -216,10 +184,9 @@ export async function GET(request: NextRequest) {
     }
 
     const now = new Date();
-    const today = now.toISOString().split('T')[0];
 
     // Get customers whose next scheduled email is due
-    const customers = await dbQuery(`
+    const customers = await teamDb(`
       SELECT c.*, b.name as business_name, b.mailing_address, b.google_review_link, b.current_offer
       FROM customers c
       JOIN businesses b ON c.business_id = b.id
@@ -236,7 +203,7 @@ export async function GET(request: NextRequest) {
       for (const email of EMAIL_SEQUENCE) {
         if (daysSinceOptIn >= email.day) {
           // Check if this email was already sent
-          const existingEmail = await dbQuery(`
+          const existingEmail = await teamDb(`
             SELECT id FROM emails 
             WHERE customer_id = '${customer.id}' 
             AND type = '${email.type}'
@@ -245,7 +212,7 @@ export async function GET(request: NextRequest) {
 
           if (!existingEmail || existingEmail.length === 0) {
             // Get business details
-            const businesses = await dbQuery(
+            const businesses = await teamDb(
               `SELECT * FROM businesses WHERE id = '${customer.business_id}'`
             );
 
@@ -255,66 +222,24 @@ export async function GET(request: NextRequest) {
 
               // Create email record
               const emailId = generateId();
-              await dbQuery(`
+              await teamDb(`
                 INSERT INTO emails (id, business_id, customer_id, type, subject, body, status, sent_at, created_at)
-                VALUES ('${emailId}', '${customer.business_id}', '${customer.id}', '${email.type}', '${emailContent.subject.replace(/'/g, "''")}', '${emailContent.body.replace(/'/g, "''")}', 'sent', '${now.toISOString()}', '${now.toISOString()}')
+                VALUES ('${emailId}', '${customer.business_id}', '${customer.id}', '${email.type}', '${emailContent.subject.replace(/'/g, "''")}', '${emailContent.html.replace(/'/g, "''")}', 'sent', '${now.toISOString()}', '${now.toISOString()}')
               `);
 
               // Send email
               await sendEmail({
                 to: customer.email,
                 subject: emailContent.subject,
-                html: emailContent.body,
+                html: emailContent.html,
               });
 
               // Update customer
-              await dbQuery(`
+              await teamDb(`
                 UPDATE customers 
                 SET last_email_sent = '${now.toISOString()}', last_email_type = '${email.type}'
                 WHERE id = '${customer.id}'
               `);
-
-              sentCount++;
-            }
-          }
-        }
-      }
-
-      // Check for birthday email (7 days before birthday)
-      if (customer.birthday) {
-        const birthday = new Date(customer.birthday);
-        const thisYearBirthday = new Date(now.getFullYear(), birthday.getMonth(), birthday.getDate());
-        const daysUntilBirthday = Math.ceil((thisYearBirthday.getTime() - now.getTime()) / (1000 * 60 * 60 * 24));
-
-        if (daysUntilBirthday === 7) {
-          // Check if birthday email was already sent this year
-          const existingBirthdayEmail = await dbQuery(`
-            SELECT id FROM emails 
-            WHERE customer_id = '${customer.id}' 
-            AND type = 'birthday'
-            AND sent_at > '${new Date(now.getFullYear(), 0, 1).toISOString()}'
-          `);
-
-          if (!existingBirthdayEmail || existingBirthdayEmail.length === 0) {
-            const businesses = await dbQuery(
-              `SELECT * FROM businesses WHERE id = '${customer.business_id}'`
-            );
-
-            if (businesses && businesses.length > 0) {
-              const business = businesses[0];
-              const emailContent = generateEmailBody('birthday', business, customer);
-
-              const emailId = generateId();
-              await dbQuery(`
-                INSERT INTO emails (id, business_id, customer_id, type, subject, body, status, sent_at, created_at)
-                VALUES ('${emailId}', '${customer.business_id}', '${customer.id}', 'birthday', '${emailContent.subject.replace(/'/g, "''")}', '${emailContent.body.replace(/'/g, "''")}', 'sent', '${now.toISOString()}', '${now.toISOString()}')
-              `);
-
-              await sendEmail({
-                to: customer.email,
-                subject: `Happy Birthday from ${business.name}! 🎉`,
-                html: emailContent.body,
-              });
 
               sentCount++;
             }
