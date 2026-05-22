@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from './Button';
+import Link from 'next/link';
 
 interface PricingCardProps {
   name: string;
@@ -46,9 +47,11 @@ export const PricingCard: React.FC<PricingCardProps> = ({
         ))}
       </ul>
       
-      <Button variant={popular ? 'primary' : 'outline'} className="w-full">
-        Choose {name}
-      </Button>
+      <Link href="/signup" className="w-full">
+        <Button variant={popular ? 'primary' : 'outline'} className="w-full">
+          Choose {name}
+        </Button>
+      </Link>
     </div>
   );
 };

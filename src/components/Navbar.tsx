@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from './Button';
+import Link from 'next/link';
 
 export const Navbar = () => {
   return (
@@ -27,12 +28,16 @@ export const Navbar = () => {
         </div>
         
         <div className="flex items-center gap-4">
-          <Button variant="outline" size="sm" className="hidden sm:inline-flex">
-            Log In
-          </Button>
-          <Button size="sm">
-            Get Started
-          </Button>
+          <Link href="/login" className="hidden sm:inline-flex">
+            <Button variant="outline" size="sm">
+              Log In
+            </Button>
+          </Link>
+          <Link href="/signup">
+            <Button size="sm">
+              Get Started
+            </Button>
+          </Link>
         </div>
       </div>
     </nav>

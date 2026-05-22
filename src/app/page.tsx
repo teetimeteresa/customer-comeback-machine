@@ -1,6 +1,7 @@
 import { Navbar } from '@/components/Navbar';
 import { Button } from '@/components/Button';
 import { PricingCard } from '@/components/PricingCard';
+import Link from 'next/link';
 
 export default function Home() {
   const plans = [
@@ -63,12 +64,16 @@ export default function Home() {
               Customer Comeback Machine is the automated follow-up system that turns one-time visitors into lifelong fans—without adding a single task to your to-do list.
             </p>
             <div className="mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row">
-              <Button size="lg" className="shadow-lg shadow-amber-500/20">
-                Start Your 14-Day Free Trial
-              </Button>
-              <Button variant="outline" size="lg">
-                See How It Works
-              </Button>
+              <Link href="/signup">
+                <Button size="lg" className="shadow-lg shadow-amber-500/20">
+                  Start Your 14-Day Free Trial
+                </Button>
+              </Link>
+              <Link href="#features">
+                <Button variant="outline" size="lg">
+                  See How It Works
+                </Button>
+              </Link>
             </div>
             <p className="mt-6 text-sm text-slate-500">
               No credit card required • Simple 5-minute setup
