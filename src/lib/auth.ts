@@ -75,5 +75,6 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
   session: {
     strategy: 'jwt',
   },
-  secret: process.env.NEXTAUTH_SECRET || 'development-secret',
+  // Ensure we have a secret for production
+  secret: process.env.AUTH_SECRET || process.env.NEXTAUTH_SECRET || 'development-secret-1234567890',
 });
