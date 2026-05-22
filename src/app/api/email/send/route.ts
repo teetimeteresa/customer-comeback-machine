@@ -112,9 +112,10 @@ export async function POST(request: NextRequest) {
     const { businessId, customerId, type } = await request.json();
 
     // Get customer and business data
-    const customers = await teamDb(
-      `SELECT * FROM customers WHERE id = '${customerId}' AND business_id = '${businessId}'`
-    );
+    const customers = await teamDb({
+      sql: 'SELECT * FROM customers WHERE id = ? AND business_id = ?',
+      args: [customerId, businessId]
+    });
     
     if (!customers || customers.length === 0) {
       return NextResponse.json({ error: 'Customer not found' }, { status: 404 });
@@ -122,9 +123,10 @@ export async function POST(request: NextRequest) {
     
     const customer = customers[0];
 
-    const businesses = await teamDb(
-      `SELECT * FROM businesses WHERE id = '${businessId}'`
-    );
+    const businesses = await teamDb({
+      sql: 'SELECT * FROM businesses WHERE id = ?',
+      args: [businessId]
+    });
     
     if (!businesses || businesses.length === 0) {
       return NextResponse.json({ error: 'Business not found' }, { status: 404 });
@@ -139,17 +141,17 @@ export async function POST(request: NextRequest) {
     const emailId = generateId();
     const now = timestamp();
 
-    await teamDb(`
-      INSERT INTO emails (id, business_id, customer_id, type, subject, body, status, sent_at, created_at)
-      VALUES ('${emailId}', '${businessId}', '${customerId}', '${type}', '${emailContent.subject.replace(/'/g, "''")}', '${emailContent.html.replace(/'/g, "''")}', 'sent', '${now}', '${now}')
-    `);
+    await teamDb({
+      sql: `INSERT INTO emails (id, business_id, customer_id, type, subject, body, status, sent_at, created_at)
+            VALUES (?, ?, ?, ?, ?, ?, 'sent', ?, ?)`,
+      args: [emailId, businessId, customerId, type, emailContent.subject, emailContent.html, now, now]
+    });
 
     // Update customer's last email sent
-    await teamDb(`
-      UPDATE customers 
-      SET last_email_sent = '${now}', last_email_type = '${type}', updated_at = '${now}'
-      WHERE id = '${customerId}'
-    `);
+    await teamDb({
+      sql: 'UPDATE customers SET last_email_sent = ?, last_email_type = ?, updated_at = ? WHERE id = ?',
+      args: [now, type, now, customerId]
+    });
 
     // Send email via Resend
     await sendEmail({
@@ -203,18 +205,17 @@ export async function GET(request: NextRequest) {
       for (const email of EMAIL_SEQUENCE) {
         if (daysSinceOptIn >= email.day) {
           // Check if this email was already sent
-          const existingEmail = await teamDb(`
-            SELECT id FROM emails 
-            WHERE customer_id = '${customer.id}' 
-            AND type = '${email.type}'
-            AND status = 'sent'
-          `);
+          const existingEmail = await teamDb({
+            sql: "SELECT id FROM emails WHERE customer_id = ? AND type = ? AND status = 'sent'",
+            args: [customer.id, email.type]
+          });
 
           if (!existingEmail || existingEmail.length === 0) {
             // Get business details
-            const businesses = await teamDb(
-              `SELECT * FROM businesses WHERE id = '${customer.business_id}'`
-            );
+            const businesses = await teamDb({
+              sql: 'SELECT * FROM businesses WHERE id = ?',
+              args: [customer.business_id]
+            });
 
             if (businesses && businesses.length > 0) {
               const business = businesses[0];
@@ -222,10 +223,11 @@ export async function GET(request: NextRequest) {
 
               // Create email record
               const emailId = generateId();
-              await teamDb(`
-                INSERT INTO emails (id, business_id, customer_id, type, subject, body, status, sent_at, created_at)
-                VALUES ('${emailId}', '${customer.business_id}', '${customer.id}', '${email.type}', '${emailContent.subject.replace(/'/g, "''")}', '${emailContent.html.replace(/'/g, "''")}', 'sent', '${now.toISOString()}', '${now.toISOString()}')
-              `);
+              await teamDb({
+                sql: `INSERT INTO emails (id, business_id, customer_id, type, subject, body, status, sent_at, created_at)
+                      VALUES (?, ?, ?, ?, ?, ?, 'sent', ?, ?)`,
+                args: [emailId, customer.business_id, customer.id, email.type, emailContent.subject, emailContent.html, now.toISOString(), now.toISOString()]
+              });
 
               // Send email
               await sendEmail({
@@ -235,11 +237,10 @@ export async function GET(request: NextRequest) {
               });
 
               // Update customer
-              await teamDb(`
-                UPDATE customers 
-                SET last_email_sent = '${now.toISOString()}', last_email_type = '${email.type}'
-                WHERE id = '${customer.id}'
-              `);
+              await teamDb({
+                sql: 'UPDATE customers SET last_email_sent = ?, last_email_type = ? WHERE id = ?',
+                args: [now.toISOString(), email.type, customer.id]
+              });
 
               sentCount++;
             }

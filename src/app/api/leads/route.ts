@@ -252,10 +252,11 @@ export async function POST(request: NextRequest) {
       goalSpecificMessage,
     });
 
-    await teamDb(`
-      INSERT INTO leads (id, email, business_type, customer_type, what_customer_bought, tone, goal, generated_content, sales_email_sent, created_at)
-      VALUES ('${leadId}', '${email}', '${businessType}', '${customerType}', '${whatCustomerBought}', '${tone}', '${goal}', '${generatedContent.replace(/'/g, "''")}', 0, '${now}')
-    `);
+    await teamDb({
+      sql: `INSERT INTO leads (id, email, business_type, customer_type, what_customer_bought, tone, goal, generated_content, sales_email_sent, created_at)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, 0, ?)`,
+      args: [leadId, email, businessType, customerType, whatCustomerBought, tone, goal, generatedContent, now]
+    });
 
     // Trigger first sales email asynchronously (don't wait for it)
     fetch(`${process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000'}/api/email/sales`, {

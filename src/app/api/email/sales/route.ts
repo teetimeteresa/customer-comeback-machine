@@ -31,7 +31,7 @@ const SALES_EMAIL_SEQUENCE = [
   },
   {
     day: 14,
-    subject: 'Here\'s everything you get with Customer Comeback Machine',
+    subject: "Here's everything you get with Customer Comeback Machine",
     templateId: 'email6_pricing',
   },
   {
@@ -339,7 +339,10 @@ export async function POST(request: NextRequest) {
     }
 
     // Get the lead
-    const leads = await teamDb(`SELECT * FROM leads WHERE id = '${leadId}'`);
+    const leads = await teamDb({
+      sql: 'SELECT * FROM leads WHERE id = ?',
+      args: [leadId]
+    });
     
     if (!leads || leads.length === 0) {
       return NextResponse.json({ error: 'Lead not found' }, { status: 404 });
@@ -359,7 +362,10 @@ export async function POST(request: NextRequest) {
     });
 
     // Mark sales email as sent
-    await teamDb(`UPDATE leads SET sales_email_sent = 1 WHERE id = '${leadId}'`);
+    await teamDb({
+      sql: 'UPDATE leads SET sales_email_sent = 1 WHERE id = ?',
+      args: [leadId]
+    });
 
     return NextResponse.json({
       success: true,
@@ -387,11 +393,7 @@ export async function GET(request: NextRequest) {
     const now = new Date();
 
     // Get leads that haven't completed the sales sequence
-    const leads = await teamDb(`
-      SELECT * FROM leads 
-      WHERE sales_email_sent = 1 
-      AND created_at IS NOT NULL
-    `);
+    const leads = await teamDb('SELECT * FROM leads WHERE sales_email_sent = 1 AND created_at IS NOT NULL');
 
     let sentCount = 0;
 
@@ -402,12 +404,10 @@ export async function GET(request: NextRequest) {
       for (const email of SALES_EMAIL_SEQUENCE) {
         if (daysSinceOptIn >= email.day) {
           // Check if this email was already sent
-          const existingEmail = await teamDb(`
-            SELECT id FROM emails 
-            WHERE customer_id = '${lead.id}' 
-            AND type = 'sales_${email.templateId}'
-            AND status = 'sent'
-          `);
+          const existingEmail = await teamDb({
+            sql: "SELECT id FROM emails WHERE customer_id = ? AND type = ? AND status = 'sent'",
+            args: [lead.id, `sales_${email.templateId}`]
+          });
 
           if (!existingEmail || existingEmail.length === 0) {
             const emailBody = generateSalesEmailBody(email.templateId, lead, lead.generated_content);
@@ -416,10 +416,11 @@ export async function GET(request: NextRequest) {
 
             // Create email record
             const emailId = generateId();
-            await teamDb(`
-              INSERT INTO emails (id, business_id, customer_id, type, subject, body, status, sent_at, created_at)
-              VALUES ('${emailId}', 'system', '${lead.id}', 'sales_${email.templateId}', '${email.subject.replace(/'/g, "''")}', '${finalEmailBody.replace(/'/g, "''")}', 'sent', '${now.toISOString()}', '${now.toISOString()}')
-            `);
+            await teamDb({
+              sql: `INSERT INTO emails (id, business_id, customer_id, type, subject, body, status, sent_at, created_at)
+                    VALUES (?, ?, ?, ?, ?, ?, 'sent', ?, ?)`,
+              args: [emailId, 'system', lead.id, `sales_${email.templateId}`, email.subject, finalEmailBody, now.toISOString(), now.toISOString()]
+            });
 
             // Send email
             await sendEmail({

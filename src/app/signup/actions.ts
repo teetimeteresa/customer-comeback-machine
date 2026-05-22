@@ -1,9 +1,9 @@
 'use server';
 
-import { generateId, timestamp, teamDb } from '@/lib/db';
+import { generateId, timestamp } from '@/lib/db';
+import { teamDb } from '@/lib/team-db';
 import bcrypt from 'bcryptjs';
 import { signIn } from '@/lib/auth';
-import { redirect } from 'next/navigation';
 
 function generateSlug(name: string): string {
   return name
@@ -23,7 +23,11 @@ export async function signup(formData: FormData) {
 
   try {
     // Check if user already exists
-    const existingUsers = await teamDb(`SELECT id FROM users WHERE email = '${email}'`);
+    const existingUsers = await teamDb({
+      sql: 'SELECT id FROM users WHERE email = ?',
+      args: [email]
+    });
+
     if (existingUsers && existingUsers.length > 0) {
       return { error: 'An account with this email already exists' };
     }
@@ -34,26 +38,30 @@ export async function signup(formData: FormData) {
     // Create user
     const userId = generateId();
     const now = timestamp();
-    
-    await teamDb(`
-      INSERT INTO users (id, email, password, name, role, created_at, updated_at)
-      VALUES ('${userId}', '${email}', '${hashedPassword}', '${name.replace(/'/g, "''")}', 'business_owner', '${now}', '${now}')
-    `);
 
-    // Create a placeholder business for now (will be updated during onboarding)
+    await teamDb({
+      sql: `INSERT INTO users (id, email, password, name, role, created_at, updated_at) 
+            VALUES (?, ?, ?, ?, ?, ?, ?)`,
+      args: [userId, email, hashedPassword, name, 'business_owner', now, now]
+    });
+
+    // Create a placeholder business for now
     const businessId = generateId();
     const slug = generateSlug(name.split(' ')[0]);
-    
-    await teamDb(`
-      INSERT INTO businesses (id, owner_id, name, type, slug, created_at, updated_at)
-      VALUES ('${businessId}', '${userId}', '${name.split(' ')[0]}\'s Business', 'local_service', '${slug}', '${now}', '${now}')
-    `);
+    const businessName = `${name.split(' ')[0]}'s Business`;
+
+    await teamDb({
+      sql: `INSERT INTO businesses (id, owner_id, name, type, slug, created_at, updated_at)
+            VALUES (?, ?, ?, ?, ?, ?, ?)`,
+      args: [businessId, userId, businessName, 'local_service', slug, now, now]
+    });
 
     // Create onboarding record
-    await teamDb(`
-      INSERT INTO onboarding (id, business_id, status, step, data, created_at, updated_at)
-      VALUES ('${generateId()}', '${businessId}', 'pending', 0, '{}', '${now}', '${now}')
-    `);
+    await teamDb({
+      sql: `INSERT INTO onboarding (id, business_id, status, step, data, created_at, updated_at)
+            VALUES (?, ?, ?, ?, ?, ?, ?)`,
+      args: [generateId(), businessId, 'pending', 0, '{}', now, now]
+    });
 
     // Automatically sign in the user
     try {
@@ -64,12 +72,12 @@ export async function signup(formData: FormData) {
       });
     } catch (authError) {
       console.error('Auto-login error:', authError);
-      // We still created the account, so they can manually login
+      // We still created the account, so they can manually login if redirect fails
     }
 
     return { success: true };
   } catch (error) {
     console.error('Signup error:', error);
-    return { error: 'Failed to create account' };
+    return { error: 'Failed to create account. Please try again.' };
   }
 }
