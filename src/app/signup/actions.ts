@@ -2,6 +2,8 @@
 
 import { generateId, timestamp, teamDb } from '@/lib/db';
 import bcrypt from 'bcryptjs';
+import { signIn } from '@/lib/auth';
+import { redirect } from 'next/navigation';
 
 function generateSlug(name: string): string {
   return name
@@ -53,7 +55,19 @@ export async function signup(formData: FormData) {
       VALUES ('${generateId()}', '${businessId}', 'pending', 0, '{}', '${now}', '${now}')
     `);
 
-    return { success: true, userId, businessId };
+    // Automatically sign in the user
+    try {
+      await signIn('credentials', {
+        email,
+        password,
+        redirect: false,
+      });
+    } catch (authError) {
+      console.error('Auto-login error:', authError);
+      // We still created the account, so they can manually login
+    }
+
+    return { success: true };
   } catch (error) {
     console.error('Signup error:', error);
     return { error: 'Failed to create account' };
