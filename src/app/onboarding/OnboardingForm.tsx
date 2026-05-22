@@ -8,8 +8,8 @@ import {
   MapPin, 
   Phone, 
   Mail, 
-  Instagram, 
-  Facebook, 
+  Share2, 
+  Camera, 
   Star, 
   MessageSquare, 
   Sparkles,
@@ -299,7 +299,7 @@ export default function OnboardingForm() {
 
                 <div>
                   <label htmlFor="facebookPage" className="flex items-center gap-2 text-sm font-bold text-slate-700 uppercase tracking-wider">
-                    <Facebook className="h-4 w-4 text-blue-600" />
+                    <Share2 className="h-4 w-4 text-blue-600" />
                     Facebook Page
                   </label>
                   <input
@@ -315,7 +315,7 @@ export default function OnboardingForm() {
 
                 <div>
                   <label htmlFor="instagramPage" className="flex items-center gap-2 text-sm font-bold text-slate-700 uppercase tracking-wider">
-                    <Instagram className="h-4 w-4 text-pink-600" />
+                    <Camera className="h-4 w-4 text-pink-600" />
                     Instagram Page
                   </label>
                   <input
