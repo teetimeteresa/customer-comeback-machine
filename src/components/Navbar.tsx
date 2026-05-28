@@ -18,10 +18,10 @@ export const Navbar = () => {
         </Link>
         
         <div className="hidden space-x-10 md:flex">
-          <a href="#features" className="text-sm font-bold text-slate-500 hover:text-slate-900 transition-colors uppercase tracking-widest">
+          <a  href="/?#features" className="text-sm font-bold text-slate-500 hover:text-slate-900 transition-colors uppercase tracking-widest">
             Features
           </a>
-          <a href="#pricing" className="text-sm font-bold text-slate-500 hover:text-slate-900 transition-colors uppercase tracking-widest">
+          <a href="/?#pricing" className="text-sm font-bold text-slate-500 hover:text-slate-900 transition-colors uppercase tracking-widest">
             Pricing
           </a>
           <Link href="/blog" className="text-sm font-bold text-slate-500 hover:text-slate-900 transition-colors uppercase tracking-widest">
