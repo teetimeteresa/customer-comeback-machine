@@ -62,11 +62,17 @@ export const Sidebar = () => {
       </nav>
 
       <div className="p-4 mt-auto">
-        <div className="bg-amber-50 rounded-3xl p-6 border border-amber-100 mb-4">
-          <p className="text-xs font-black text-amber-800 uppercase tracking-widest mb-1">Growth Tip</p>
-          <p className="text-xs text-amber-700 font-medium leading-relaxed">
-            Did you know? Review requests are most effective when sent within 48 hours.
+        <div className="bg-slate-900 rounded-3xl p-6 shadow-xl shadow-slate-900/20 mb-4">
+          <p className="text-xs font-black text-amber-400 uppercase tracking-widest mb-2">Need a hand? ❤️</p>
+          <p className="text-[11px] text-slate-300 font-medium leading-relaxed mb-4">
+            We’re your quiet partner. If you need help with your setup, just reach out!
           </p>
+          <Link 
+            href="/dashboard/support"
+            className="block text-center bg-white text-slate-900 py-2 rounded-xl text-[10px] font-black uppercase tracking-widest hover:bg-amber-400 transition-colors"
+          >
+            Message the team
+          </Link>
         </div>
         
         <button className="w-full flex items-center gap-3 px-4 py-3.5 rounded-2xl text-slate-400 hover:bg-red-50 hover:text-red-500 transition-all font-bold text-sm group">

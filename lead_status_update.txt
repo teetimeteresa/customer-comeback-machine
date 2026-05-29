@@ -1,0 +1,9 @@
+Cleanup Update:
+- Purged all 'Teresa' test data from the database (both emails).
+- Operations has updated the .env with real production Stripe Price IDs.
+- Team is ready for global outreach once the Stripe Webhook is finalized.
+
+Blocker:
+- We need the STRIPE_WEBHOOK_SECRET from your Stripe Dashboard (Developers -> Webhooks) to enable automated billing confirmation.
+
+Once we have that, the 'machine' is officially 100% production-ready.

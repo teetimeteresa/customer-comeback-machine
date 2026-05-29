@@ -75,7 +75,7 @@ export async function signup(formData: FormData) {
       // We still created the account, so they can manually login if redirect fails
     }
 
-    return { success: true };
+    return { success: true, userId };
   } catch (error) {
     console.error('Signup error:', error);
     return { error: 'Failed to create account. Please try again.' };

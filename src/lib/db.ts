@@ -5,9 +5,9 @@ import { turso } from './turso';
 export type { DbUser, DbBusiness, DbCustomer, DbLead, DbSubscription, DbOnboarding };
 
 // Helper to execute team-db queries using Turso client
-export async function teamDb(query: string): Promise<any[] | null> {
+export async function teamDb(statement: any): Promise<any[] | null> {
   try {
-    const result = await turso.execute(query);
+    const result = await turso.execute(statement);
     // Convert Rows to plain objects
     return result.rows.map(row => {
       const obj: any = {};

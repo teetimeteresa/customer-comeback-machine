@@ -1,5 +1,6 @@
 import { Navbar } from '@/components/Navbar';
 import { Button } from '@/components/Button';
+import { FreeToolBanner } from '@/components/FreeToolBanner';
 
 export default function BlogPost() {
   return (
@@ -115,6 +116,9 @@ export default function BlogPost() {
             </div>
           </div>
         </article>
+        <div className="container mx-auto px-4 pb-20">
+          <FreeToolBanner />
+        </div>
       </main>
 
       <footer className="border-t border-slate-100 bg-white py-12">

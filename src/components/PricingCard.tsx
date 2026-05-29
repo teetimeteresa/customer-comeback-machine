@@ -61,7 +61,7 @@ export const PricingCard: React.FC<PricingCardProps> = ({
         ))}
       </ul>
 
-      <Link href="/signup" className="w-full">
+      <Link href={`/signup?plan=${name.toLowerCase()}`} className="w-full">
         <Button
           variant={popular ? 'default' : 'outline'}
           size="lg"

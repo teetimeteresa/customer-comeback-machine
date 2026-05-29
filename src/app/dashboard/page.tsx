@@ -23,6 +23,20 @@ export default async function Dashboard() {
     redirect('/onboarding');
   }
 
+  // Check for active subscription
+  const subscriptions = await teamDb({
+    sql: `SELECT id, status, plan FROM subscriptions 
+          WHERE business_id = ? AND status = 'active' 
+          ORDER BY created_at DESC LIMIT 1`,
+    args: [business.id]
+  });
+
+  const hasActiveSubscription = subscriptions && subscriptions.length > 0;
+
+  if (!hasActiveSubscription) {
+    redirect('/pricing?error=subscription_required');
+  }
+
   // Fetch real stats
   const customerCountResult = await teamDb({
     sql: 'SELECT COUNT(*) as count FROM customers WHERE business_id = ?',
@@ -63,14 +77,27 @@ export default async function Dashboard() {
       
       <main className="pl-64">
         <header className="flex h-16 items-center justify-between border-b border-slate-200 bg-white px-8">
-          <h1 className="text-xl font-bold">Business Dashboard</h1>
+          <h1 className="text-xl font-bold">Welcome back, {session.user.name?.split(' ')[0]}! ❤️</h1>
           <div className="flex items-center gap-4">
             <span className="text-sm font-medium text-slate-500">{business.name}</span>
-            <div className="h-8 w-8 rounded-full bg-slate-200"></div>
+            <div className="h-8 w-8 rounded-full bg-slate-200 flex items-center justify-center font-bold text-slate-400 text-xs">
+              {session.user.name?.charAt(0)}
+            </div>
           </div>
         </header>
 
         <div className="p-8 max-w-7xl mx-auto">
+          {/* Happiness Tip of the Week */}
+          <div className="mb-8 rounded-2xl bg-amber-50 border border-amber-100 p-4 flex items-center gap-4">
+            <div className="h-10 w-10 rounded-full bg-white flex items-center justify-center text-amber-500 shadow-sm">
+              <Sparkles size={20} />
+            </div>
+            <div>
+              <p className="text-xs font-bold text-amber-600 uppercase tracking-widest">Happiness Tip of the Week</p>
+              <p className="text-sm text-amber-900 font-medium">"People will forget what you said, but they will never forget how you made them feel." Try adding a personal note to your next follow-up!</p>
+            </div>
+          </div>
+
           {/* Stats Grid */}
           <div className="grid gap-6 md:grid-cols-4">
             {stats.map((stat, index) => (

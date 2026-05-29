@@ -61,7 +61,7 @@ export default function Home() {
               Stop Letting Good <br/> Customers <span className="text-amber-500 underline decoration-slate-100 underline-offset-8">Disappear.</span>
             </h1>
             <p className="mt-10 text-xl text-slate-500 leading-relaxed max-w-3xl mx-auto font-medium">
-              The automated follow-up system for local shops that turns one-time visitors into lifelong fans—without lifting a finger.
+              Because every customer is a neighbor. Our heart-centered follow-up system helps local shops turn one-time visitors into lifelong friends—automatically.
             </p>
             <div className="mt-14 flex flex-col items-center justify-center gap-6 sm:flex-row">
               <Link href="/signup">

@@ -73,7 +73,10 @@ export default function PricingPage() {
             <div className="max-w-xl">
               <h2 className="text-3xl font-bold text-slate-900">“Done-for-You” Setup</h2>
               <p className="mt-4 text-lg text-slate-600">
-                Want us to handle everything? We'll set up your business profile, customize your messages, and design your QR signs for a one-time fee of <span className="font-bold text-amber-600">$497</span>.
+                Want a dedicated partner to get you launched? We'll handle everything—from setting up your profile to customizing your messages—so you can stay focused on your customers.
+              </p>
+              <p className="mt-2 text-sm text-amber-600 font-bold uppercase tracking-widest italic">
+                ✨ Includes a 1-on-1 success call to ensure you're ready to win.
               </p>
             </div>
             <button className="whitespace-nowrap rounded-xl bg-amber-500 px-8 py-4 font-bold text-white shadow-lg shadow-amber-500/20 hover:bg-amber-600 transition-colors">

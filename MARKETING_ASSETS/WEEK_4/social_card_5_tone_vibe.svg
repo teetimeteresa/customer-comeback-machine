@@ -1,0 +1,35 @@
+<svg width="1080" height="1080" viewBox="0 0 1080 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1080" height="1080" fill="#FAFAF9"/>
+  
+  <g transform="translate(140, 150)">
+    <text font-family="'Inter', sans-serif" font-weight="900" font-size="100" fill="#1C1917" letter-spacing="-4">
+      <tspan x="0" dy="0">Your Brand's</tspan>
+      <tspan x="0" dy="110" fill="#F59E0B">Soul.</tspan>
+      <tspan x="0" dy="110">Amplified.</tspan>
+    </text>
+    
+    <g transform="translate(0, 380)">
+      <text font-family="'Inter', sans-serif" font-weight="600" font-size="44" fill="#57534E" leading-relaxed="1.4">
+        <tspan x="0" dy="0">Our AI doesn't sound like a robot.</tspan>
+        <tspan x="0" dy="60">It sounds like YOU—friendly, luxury,</tspan>
+        <tspan x="0" dy="60">or funny. Whatever your vibe,</tspan>
+        <tspan x="0" dy="60">we've got your back.</tspan>
+      </text>
+    </g>
+    
+    <!-- Heart styles illustration -->
+    <g transform="translate(0, 650)">
+       <!-- Friendly Heart -->
+       <path d="M50 100C50 100 95 75 95 45C95 28.4315 81.5685 15 65 15C56.8237 15 49.4125 18.255 44 23.51C38.5875 18.255 31.1763 15 23 15C6.43147 15 -7 28.4315 -7 45C-7 75 38 100 38 100L50 100Z" fill="#FBBF24" transform="scale(2)" />
+       <text x="50" y="240" font-family="'Inter', sans-serif" font-weight="900" font-size="24" fill="#57534E" text-anchor="middle">FRIENDLY</text>
+       
+       <!-- Luxury Heart -->
+       <path d="M250 100C250 100 295 75 295 45C295 28.4315 281.5685 15 265 15C256.8237 15 249.4125 18.255 244 23.51C238.5875 18.255 231.1763 15 223 15C206.4315 15 193 28.4315 193 45C193 75 238 100 238 100L250 100Z" fill="#1C1917" stroke="#FBBF24" stroke-width="4" transform="scale(2) translate(-100, 0)" />
+       <text x="300" y="240" font-family="'Inter', sans-serif" font-weight="900" font-size="24" fill="#57534E" text-anchor="middle">LUXURY</text>
+       
+       <!-- Heartfelt Heart -->
+       <path d="M450 100C450 100 495 75 495 45C495 28.4315 481.5685 15 465 15C456.8237 15 449.4125 18.255 444 23.51C438.5875 18.255 431.1763 15 423 15C406.4315 15 393 28.4315 393 45C393 75 438 100 438 100L450 100Z" fill="#F43F5E" opacity="0.6" transform="scale(2) translate(-200, 0)" />
+       <text x="550" y="240" font-family="'Inter', sans-serif" font-weight="900" font-size="24" fill="#57534E" text-anchor="middle">HEARTFELT</text>
+    </g>
+  </g>
+</svg>
