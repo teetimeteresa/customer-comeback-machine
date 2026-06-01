@@ -1,45 +1,96 @@
-import React from 'react';
-import { Button } from './Button';
+'use client';
+
+import React, { useState } from 'react';
 import Link from 'next/link';
-import { Sparkles } from 'lucide-react';
+import { Button } from './Button';
+import { Menu, X } from 'lucide-react';
 
 export const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
-    <nav className="sticky top-0 z-50 w-full border-b border-slate-50 bg-white/80 backdrop-blur-md">
-      <div className="container mx-auto flex h-20 items-center justify-between px-6">
-        <Link href="/" className="flex items-center gap-3 group">
-          <div className="h-10 w-10 rounded-2xl bg-amber-500 flex items-center justify-center shadow-lg shadow-amber-500/20 group-hover:scale-110 transition-transform">
-            <Sparkles className="text-white h-6 w-6" />
+    <nav className="sticky top-0 z-50 w-full border-b border-slate-100 bg-white/80 backdrop-blur-md">
+      <div className="container mx-auto flex h-16 items-center justify-between px-4">
+        <Link href="/" className="flex items-center gap-2 hover:opacity-90 transition-opacity">
+          <div className="h-8 w-8 rounded-lg bg-amber-500 flex items-center justify-center">
+            <span className="text-white font-bold text-xl">C</span>
           </div>
-          <div className="flex flex-col">
-            <span className="text-lg font-black tracking-tight text-slate-900 leading-none">Comeback</span>
-            <span className="text-[10px] font-black uppercase tracking-widest text-amber-500 mt-1">Machine</span>
-          </div>
+          <span className="text-xl font-bold tracking-tight text-slate-900">
+            Customer Comeback Machine
+          </span>
         </Link>
         
-        <div className="hidden space-x-10 md:flex">
-          <a href="#features" className="text-sm font-bold text-slate-500 hover:text-slate-900 transition-colors uppercase tracking-widest">
+        {/* Desktop Navigation */}
+        <div className="hidden space-x-8 md:flex">
+          <Link href="/#features" className="text-sm font-medium text-slate-600 hover:text-amber-500 transition-colors">
             Features
-          </a>
-          <a href="#pricing" className="text-sm font-bold text-slate-500 hover:text-slate-900 transition-colors uppercase tracking-widest">
+          </Link>
+          <Link href="/pricing" className="text-sm font-medium text-slate-600 hover:text-amber-500 transition-colors">
             Pricing
-          </a>
-          <Link href="/blog" className="text-sm font-bold text-slate-500 hover:text-slate-900 transition-colors uppercase tracking-widest">
-            Resources
+          </Link>
+          <Link href="/faq" className="text-sm font-medium text-slate-600 hover:text-amber-500 transition-colors">
+            FAQ
           </Link>
         </div>
         
-        <div className="flex items-center gap-4">
-          <Link href="/login" className="hidden sm:inline-flex text-sm font-bold text-slate-500 hover:text-slate-900 px-4">
-            Log In
+        <div className="hidden md:flex items-center gap-4">
+          <Link href="/signup">
+            <Button variant="outline" size="sm">
+              Log In
+            </Button>
           </Link>
           <Link href="/signup">
-            <Button size="lg" className="rounded-2xl shadow-lg shadow-amber-500/20">
-              Try for Free
+            <Button size="sm">
+              Get Started
             </Button>
           </Link>
         </div>
+
+        {/* Mobile Menu Button */}
+        <button 
+          className="md:hidden p-2 text-slate-600"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+        >
+          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
       </div>
+
+      {/* Mobile Navigation */}
+      {isMenuOpen && (
+        <div className="md:hidden border-t border-slate-100 bg-white p-4 space-y-4 shadow-xl">
+          <div className="flex flex-col space-y-3">
+            <Link 
+              href="/#features" 
+              className="text-base font-medium text-slate-600 px-2 py-1"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Features
+            </Link>
+            <Link 
+              href="/pricing" 
+              className="text-base font-medium text-slate-600 px-2 py-1"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Pricing
+            </Link>
+            <Link 
+              href="/faq" 
+              className="text-base font-medium text-slate-600 px-2 py-1"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              FAQ
+            </Link>
+          </div>
+          <div className="pt-4 border-t border-slate-50 flex flex-col gap-3">
+            <Link href="/signup" className="w-full">
+              <Button variant="outline" className="w-full">Log In</Button>
+            </Link>
+            <Link href="/signup" className="w-full">
+              <Button className="w-full">Get Started</Button>
+            </Link>
+          </div>
+        </div>
+      )}
     </nav>
   );
 };
