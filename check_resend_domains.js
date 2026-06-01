@@ -1,5 +1,5 @@
 
-const RESEND_API_KEY = 're_TxeCHp1e_8k9fnpAQFTyYceUScYKZHhzf';
+const RESEND_API_KEY = 'process.env.RESEND_API_KEY';
 
 async function checkDomains() {
     console.log(`Checking Resend domains...`);

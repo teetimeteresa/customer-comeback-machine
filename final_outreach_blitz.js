@@ -2,7 +2,7 @@ const { execSync } = require('child_process');
 const { batchDb } = require('./scripts/batch-db-helper');
 
 // Configuration
-const RESEND_API_KEY = 're_TxeCHp1e_8k9fnpAQFTyYceUScYKZHhzf';
+const RESEND_API_KEY = 'process.env.RESEND_API_KEY';
 const EMAIL_FROM = 'Customer Comeback Team <onboarding@resend.dev>'; // NEEDS DOMAIN VERIFICATION TO WORK EXTERNALLY
 
 function db(query) {

@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 // Configuration
-const RESEND_API_KEY = 're_TxeCHp1e_8k9fnpAQFTyYceUScYKZHhzf';
+const RESEND_API_KEY = 'process.env.RESEND_API_KEY';
 const EMAIL_FROM = 'Customer Comeback Machine <onboarding@resend.dev>';
 const APP_URL = 'http://localhost:3000';
 

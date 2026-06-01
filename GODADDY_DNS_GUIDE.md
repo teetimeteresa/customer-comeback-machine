@@ -93,7 +93,7 @@ Run this command on the server:
 ```bash
 cd /home/team/shared && node -e "
 const https = require('https');
-const RESEND_API_KEY = 're_TxeCHp1e_8k9fnpAQFTyYceUScYKZHhzf';
+const RESEND_API_KEY = 'process.env.RESEND_API_KEY';
 function fetch(url, opts = {}) {
     return new Promise((resolve, reject) => {
         const urlObj = new URL(url);
