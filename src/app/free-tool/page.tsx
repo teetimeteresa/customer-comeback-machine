@@ -160,6 +160,7 @@ export default function FreeTool() {
                     <option>Luxury</option>
                     <option>Funny</option>
                     <option>Heartfelt</option>
+                    <option>Neighborly</option>
                     <option>Simple</option>
                   </select>
                 </div>

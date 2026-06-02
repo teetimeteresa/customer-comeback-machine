@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      letterSpacing: {
+        tight: '-0.025em',
+      },
       colors: {
         primary: {
           DEFAULT: "#F59E0B", // Amber-500

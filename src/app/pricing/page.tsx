@@ -1,52 +1,9 @@
 import { Navbar } from '@/components/Navbar';
 import { PricingCard } from '@/components/PricingCard';
+import Link from 'next/link';
+import { plans } from '@/config/plans';
 
 export default function PricingPage() {
-  const plans = [
-    {
-      name: 'Starter',
-      price: '49',
-      description: 'The essentials for every local shop.',
-      features: [
-        'Custom customer opt-in page',
-        'Branded QR code signs',
-        'Automated Thank-You emails',
-        'Review Request emails',
-        'Comeback Offer emails',
-        'Basic analytics dashboard',
-      ],
-    },
-    {
-      name: 'Growth',
-      price: '99',
-      description: 'Accelerate your growth and build a community.',
-      popular: true,
-      features: [
-        'Everything in Starter',
-        'Birthday Club rewards',
-        'Referral request system',
-        'Win-back campaigns',
-        'Monthly campaign suggestions',
-        'Customer tagging & segmentation',
-        'Downloadable customer list',
-      ],
-    },
-    {
-      name: 'Pro',
-      price: '199',
-      description: 'Maximum impact with advanced automation.',
-      features: [
-        'Everything in Growth',
-        'SMS/Text message marketing',
-        'Advanced campaign builder',
-        'Automated seasonal promotions',
-        'AI-powered review reply suggestions',
-        'Testimonial repurposing',
-        'Priority support',
-      ],
-    },
-  ];
-
   return (
     <div className="min-h-screen bg-slate-50 font-sans text-slate-900">
       <Navbar />
@@ -76,9 +33,11 @@ export default function PricingPage() {
                 Want us to handle everything? We'll set up your business profile, customize your messages, and design your QR signs for a one-time fee of <span className="font-bold text-amber-600">$497</span>.
               </p>
             </div>
-            <button className="whitespace-nowrap rounded-xl bg-amber-500 px-8 py-4 font-bold text-white shadow-lg shadow-amber-500/20 hover:bg-amber-600 transition-colors">
-              Add Setup to Any Plan
-            </button>
+            <Link href="/contact">
+              <button className="whitespace-nowrap rounded-xl bg-amber-500 px-8 py-4 font-bold text-white shadow-lg shadow-amber-500/20 hover:bg-amber-600 transition-colors">
+                Add Setup to Any Plan
+              </button>
+            </Link>
           </div>
         </div>
       </main>

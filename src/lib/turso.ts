@@ -26,11 +26,11 @@ export const turso = {
     }
     return _turso;
   },
-  async execute(sql: string) {
+  async execute(statement: any) {
     if (!this.client) {
       console.warn('Database client not initialized - skipping query');
       return { rows: [], columns: [] };
     }
-    return this.client.execute(sql);
+    return this.client.execute(statement);
   }
 };

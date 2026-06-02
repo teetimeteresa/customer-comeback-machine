@@ -34,6 +34,13 @@ export const messageTemplates = {
     "referral": "Small businesses are built on love and word-of-mouth. If you know someone who would appreciate what we do, we'd be honored by the introduction.",
     "social_caption": "Grateful for the community that keeps our dream alive. Thank you for being part of it. ❤️ #CommunityLove #[BusinessType]"
   },
+  "Neighborly": {
+    "thank_you": "It was so good to have you in the shop today, [Name]. Neighbors like you are the reason we love what we do!",
+    "review_request": "We're working hard to make our little corner of the world special. Would you mind leaving us a review? It helps more of our neighbors find us!",
+    "comeback_offer": "We missed seeing your face! Come back soon and enjoy a special treat on us. We'd love to have you back.",
+    "referral": "Know someone in the neighborhood who would love us? Refer them and we'll have a little surprise waiting for both of you next time.",
+    "social_caption": "Just another beautiful day in the neighborhood. Grateful for everyone who stopped by! 🏠❤️ #Neighborly #[BusinessType]"
+  },
   "Simple": {
     "thank_you": "Thanks for coming in, [Name]! We hope you loved it.",
     "review_request": "Liked your visit? Leave us a quick review on Google! It helps a lot.",

@@ -1,0 +1,32 @@
+<svg width="1080" height="1080" viewBox="0 0 1080 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1080" height="1080" fill="#FAFAF9"/>
+  
+  <rect x="40" y="40" width="1000" height="1000" rx="100" stroke="#FDE68A" stroke-width="4" />
+  
+  <g transform="translate(140, 180)">
+    <text font-family="'Inter', sans-serif" font-weight="900" font-size="100" fill="#1C1917" letter-spacing="-5">
+      <tspan x="0" dy="0">The "Digital</tspan>
+      <tspan x="0" dy="110" fill="#F59E0B">Handshake."</tspan>
+    </text>
+    
+    <g transform="translate(0, 300)">
+      <text font-family="'Inter', sans-serif" font-weight="600" font-size="44" fill="#57534E" leading-relaxed="1.4">
+        <tspan x="0" dy="0">Asking for reviews doesn't</tspan>
+        <tspan x="0" dy="60">have to be awkward. When you</tspan>
+        <tspan x="0" dy="60">ask with heart, your neighbors</tspan>
+        <tspan x="0" dy="60">are happy to help.</tspan>
+      </text>
+    </g>
+    
+    <!-- Stars illustration (Gold) -->
+    <g transform="translate(0, 650)">
+      <path d="M40 0 L52 25 H80 L60 40 L68 65 L40 50 L12 65 L20 40 L0 25 H28 L40 0Z" fill="#FBBF24" transform="scale(1.5)" />
+      <path d="M40 0 L52 25 H80 L60 40 L68 65 L40 50 L12 65 L20 40 L0 25 H28 L40 0Z" fill="#FBBF24" transform="translate(130, 0) scale(1.5)" />
+      <path d="M40 0 L52 25 H80 L60 40 L68 65 L40 50 L12 65 L20 40 L0 25 H28 L40 0Z" fill="#FBBF24" transform="translate(260, 0) scale(1.5)" />
+      <path d="M40 0 L52 25 H80 L60 40 L68 65 L40 50 L12 65 L20 40 L0 25 H28 L40 0Z" fill="#FBBF24" transform="translate(390, 0) scale(1.5)" />
+      <path d="M40 0 L52 25 H80 L60 40 L68 65 L40 50 L12 65 L20 40 L0 25 H28 L40 0Z" fill="#FBBF24" transform="translate(520, 0) scale(1.5)" />
+    </g>
+  </g>
+  
+  <text x="540" y="1000" font-family="'Inter', sans-serif" font-weight="900" font-size="28" fill="#1C1917" text-anchor="middle" letter-spacing="4">HUMILITY-DRIVEN GROWTH</text>
+</svg>

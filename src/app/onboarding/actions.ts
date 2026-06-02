@@ -53,7 +53,8 @@ export async function saveOnboardingAction(formData: any) {
           mailing_address = ?, birthday_club_enabled = ?, referral_enabled = ?, 
           review_enabled = ?, comeback_enabled = ?, sms_enabled = ?, 
           referral_offer = ?, preferred_cta = ?, words_liked = ?, 
-          words_disliked = ?, updated_at = ?
+          words_disliked = ?, story_eye = ?, story_love = ?, story_start = ?,
+          updated_at = ?
           WHERE id = ?`,
         args: [
           formData.name, formData.type, formData.website, slug, formData.city, formData.state,
@@ -64,7 +65,8 @@ export async function saveOnboardingAction(formData: any) {
           formData.referralEnabled ? 1 : 0, formData.reviewEnabled ? 1 : 0, 
           formData.comebackEnabled ? 1 : 0, formData.smsEnabled ? 1 : 0,
           formData.referralOffer, formData.preferredCTA, formData.wordsLiked,
-          formData.wordsDisliked, now, businessId
+          formData.wordsDisliked, formData.storyEye || '', formData.storyFeel || '', formData.storyStart || '',
+          now, businessId
         ]
       });
     } else {
@@ -76,9 +78,10 @@ export async function saveOnboardingAction(formData: any) {
           ideal_customer, brand_tone, special_thing, current_offer, mailing_address,
           birthday_club_enabled, referral_enabled, review_enabled, comeback_enabled,
           sms_enabled, referral_offer, preferred_cta, words_liked, words_disliked,
+          story_eye, story_love, story_start,
           created_at, updated_at
         ) VALUES (
-          ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
+          ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
         )`,
         args: [
           businessId, userId, formData.name, formData.type, formData.website, slug,
@@ -89,7 +92,9 @@ export async function saveOnboardingAction(formData: any) {
           formData.birthdayClubEnabled ? 1 : 0, formData.referralEnabled ? 1 : 0,
           formData.reviewEnabled ? 1 : 0, formData.comebackEnabled ? 1 : 0,
           formData.smsEnabled ? 1 : 0, formData.referralOffer, formData.preferredCTA,
-          formData.wordsLiked, formData.wordsDisliked, now, now
+          formData.wordsLiked, formData.wordsDisliked,
+          formData.storyEye || '', formData.storyFeel || '', formData.storyStart || '',
+          now, now
         ]
       });
     }

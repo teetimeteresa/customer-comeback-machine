@@ -35,7 +35,7 @@ const businessTypes = [
 ];
 
 const brandTones = [
-  'Friendly', 'Funny', 'Professional', 'Luxury', 'Heartfelt', 'Simple'
+  'Friendly', 'Funny', 'Professional', 'Luxury', 'Heartfelt', 'Neighborly', 'Simple'
 ];
 
 export default function OnboardingForm() {
@@ -68,6 +68,9 @@ export default function OnboardingForm() {
     preferredCTA: 'Visit us again',
     wordsLiked: '',
     wordsDisliked: '',
+    storyEye: '',
+    storyFeel: '',
+    storyStart: '',
   });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -429,6 +432,68 @@ export default function OnboardingForm() {
                       className="block w-full rounded-2xl border-2 border-slate-100 bg-slate-50/50 px-6 py-4 text-lg font-semibold text-slate-900 focus:border-amber-500 focus:ring-amber-500 outline-none transition-all"
                       placeholder="e.g. Cheap, discount, corporate"
                     />
+                  </div>
+                </div>
+
+                {/* Storyteller Questions */}
+                <div className="border-t border-slate-100 pt-8 mt-8">
+                  <div className="flex items-center gap-4 mb-6 bg-purple-50 p-6 rounded-3xl border border-purple-100">
+                    <div className="h-12 w-12 rounded-2xl bg-purple-500 flex items-center justify-center text-white flex-shrink-0 shadow-lg shadow-purple-500/20">
+                      <Sparkles size={24} />
+                    </div>
+                    <div>
+                      <p className="text-xs font-black text-purple-800 uppercase tracking-widest mb-1">The Storyteller Approach</p>
+                      <p className="text-sm font-medium text-purple-900 leading-tight">
+                        These questions help us write emails that sound like you — warm, human, and real. Your answers go directly into your customer's welcome email.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="space-y-6">
+                    <div>
+                      <label htmlFor="storyEye" className="block text-xs font-black text-slate-400 uppercase tracking-[0.2em] mb-2">
+                        What do you see when a customer walks in?
+                      </label>
+                      <textarea
+                        name="storyEye"
+                        id="storyEye"
+                        rows={2}
+                        value={formData.storyEye}
+                        onChange={handleChange}
+                        className="block w-full rounded-2xl border-2 border-slate-100 bg-slate-50/50 px-6 py-4 text-lg font-semibold text-slate-900 focus:border-purple-500 focus:ring-purple-500 outline-none transition-all resize-none"
+                        placeholder="e.g. I see regulars grabbing their usual, new faces browsing nervously, the bell above the door chiming..."
+                      />
+                    </div>
+
+                    <div>
+                      <label htmlFor="storyFeel" className="block text-xs font-black text-slate-400 uppercase tracking-[0.2em] mb-2">
+                        How do you want your customers to feel?
+                      </label>
+                      <textarea
+                        name="storyFeel"
+                        id="storyFeel"
+                        rows={2}
+                        value={formData.storyFeel}
+                        onChange={handleChange}
+                        className="block w-full rounded-2xl border-2 border-slate-100 bg-slate-50/50 px-6 py-4 text-lg font-semibold text-slate-900 focus:border-purple-500 focus:ring-purple-500 outline-none transition-all resize-none"
+                        placeholder="e.g. Like they walked into a warm hug. Like someone actually remembers their name..."
+                      />
+                    </div>
+
+                    <div>
+                      <label htmlFor="storyStart" className="block text-xs font-black text-slate-400 uppercase tracking-[0.2em] mb-2">
+                        What's the story behind why you opened?
+                      </label>
+                      <textarea
+                        name="storyStart"
+                        id="storyStart"
+                        rows={2}
+                        value={formData.storyStart}
+                        onChange={handleChange}
+                        className="block w-full rounded-2xl border-2 border-slate-100 bg-slate-50/50 px-6 py-4 text-lg font-semibold text-slate-900 focus:border-purple-500 focus:ring-purple-500 outline-none transition-all resize-none"
+                        placeholder="e.g. I started this because I was tired of seeing great shops close. I wanted to create a place that felt like home..."
+                      />
+                    </div>
                   </div>
                 </div>
               </div>

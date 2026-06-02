@@ -1,0 +1,24 @@
+<svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Outer Wax Seal Effect -->
+  <path d="M120 10C180.748 10 230 60.2518 230 120C230 179.748 180.748 230 120 230C59.2518 230 10 179.748 10 120C10 60.2518 59.2518 10 120 10Z" fill="#B45309" fill-opacity="0.1"/>
+  
+  <!-- Irregular Wax Edges -->
+  <path d="M120 20C145 20 165 25 185 40C205 55 215 80 215 110C215 140 205 170 185 190C165 210 135 220 110 220C85 220 55 210 35 185C15 160 25 120 25 90C25 60 45 35 70 25C90 15 105 20 120 20Z" fill="#F59E0B" />
+  
+  <!-- Inner Ring -->
+  <circle cx="120" cy="120" r="85" fill="none" stroke="white" stroke-width="2" stroke-dasharray="4 4" opacity="0.4" />
+  
+  <!-- Heart Icon (Hand-drawn feel) -->
+  <path d="M120 160C120 160 175 130 175 95C175 75.1178 158.882 59 139 59C129.189 59 120.294 62.9061 113.8 69.212C107.306 62.9061 98.411 59 88.6 59C68.7178 59 52.6 75.1178 52.6 95C52.6 130 107.6 160 107.6 160L120 160Z" fill="white" />
+  
+  <!-- Circular Text -->
+  <defs>
+    <path id="badgeCircle" d="M 120, 120 m -70, 0 a 70,70 0 1,1 140,0 a 70,70 0 1,1 -140,0" />
+  </defs>
+  
+  <text fill="#78350F" font-family="'Inter', sans-serif" font-size="10" font-weight="900" letter-spacing="2">
+    <textPath href="#badgeCircle" startOffset="50%" text-anchor="middle">
+      • HEART-CENTERED • EMPATHY FIRST • HAND-CRAFTED •
+    </textPath>
+  </text>
+</svg>

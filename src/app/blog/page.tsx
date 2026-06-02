@@ -1,5 +1,6 @@
 import { Navbar } from '@/components/Navbar';
 import { Button } from '@/components/Button';
+import { FreeToolBanner } from '@/components/FreeToolBanner';
 
 export default function BlogPage() {
   const posts = [
@@ -114,6 +115,7 @@ export default function BlogPage() {
             </article>
           ))}
         </div>
+        <FreeToolBanner />
       </main>
 
       <footer className="border-t border-slate-100 bg-white py-12">
