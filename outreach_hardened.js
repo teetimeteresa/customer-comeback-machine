@@ -19,6 +19,9 @@ const DELAY_MS = 3000;
 const DB_PATH = '/home/team/shared/austin_leads_v2.db';
 const STATE_FILE = '/home/team/shared/outreach_state.json';
 const LOG_FILE = '/home/team/shared/outreach_rate_limited.log';
+const TURSO_SYNC_SCRIPT = '/home/team/shared/scripts/sync_outreach_to_turso.sh';
+const TURSO_SYNC_BATCH = '/tmp/outreach_turso_batch.json';
+let tursoBatch = [];  // Accumulates sent records for batch Turso sync
 
 // Load .env for RESEND_API_KEY
 if (!process.env.RESEND_API_KEY) {
@@ -83,7 +86,7 @@ function sleep(ms) {
 }
 
 function getTemplate(lead) {
-  const appUrl = process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000';
+  const appUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://www.customercomebackmachine.com';
   const businessName = lead.business_name || 'there';
   const bt = (lead.business_type || '').toLowerCase();
 
@@ -217,6 +220,7 @@ async function sendEmail(to, subject, html) {
       body: JSON.stringify({
         from: 'CCM <noreply@customercomebackmachine.com>',
         to: [to],
+        reply_to: 'customer-comeback-machine-7e50ee2f@ctomail.io',
         subject: subject,
         html: html,
       }),
@@ -300,6 +304,19 @@ async function main() {
 
     if (result.success) {
       dbExec(`UPDATE leads SET sales_email_sent = 1 WHERE id = '${lead.id}'`);
+      
+      // Accumulate for Turso batch sync
+      tursoBatch.push({
+        lead_id: lead.id,
+        email: lead.email,
+        niche: (lead.business_type || 'general').toLowerCase(),
+        business_name: lead.business_name || '',
+        method: 'email',
+        tracking_id: result.id || '',
+        subject: subject,
+        status: 'sent'
+      });
+      
       state.sent_today++;
       state.total_sent++;
       sent++;
@@ -318,6 +335,25 @@ async function main() {
   }
 
   log(`=== Batch: ${sent} sent, total: ${state.total_sent} ===`);
+  
+  // ─── Sync to Turso ─────────────────────────────────────────────────────────
+  if (tursoBatch.length > 0) {
+    try {
+      const batchJson = JSON.stringify(tursoBatch, null, 2);
+      fs.writeFileSync(TURSO_SYNC_BATCH, batchJson);
+      log(`Syncing ${tursoBatch.length} records to Turso...`);
+      const syncResult = execSync(
+        `cd /home/team/shared && bash ${TURSO_SYNC_SCRIPT} ${TURSO_SYNC_BATCH} 2>&1`,
+        { encoding: 'utf8', maxBuffer: 10 * 1024 * 1024 }
+      );
+      log(`Turso sync output:\n${syncResult.trim()}`);
+      fs.unlinkSync(TURSO_SYNC_BATCH);
+    } catch (e) {
+      log(`Turso sync error (non-fatal): ${e.message}`);
+    }
+  } else {
+    log('No records to sync to Turso.');
+  }
 }
 
 main().catch(e => { log(`FATAL: ${e.message}`); process.exit(1); });
