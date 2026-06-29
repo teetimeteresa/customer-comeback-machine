@@ -1,0 +1,17 @@
+[Unit]
+Description=Customer Comeback Machine - Outreach Engine
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=agent-infrastructure-expert
+Group=team
+WorkingDirectory=/home/team/shared
+EnvironmentFile=/home/team/shared/.env
+ExecStart=/home/engine/.nvm/versions/node/v24.16.0/bin/node /home/team/shared/outreach_hardened.js
+StandardOutput=journal
+StandardError=journal
+PrivateTmp=yes
+ProtectSystem=strict
+ReadWritePaths=/home/team/shared
