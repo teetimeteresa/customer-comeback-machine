@@ -15,6 +15,17 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Customer Comeback Machine | Automated Customer Retention for Local Businesses",
   description: "Turn one-time visitors into repeat customers with AI-driven follow-ups and loyalty campaigns triggered by a simple QR code scan.",
+  manifest: '/manifest.json',
+  other: {
+    'apple-mobile-web-app-capable': 'yes',
+    'apple-mobile-web-app-status-bar-style': 'default',
+    'apple-mobile-web-app-title': 'Owner HQ',
+  },
+  icons: {
+    other: [
+      { rel: 'apple-touch-icon', url: '/icon-192x192.svg' },
+    ],
+  },
 };
 
 export default function RootLayout({

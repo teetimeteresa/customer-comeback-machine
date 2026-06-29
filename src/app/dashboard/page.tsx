@@ -1,4 +1,3 @@
-import { Sidebar } from '@/components/Sidebar';
 import { QRCodeDisplay } from '@/components/QRCodeDisplay';
 import { auth } from '@/lib/auth';
 import { teamDb } from '@/lib/team-db';
@@ -72,11 +71,7 @@ export default async function Dashboard() {
   const optInUrl = `${baseUrl}/optin/${business.slug}`;
 
   return (
-    <div className="min-h-screen bg-slate-50 font-sans text-slate-900">
-      <Sidebar />
-      
-      <main className="pl-64">
-        <header className="flex h-16 items-center justify-between border-b border-slate-200 bg-white px-8">
+        <><header className="flex h-16 items-center justify-between border-b border-slate-200 bg-white px-4 md:px-8 md:pl-8 mt-6 md:mt-0">
           <h1 className="text-xl font-bold">Welcome back, {session.user.name?.split(' ')[0]}! ❤️</h1>
           <div className="flex items-center gap-4">
             <span className="text-sm font-medium text-slate-500">{business.name}</span>
@@ -189,7 +184,6 @@ export default async function Dashboard() {
             </div>
           </div>
         </div>
-      </main>
-    </div>
+      </>
   );
 }

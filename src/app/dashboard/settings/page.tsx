@@ -1,4 +1,3 @@
-import { Sidebar } from '@/components/Sidebar';
 import { auth } from '@/lib/auth';
 import { teamDb } from '@/lib/team-db';
 import { redirect } from 'next/navigation';
@@ -53,11 +52,8 @@ export default async function SettingsPage() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-50 font-sans text-slate-900">
-      <Sidebar />
-      
-      <main className="pl-64">
-        <header className="flex h-16 items-center justify-between border-b border-slate-200 bg-white px-8">
+    <>
+      <header className="flex h-16 items-center justify-between border-b border-slate-200 bg-white px-4 md:px-8 md:pl-8 mt-6 md:mt-0">
           <h1 className="text-xl font-bold">Settings</h1>
           <div className="flex items-center gap-4">
             <span className="text-sm font-medium text-slate-500">{business.name}</span>
@@ -65,7 +61,7 @@ export default async function SettingsPage() {
           </div>
         </header>
 
-        <div className="p-8 pb-24">
+        <div className="p-4 md:p-8 pb-24">
           <div className="max-w-4xl">
             <div className="mb-8">
               <h2 className="text-2xl font-extrabold tracking-tight">Business Profile</h2>
@@ -75,7 +71,6 @@ export default async function SettingsPage() {
             <SettingsForm initialData={initialData} />
           </div>
         </div>
-      </main>
-    </div>
+    </>
   );
 }

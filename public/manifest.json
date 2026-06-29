@@ -1,0 +1,14 @@
+{
+  "name": "Owner HQ — Customer Comeback Machine",
+  "short_name": "Owner HQ",
+  "description": "Manage your customer retention from anywhere",
+  "start_url": "/dashboard",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#F59E0B",
+  "orientation": "portrait-primary",
+  "icons": [
+    { "src": "/icon-192x192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512x512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
