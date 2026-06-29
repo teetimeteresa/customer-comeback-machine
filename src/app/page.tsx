@@ -9,6 +9,18 @@ export default function Home() {
     <div className="min-h-screen bg-white font-sans text-slate-900">
       <Navbar />
       
+      {/* Founding Member Alert Banner */}
+      <div className="sticky top-0 z-50 bg-gradient-to-r from-amber-500 to-amber-600 px-4 py-3 text-center shadow-lg">
+        <p className="text-sm font-semibold text-white sm:text-base">
+          🚀 <span className="hidden sm:inline">Founding Member Special: </span>
+          We're looking for our first 10 partners. Lock in the Founding Rate (
+          <span className="font-extrabold">$49/mo lifetime</span>) for all Growth features.{' '}
+          <span className="inline-flex items-center gap-1 rounded-full bg-white/20 px-2 py-0.5 text-xs font-bold uppercase tracking-wider text-white">
+            3 spots left
+          </span>
+        </p>
+      </div>
+      
       {/* Hero Section */}
       <section className="relative overflow-hidden pt-20 pb-32">
         <div className="container mx-auto px-4 text-center">

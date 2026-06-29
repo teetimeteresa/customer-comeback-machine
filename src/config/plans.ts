@@ -1,8 +1,9 @@
 export const plans = [
   {
-    name: 'Starter',
+    name: 'Founding Member',
     price: '49',
-    description: 'The essentials for every local shop.',
+    description: 'Lock in the Founding Rate for life. Everything you need to turn one-time visitors into regulars.',
+    popular: false,
     features: [
       'Custom customer opt-in page',
       'Branded QR code signs',
@@ -10,6 +11,13 @@ export const plans = [
       'Review Request emails',
       'Comeback Offer emails',
       'Basic analytics dashboard',
+      'Birthday Club rewards',
+      'Referral request system',
+      'Win-back campaigns',
+      'Monthly campaign suggestions',
+      'Customer tagging & segmentation',
+      'Downloadable customer list',
+      'Lifetime Rate Lock-in at $49/mo',
     ],
   },
   {
@@ -18,13 +26,13 @@ export const plans = [
     description: 'Accelerate your growth and build a community.',
     popular: true,
     features: [
-      'Everything in Starter',
-      'Birthday Club rewards',
-      'Referral request system',
-      'Win-back campaigns',
-      'Monthly campaign suggestions',
-      'Customer tagging & segmentation',
-      'Downloadable customer list',
+      'Everything in Founding Member',
+      'SMS/Text message marketing',
+      'Advanced campaign builder',
+      'Automated seasonal promotions',
+      'AI-powered review reply suggestions',
+      'Testimonial repurposing',
+      'Priority support',
     ],
   },
   {
@@ -33,12 +41,8 @@ export const plans = [
     description: 'Maximum impact with advanced automation.',
     features: [
       'Everything in Growth',
-      'SMS/Text message marketing',
-      'Advanced campaign builder',
-      'Automated seasonal promotions',
-      'AI-powered review reply suggestions',
-      'Testimonial repurposing',
-      'Priority support',
+      'Dedicated account manager',
+      'Custom onboarding & training',
     ],
   },
 ];
