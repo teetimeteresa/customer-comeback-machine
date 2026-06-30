@@ -1,0 +1,201 @@
+id,email,business_name,city,business_type,high_intent,status,country,verification_status,domain_status
+ng-exp-0001,info@miamismiledesign.com,Miami Smile Design,Miami,Cosmetic Dentistry,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0002,info@southbeachcosmeticdentistry.com,South Beach Cosmetic Dentistry,Miami,Cosmetic Dentistry,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0003,info@coralgablesdentalspa.com,Coral Gables Dental Spa,Miami,Cosmetic Dentistry,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0004,info@hqdontics.com,Brickell Cosmetic Dentist,Miami,Cosmetic Dentistry,1,new,US,verified,NO_CONNECT
+ng-exp-0005,info@doralsmilestudio.com,Doral Smile Studio,Miami,Cosmetic Dentistry,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0006,info@kendalldentalarts.com,Kendall Dental Arts,Miami,Cosmetic Dentistry,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0007,info@pinecrestcosmeticdentistry.com,Pinecrest Cosmetic Dentistry,Miami,Cosmetic Dentistry,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0008,info@coconutgrovesmilecenter.com,Coconut Grove Smile Center,Miami,Cosmetic Dentistry,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0009,info@miamibeachdental.com,Miami Beach Dental,Miami,Cosmetic Dentistry,1,new,US,domain_live_no_email,NO_CONNECT
+ng-exp-0010,info@wynwoodsmilestudio.com,Wynwood Smile Studio,Miami,Cosmetic Dentistry,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0011,info@designdistrictdentistry.com,Design District Dentistry,Miami,Cosmetic Dentistry,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0012,info@midtownmiamidental.com,Midtown Miami Dental,Miami,Cosmetic Dentistry,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0013,info@littlehavanadental.com,Little Havana Dental,Miami,Cosmetic Dentistry,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0014,info@coralwaysmile.com,Coral Way Smile,Miami,Cosmetic Dentistry,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0015,info@southmiamidentalarts.com,South Miami Dental Arts,Miami,Cosmetic Dentistry,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0016,info@palmettobaysmilestudio.com,Palmetto Bay Smile Studio,Miami,Cosmetic Dentistry,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0017,info@cutlerbaydental.com,Cutler Bay Dental,Miami,Cosmetic Dentistry,1,new,US,domain_live_no_email,NO_CONNECT
+ng-exp-0018,info@homesteadcosmeticdentistry.com,Homestead Cosmetic Dentistry,Miami,Cosmetic Dentistry,1,new,US,domain_live_no_email,NO_CONNECT
+ng-exp-0019,info@keybiscaynesmilecenter.com,Key Biscayne Smile Center,Miami,Cosmetic Dentistry,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0020,info@sunnyislesdental.com,Sunny Isles Dental,Miami,Cosmetic Dentistry,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0021,info@aventurasmiledesign.com,Aventura Smile Design,Miami,Cosmetic Dentistry,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0022,info@balharbourdentalspa.com,Bal Harbour Dental Spa,Miami,Cosmetic Dentistry,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0023,info@surfsidecosmeticdentistry.com,Surfside Cosmetic Dentistry,Miami,Cosmetic Dentistry,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0024,info@miamilakesdentalarts.com,Miami Lakes Dental Arts,Miami,Cosmetic Dentistry,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0025,info@hialeahsmilestudio.com,Hialeah Smile Studio,Miami,Cosmetic Dentistry,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0026,support@citydental.com,North Miami Beach Dental,Miami,Cosmetic Dentistry,1,new,US,verified,NO_CONNECT
+ng-exp-0027,info@miamishorescosmetic.com,Miami Shores Cosmetic,Miami,Cosmetic Dentistry,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0028,uppereastsidedentist@rcn.com,Upper East Side Dental,Miami,Cosmetic Dentistry,1,new,US,verified,NO_CONNECT
+ng-exp-0029,info@bellemeadesmile.com,Belle Meade Smile,Miami,Cosmetic Dentistry,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0030,info@virginiakeydental.com,Virginia Key Dental,Miami,Cosmetic Dentistry,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0031,info@miamiacpro.com,Miami AC Pro,Miami,HVAC,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0032,info@southbeachheatingcooling.com,South Beach Heating & Cooling,Miami,HVAC,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0033,info@brickellhvacservices.com,Brickell HVAC Services,Miami,HVAC,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0034,info@coralgablesairconditioning.com,Coral Gables Air Conditioning,Miami,HVAC,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0035,info@doralcoolingsolutions.com,Doral Cooling Solutions,Miami,HVAC,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0036,info@kendallacrepair.com,Kendall AC Repair,Miami,HVAC,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0037,info@pinecrestheatingair.com,Pinecrest Heating & Air,Miami,HVAC,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0038,info@coconutgrovehvac.com,Coconut Grove HVAC,Miami,HVAC,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0039,info@miamibeachacservice.com,Miami Beach AC Service,Miami,HVAC,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0040,info@wynwoodcoolingco.com,Wynwood Cooling Co,Miami,HVAC,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0041,info@midtownmiamihvac.com,Midtown Miami HVAC,Miami,HVAC,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0042,info@littlehavanaac.com,Little Havana AC,Miami,HVAC,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0043,info@coralwayheating.com,Coral Way Heating,Miami,HVAC,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0044,info@southmiamiairsystems.com,South Miami Air Systems,Miami,HVAC,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0045,info@palmettobayac.com,Palmetto Bay AC,Miami,HVAC,1,new,US,domain_live_no_email,NO_CONNECT
+ng-exp-0046,info@cutlerbayheatingcooling.com,Cutler Bay Heating & Cooling,Miami,HVAC,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0047,info@homesteadacservice.com,Homestead AC Service,Miami,HVAC,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0048,info@keybiscaynehvac.com,Key Biscayne HVAC,Miami,HVAC,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0049,info@sunnyislesairconditioning.com,Sunny Isles Air Conditioning,Miami,HVAC,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0050,info@aventuracoolingheating.com,Aventura Cooling & Heating,Miami,HVAC,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0051,info@miamilakesacpro.com,Miami Lakes AC Pro,Miami,HVAC,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0052,info@hialeahhvacservices.com,Hialeah HVAC Services,Miami,HVAC,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0053,info@northmiamiair.com,North Miami Air,Miami,HVAC,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0054,info@miamishorescooling.com,Miami Shores Cooling,Miami,HVAC,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0055,info@uppereastsidehvac.com,Upper East Side HVAC,Miami,HVAC,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0056,info@doralacrepair.com,Doral AC Repair,Miami,HVAC,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0057,info@brickellairsystems.com,Brickell Air Systems,Miami,HVAC,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0058,info@coralgablesacservice.com,Coral Gables AC Service,Miami,HVAC,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0059,info@southbeachair.com,South Beach Air,Miami,HVAC,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0060,info@miamispringshvac.com,Miami Springs HVAC,Miami,HVAC,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0061,info@phoenixsmiledesign.com,Phoenix Smile Design,Phoenix,Cosmetic Dentistry,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0062,info@scottsdalecosmeticdentistry.com,Scottsdale Cosmetic Dentistry,Phoenix,Cosmetic Dentistry,1,new,US,domain_live_no_email,NO_CONNECT
+ng-exp-0063,info@paradisevalleydentalspa.com,Paradise Valley Dental Spa,Phoenix,Cosmetic Dentistry,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0064,info@chandlersmilestudio.com,Chandler Smile Studio,Phoenix,Cosmetic Dentistry,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0065,info@tempedentalarts.com,Tempe Dental Arts,Phoenix,Cosmetic Dentistry,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0066,info@mesacosmeticdentistry.com,Mesa Cosmetic Dentistry,Phoenix,Cosmetic Dentistry,1,new,US,domain_live_no_email,NO_CONNECT
+ng-exp-0067,info@gilbertsmilecenter.com,Gilbert Smile Center,Phoenix,Cosmetic Dentistry,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0068,info@peoriadentalspa.com,Peoria Dental Spa,Phoenix,Cosmetic Dentistry,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0069,info@surprisecosmeticdentist.com,Surprise Cosmetic Dentist,Phoenix,Cosmetic Dentistry,1,new,US,domain_live_no_email,NO_CONNECT
+ng-exp-0070,info@avondaledentalarts.com,Avondale Dental Arts,Phoenix,Cosmetic Dentistry,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0071,info@goodyearsmilestudio.com,Goodyear Smile Studio,Phoenix,Cosmetic Dentistry,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0072,info@buckeyedental.com,Buckeye Dental,Phoenix,Cosmetic Dentistry,1,new,US,domain_live_no_email,NO_CONNECT
+ng-exp-0073,info@cavecreekcosmeticdentistry.com,Cave Creek Cosmetic Dentistry,Phoenix,Cosmetic Dentistry,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0074,info@fountainhillssmile.com,Fountain Hills Smile,Phoenix,Cosmetic Dentistry,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0075,info@carefreedentalarts.com,Carefree Dental Arts,Phoenix,Cosmetic Dentistry,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0076,info@ahwatukeesmilecenter.com,Ahwatukee Smile Center,Phoenix,Cosmetic Dentistry,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0077,info@arcadiadentalspa.com,Arcadia Dental Spa,Phoenix,Cosmetic Dentistry,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0078,info@biltmorecosmeticdentistry.com,Biltmore Cosmetic Dentistry,Phoenix,Cosmetic Dentistry,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0079,info@centralphoenixsmilestudio.com,Central Phoenix Smile Studio,Phoenix,Cosmetic Dentistry,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0080,info@midtownphoenixdental.com,Midtown Phoenix Dental,Phoenix,Cosmetic Dentistry,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0081,dtphxdental@gmail.com,Downtown Phoenix Dental,Phoenix,Cosmetic Dentistry,1,new,US,verified,NO_CONNECT
+ng-exp-0082,info@encantosmiledesign.com,Encanto Smile Design,Phoenix,Cosmetic Dentistry,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0083,info@maryvaledentalarts.com,Maryvale Dental Arts,Phoenix,Cosmetic Dentistry,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0084,info@deervalleysmile.com,Deer Valley Smile,Phoenix,Cosmetic Dentistry,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0085,info@northphoenixcosmetic.com,North Phoenix Cosmetic,Phoenix,Cosmetic Dentistry,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0086,info@anthemdentalspa.com,Anthem Dental Spa,Phoenix,Cosmetic Dentistry,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0087,info@glendalesmilestudio.com,Glendale Smile Studio,Phoenix,Cosmetic Dentistry,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0088,info@suncitydentalarts.com,Sun City Dental Arts,Phoenix,Cosmetic Dentistry,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0089,info@litchfieldparksmile.com,Litchfield Park Smile,Phoenix,Cosmetic Dentistry,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0090,info@estrellamountaindental.com,Estrella Mountain Dental,Phoenix,Cosmetic Dentistry,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0091,info@phoenixacpro.com,Phoenix AC Pro,Phoenix,HVAC,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0092,info@scottsdalecoolingheating.com,Scottsdale Cooling & Heating,Phoenix,HVAC,1,new,US,domain_live_no_email,NO_CONNECT
+ng-exp-0093,info@paradisevalleyhvac.com,Paradise Valley HVAC,Phoenix,HVAC,1,new,US,domain_live_no_email,NO_CONNECT
+ng-exp-0094,info@chandlerairconditioning.com,Chandler Air Conditioning,Phoenix,HVAC,1,new,US,domain_live_no_email,NO_CONNECT
+ng-exp-0095,info@tempeacservices.com,Tempe AC Services,Phoenix,HVAC,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0096,info@mesaheatingcooling.com,Mesa Heating & Cooling,Phoenix,HVAC,1,new,US,domain_live_no_email,NO_CONNECT
+ng-exp-0097,info@gilbertairsystems.com,Gilbert Air Systems,Phoenix,HVAC,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0098,info@peoriahvacpro.com,Peoria HVAC Pro,Phoenix,HVAC,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0099,info@surprisecoolingco.com,Surprise Cooling Co,Phoenix,HVAC,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0100,info@avondaleacrepair.com,Avondale AC Repair,Phoenix,HVAC,1,new,US,domain_live_no_email,NO_CONNECT
+ng-exp-0101,info@goodyearheatingair.com,Goodyear Heating & Air,Phoenix,HVAC,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0102,info@buckeyehvacservices.com,Buckeye HVAC Services,Phoenix,HVAC,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0103,info@cavecreekair.com,Cave Creek Air,Phoenix,HVAC,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0104,info@fountainhillscooling.com,Fountain Hills Cooling,Phoenix,HVAC,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0105,info@carefreeacservice.com,Carefree AC Service,Phoenix,HVAC,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0106,info@ahwatukeehvac.com,Ahwatukee HVAC,Phoenix,HVAC,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0107,info@arcadiaairsystems.com,Arcadia Air Systems,Phoenix,HVAC,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0108,info@biltmorecoolingheating.com,Biltmore Cooling & Heating,Phoenix,HVAC,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0109,info@centralphoenixac.com,Central Phoenix AC,Phoenix,HVAC,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0110,info@midtownphoenixhvac.com,Midtown Phoenix HVAC,Phoenix,HVAC,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0111,info@downtownphoenixcooling.com,Downtown Phoenix Cooling,Phoenix,HVAC,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0112,info@encantoair.com,Encanto Air,Phoenix,HVAC,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0113,info@maryvaleacpro.com,Maryvale AC Pro,Phoenix,HVAC,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0114,info@deervalleyhvacservices.com,Deer Valley HVAC Services,Phoenix,HVAC,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0115,info@northphoenixair.com,North Phoenix Air,Phoenix,HVAC,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0116,info@anthemcoolingheating.com,Anthem Cooling & Heating,Phoenix,HVAC,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0117,info@glendaleacservice.com,Glendale AC Service,Phoenix,HVAC,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0118,605a7baede844d278b89dc95ae0a9123@sentry-next.wixpress.com,Sun City HVAC,Phoenix,HVAC,1,new,US,verified,NO_CONNECT
+ng-exp-0119,info@litchfieldparkair.com,Litchfield Park Air,Phoenix,HVAC,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0120,info@estrellamountaincooling.com,Estrella Mountain Cooling,Phoenix,HVAC,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0122,info@miamipremierdentalspa.com,Miami Premier Dental Spa,Miami,Cosmetic Dentistry,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0123,info@biscaynebaycosmeticdentistry.com,Biscayne Bay Cosmetic Dentistry,Miami,Cosmetic Dentistry,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0124,info@flaglerdentalarts.com,Flagler Dental Arts,Miami,Cosmetic Dentistry,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0125,info@coralterracesmilestudio.com,Coral Terrace Smile Studio,Miami,Cosmetic Dentistry,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0126,info@arizonasmilecenter.com,Arizona Smile Center,Phoenix,Cosmetic Dentistry,1,new,US,domain_live_no_email,NO_CONNECT
+ng-exp-0127,info@desertridgecosmeticdentistry.com,Desert Ridge Cosmetic Dentistry,Phoenix,Cosmetic Dentistry,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0128,info@camelbackdentalspa.com,Camelback Dental Spa,Phoenix,Cosmetic Dentistry,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0129,info@sunnyslopesmiledesign.com,Sunnyslope Smile Design,Phoenix,Cosmetic Dentistry,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0130,info@biscaynehvacservices.com,Biscayne HVAC Services,Miami,HVAC,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0131,info@flagleracheating.com,Flagler AC & Heating,Miami,HVAC,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0132,info@coralterracecooling.com,Coral Terrace Cooling,Miami,HVAC,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0133,info@westmiamiairpro.com,West Miami Air Pro,Miami,HVAC,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0134,info@desertridgeairconditioning.com,Desert Ridge Air Conditioning,Phoenix,HVAC,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0135,info@camelbackhvac.com,Camelback HVAC,Phoenix,HVAC,1,new,US,domain_live_no_email,NO_CONNECT
+ng-exp-0136,info@sunnyslopecooling.com,Sunnyslope Cooling,Phoenix,HVAC,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0137,info@paradisevalleyacpro.com,Paradise Valley AC Pro,Phoenix,HVAC,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0138,info@miamiinjurywellness.com,Miami Injury & Wellness,Miami,Chiropractic,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0139,info@southbeachchiropractic.com,South Beach Chiropractic,Miami,Chiropractic,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0140,info@brickellspinecenter.com,Brickell Spine Center,Miami,Chiropractic,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0141,info@coralgableschiropractic.com,Coral Gables Chiropractic,Miami,Chiropractic,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0142,info@doralinjuryclinic.com,Doral Injury Clinic,Miami,Chiropractic,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0143,info@kendallwellnesscenter.com,Kendall Wellness Center,Miami,Chiropractic,1,new,US,domain_live_no_email,NO_CONNECT
+ng-exp-0144,info@pinecrestbackpainclinic.com,Pinecrest Back Pain Clinic,Miami,Chiropractic,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0145,info@coconutgrovechiropractic.com,Coconut Grove Chiropractic,Miami,Chiropractic,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0146,info@miamibeachspine.com,Miami Beach Spine,Miami,Chiropractic,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0147,info@wynwoodinjuryrehab.com,Wynwood Injury Rehab,Miami,Chiropractic,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0148,info@midtownmiamichiropractic.com,Midtown Miami Chiropractic,Miami,Chiropractic,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0149,info@littlehavanawellness.com,Little Havana Wellness,Miami,Chiropractic,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0150,info@coralwayspinecenter.com,Coral Way Spine Center,Miami,Chiropractic,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0151,info@southmiamichiropractic.com,South Miami Chiropractic,Miami,Chiropractic,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0152,info@palmettobayinjuryclinic.com,Palmetto Bay Injury Clinic,Miami,Chiropractic,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0153,info@cutlerbaywellness.com,Cutler Bay Wellness,Miami,Chiropractic,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0154,info@homesteadspinerehab.com,Homestead Spine & Rehab,Miami,Chiropractic,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0155,info@keybiscaynechiropractic.com,Key Biscayne Chiropractic,Miami,Chiropractic,1,new,US,domain_live_no_email,NO_CONNECT
+ng-exp-0156,info@sunnyislesbackcenter.com,Sunny Isles Back Center,Miami,Chiropractic,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0157,info@aventurainjurycare.com,Aventura Injury Care,Miami,Chiropractic,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0158,info@miamilakeschiropractic.com,Miami Lakes Chiropractic,Miami,Chiropractic,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0159,info@hialeahspinecenter.com,Hialeah Spine Center,Miami,Chiropractic,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0160,info@northmiamiwellness.com,North Miami Wellness,Miami,Chiropractic,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0161,info@miamishoreschiropractic.com,Miami Shores Chiropractic,Miami,Chiropractic,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0162,info@uppereastsidebackcare.com,Upper East Side Back Care,Miami,Chiropractic,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0163,info@doralpainmanagement.com,Doral Pain Management,Miami,Chiropractic,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0164,info@brickellwellnesscenter.com,Brickell Wellness Center,Miami,Chiropractic,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0165,info@coralgablesspinerehab.com,Coral Gables Spine Rehab,Miami,Chiropractic,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0166,info@southbeachinjurycare.com,South Beach Injury Care,Miami,Chiropractic,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0167,info@miamispringschiropractic.com,Miami Springs Chiropractic,Miami,Chiropractic,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0168,info@pinecrestwellnesscenter.com,Pinecrest Wellness Center,Miami,Chiropractic,1,new,US,verified,NO_CONNECT
+ng-exp-0169,info@kendallpainrelief.com,Kendall Pain Relief,Miami,Chiropractic,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0170,info@phoenixspineinjury.com,Phoenix Spine & Injury,Phoenix,Chiropractic,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0171,info@scottsdalechiropracticcenter.com,Scottsdale Chiropractic Center,Phoenix,Chiropractic,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0172,info@paradisevalleywellness.com,Paradise Valley Wellness,Phoenix,Chiropractic,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0173,info@chandlerbackpainclinic.com,Chandler Back Pain Clinic,Phoenix,Chiropractic,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0174,info@tempeinjuryrehab.com,Tempe Injury Rehab,Phoenix,Chiropractic,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0175,info@mesachiropracticcenter.com,Mesa Chiropractic Center,Phoenix,Chiropractic,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0176,info@gilbertspinewellness.com,Gilbert Spine & Wellness,Phoenix,Chiropractic,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0177,info@peoriainjurycare.com,Peoria Injury Care,Phoenix,Chiropractic,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0178,info@surprisechiropractic.com,Surprise Chiropractic,Phoenix,Chiropractic,1,new,US,domain_live_no_email,NO_CONNECT
+ng-exp-0179,info@avondalebackcenter.com,Avondale Back Center,Phoenix,Chiropractic,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0180,info@goodyearwellnessrehab.com,Goodyear Wellness & Rehab,Phoenix,Chiropractic,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0181,info@buckeyespineclinic.com,Buckeye Spine Clinic,Phoenix,Chiropractic,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0182,drckrahldc@gmail.com,Cave Creek Chiropractic,Phoenix,Chiropractic,1,new,US,verified,NO_CONNECT
+ng-exp-0183,info@fountainhillsinjurycare.com,Fountain Hills Injury Care,Phoenix,Chiropractic,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0184,info@carefreewellnesscenter.com,Carefree Wellness Center,Phoenix,Chiropractic,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0185,info@ahwatukeebackpainrelief.com,Ahwatukee Back Pain Relief,Phoenix,Chiropractic,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0186,info@arcadiachiropractic.com,Arcadia Chiropractic,Phoenix,Chiropractic,1,new,US,domain_live_no_email,NO_CONNECT
+ng-exp-0187,info@biltmorespinecenter.com,Biltmore Spine Center,Phoenix,Chiropractic,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0188,info@centralphoenixinjuryrehab.com,Central Phoenix Injury Rehab,Phoenix,Chiropractic,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0189,info@midtownphoenixchiropractic.com,Midtown Phoenix Chiropractic,Phoenix,Chiropractic,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0190,info@downtownphoenixwellness.com,Downtown Phoenix Wellness,Phoenix,Chiropractic,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0191,info@encantospinerehab.com,Encanto Spine & Rehab,Phoenix,Chiropractic,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0192,info@maryvalechiropractic.com,Maryvale Chiropractic,Phoenix,Chiropractic,1,new,US,domain_live_no_email,NO_CONNECT
+ng-exp-0193,info@deervalleybackcenter.com,Deer Valley Back Center,Phoenix,Chiropractic,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0194,info@northphoenixinjurycare.com,North Phoenix Injury Care,Phoenix,Chiropractic,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0195,info@anthemwellnesscenter.com,Anthem Wellness Center,Phoenix,Chiropractic,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0196,info@glendalechiropractic.com,Glendale Chiropractic,Phoenix,Chiropractic,1,new,US,domain_live_no_email,NO_CONNECT
+ng-exp-0197,info@suncityspinecenter.com,Sun City Spine Center,Phoenix,Chiropractic,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0198,info@litchfieldparkrehab.com,Litchfield Park Rehab,Phoenix,Chiropractic,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0199,info@estrellamountainbackcare.com,Estrella Mountain Back Care,Phoenix,Chiropractic,1,new,US,domain_unreachable,NO_CONNECT
+ng-exp-0200,hello@chandlerwellnesscenter.com,Chandler Wellness Center,Phoenix,Chiropractic,1,new,US,verified,NO_CONNECT
+ng-exp-0201,info@mesapainmanagement.com,Mesa Pain Management,Phoenix,Chiropractic,1,new,US,domain_unreachable,NO_CONNECT

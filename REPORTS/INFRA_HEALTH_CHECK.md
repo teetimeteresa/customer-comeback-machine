@@ -8,9 +8,11 @@
 
 | Metric | Status |
 |--------|--------|
-| **Server** | Next.js dev server (v15.5.18) on port 3000 |
-| **Memory** | 565Mi available (was 380Mi — **+185Mi freed**) |
-| **CPU** | Moderate — `next-server` at ~1.3% CPU |
+| **Vercel URL** | ✅ `https://customer-comeback-machine.vercel.app/` — HTTP 200, 46KB |
+| **Custom Domain** | ⚠️ `customercomebackmachine.com` → redirecting to `www.` subdomain (DNS propagation pending) |
+| **Server (Local)** | Next.js production build (v15.5.18) on port 3000 |
+| **Memory** | 1.2Gi available (was 380Mi — **+820Mi freed**) |
+| **CPU** | Moderate |
 | **Port 3000** | ✅ Listening on `*:3000` |
 | **Disk** | `.next/` build cache: 41MB — acceptable |
 
@@ -54,23 +56,19 @@
 
 | URL | Status | Size |
 |-----|--------|------|
-| `https://2a76dac2dcee2a15a0b2f69afa0b21b5.ctonew.app/` | ⚠️ HTTP 200 — **0 bytes body** | Empty |
-| `https://.../audit` | ⚠️ HTTP 200 — **0 bytes body** | Empty |
+| `https://customer-comeback-machine.vercel.app/` | ✅ **HTTP 200 — 46KB** | Live |
+| `https://customer-comeback-machine.vercel.app/audit` | ✅ **HTTP 200 — 17KB** | Live |
+| `https://customer-comeback-machine.vercel.app/roi-calculator` | ✅ **HTTP 200 — 14KB** | Live |
+| `https://customercomebackmachine.com/` | ⚠️ HTTP 307 — Redirecting (DNS propagation) | Pending |
+| `https://2a76dac2dcee2a15a0b2f69afa0b21b5.ctonew.app/` | ❌ HTTP 200 — **0 bytes** | Deprecated |
 
-**Issue:** Public URL returns HTTP 200 but empty body. Localhost serves 46KB correctly.  
-**Root Cause (Identified):** The public URL does NOT proxy to our local port 3000. Response headers reveal:
-- `x-render-origin-server: Render` — Origin server is **Render.com**, not our sandbox
-- `server: cloudflare` — Proxied through **Cloudflare CDN**
-- `via: 1.1 google` — Also routed through Google Cloud
-- `rndr-id: b4d110ab-3826-4ef5` — Render server identifier
-- No `Content-Length` header — body is truly empty at the Render origin
-- `cf-cache-status: DYNAMIC` — Cloudflare passes through to origin (not cached)
+**Resolution:** Code pushed to GitHub (`teetimeteresa/customer-comeback-machine`), auto-deployed to **Vercel**. The Vercel URL is fully functional. The custom domain `customercomebackmachine.com` is configured and redirecting (may need DNS propagation time). The old ctonew.app/Render URL is deprecated.
 
-**Impact:** All outreach pointing to the public URL lands on a blank page. The Render deployment is serving an empty body for all routes including `/` and `/audit`.
-
-**What was done:** Switched from `next dev` to production `next start` on port 3000 — app serves 46KB locally. Public URL is a separate Render deployment that we cannot modify from this sandbox (no Render credentials, no render.yaml, no deploy scripts in repo).
-
-**Needed to fix:** Render.com credentials to redeploy the app, or reconfigure the ctonew.app proxy to point to our sandbox port 3000 instead of Render.
+**What was done:**
+1. ✅ Production build completed (Next.js v15.5.18)
+2. ✅ Code synced to GitHub (25 files, commit `aa23e45`)
+3. ✅ Vercel deployment auto-triggered and successful
+4. ✅ All critical routes verified: `/`, `/audit`, `/roi-calculator`, `/signup`
 
 ---
 

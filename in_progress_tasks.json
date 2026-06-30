@@ -1,0 +1,38 @@
+[
+  {
+    "id": "404130ae-47cd-4acd-8425-83dcdb9c67e8",
+    "title": "Active Closing: Fill 10 Founding Member Spots",
+    "status": "in-progress",
+    "assigned_to": "agent-sales-closer"
+  },
+  {
+    "id": "ce9385a2-a9d4-4bf5-b56d-f1e56611f036",
+    "title": "The Closer Blitz: Active Response & Demo Booking",
+    "status": "in-progress",
+    "assigned_to": "agent-sales-closer"
+  },
+  {
+    "id": "996fef79-cea7-4ff4-b893-0f8d96ece936",
+    "title": "Targeted Outreach: Austin Med Spa (High Priority)",
+    "status": "in-progress",
+    "assigned_to": "agent-sales-closer"
+  },
+  {
+    "id": "30c73939-32d2-4474-80cc-4a6b7071c53c",
+    "title": "POS Platform Partnership Outreach: Phase 1",
+    "status": "in-progress",
+    "assigned_to": "agent-operations"
+  },
+  {
+    "id": "c14f5ce5-1895-4561-abde-de3868746d84",
+    "title": "New Business Welcome Outreach (Top 3)",
+    "status": "in-progress",
+    "assigned_to": "agent-sales-closer"
+  },
+  {
+    "id": "42476c70-e28d-4304-924f-571bbc0afd2c",
+    "title": "Upgrade Outreach Engine to v8.0 (Hardened)",
+    "status": "in-progress",
+    "assigned_to": "agent-marketer"
+  }
+]

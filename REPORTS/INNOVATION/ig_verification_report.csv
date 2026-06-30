@@ -1,0 +1,50 @@
+priority_tier,business,current_handle,suggested_handle,domain,is_algorithmic,verification_needed,action_taken
+CRITICAL,Music City Auto Repair,musiccityautorepair,,musiccityautorepair.com,True,False,KEEP_PLAUSIBLE
+SEVERE,Paw Pleasers Grooming,pawpleasersgrooming,paw_pleasers_grooming,pawpleasersgrooming.com,True,True,USE_SUGGESTED
+SEVERE,Vibe Yoga Studio,vibeyogastudio,vibe_yoga_studio,vibeyogastudio.com,True,True,USE_SUGGESTED
+SEVERE,Pride & Groom Scottsdale,pridegroomscottsdale,pride_groom_scottsdale,pridegroomscottsdale.com,True,True,USE_SUGGESTED
+SEVERE,Elite Finish Auto,elitefinishauto,elite_finish_auto,elitefinishauto.com,True,True,USE_SUGGESTED
+SEVERE,Culvers Auto Body,culversautobody,culvers_auto_body,culversautobody.com,True,True,USE_SUGGESTED
+SEVERE,Scottdale Auto Repair,scottdaleautorepair,scottdale_auto_repair,scottdaleautorepair.com,True,True,USE_SUGGESTED
+SEVERE,Elite Auto Werks,eliteautowerks,elite_auto_werks,eliteautowerks.com,True,True,USE_SUGGESTED
+SEVERE,Denver Dog Grooming,denverdoggrooming,denver_dog_grooming,denverdoggrooming.com,True,True,USE_SUGGESTED
+SEVERE,Colorado Auto Repair,coloradoautorepair,colorado_auto_repair,coloradoautorepair.com,True,True,USE_SUGGESTED
+SEVERE,AutoWerks Charlotte,autowerkscharlotte,autowerks_charlotte,autowerkscharlotte.com,True,True,USE_SUGGESTED
+MODERATE,Austin Detailing Specialists,austindetailingspecialists,,austindetailingspeci.com,True,False,KEEP_PLAUSIBLE
+MODERATE,Radiant Yoga Austin,radiantyogaaustin,,radiantyogaaustin.com,True,False,KEEP_PLAUSIBLE
+MODERATE,The Bakery At Scottsdale,thebakeryatscottsdale,,thebakeryatscottsdal.com,True,False,KEEP_PLAUSIBLE
+MODERATE,Pawsitively Groomed,pawsitivelygroomed,,pawsitivelygroomed.com,True,False,KEEP_PLAUSIBLE
+MODERATE,Ivey Cake Bakery,iveycakebakery,,iveycakebakery.com,True,False,KEEP_PLAUSIBLE
+MODERATE,Yoga Tree Nashville,yogatreenashville,,yogatreenashville.com,True,False,KEEP_PLAUSIBLE
+MODERATE,Paw Works Denver,pawworksdenver,,pawworksdenver.com,True,False,KEEP_PLAUSIBLE
+MODERATE,Villanis Gourmet Bakery,villanisgourmetbakery,,villanisgourmetbaker.com,True,False,KEEP_PLAUSIBLE
+MODERATE,Superior Auto Body Austin,superiorautobodyaustin,,superiorautobodyaust.com,True,False,KEEP_PLAUSIBLE
+MODERATE,Texas French Bread,texasfrenchbread,,texasfrenchbread.com,True,False,KEEP_PLAUSIBLE
+MODERATE,Sun Devil Auto Scottsdale,sundevilautoscottsdale,,sundevilautoscottsda.com,True,False,KEEP_PLAUSIBLE
+MODERATE,True Hot Yoga,truehotyoga,,truehotyoga.com,True,False,KEEP_PLAUSIBLE
+MODERATE,Exotic Motors Denver,exoticmotorsdenver,,exoticmotorsdenver.com,True,False,KEEP_PLAUSIBLE
+MODERATE,Samadhi Yoga,samadhiyoga,,samadhiyoga.com,True,False,KEEP_PLAUSIBLE
+MODERATE,Superior Auto Charlotte,superiorautocharlotte,,superiorautocharlott.com,True,False,KEEP_PLAUSIBLE
+MODERATE,River Yoga Denver,riveryogadenver,,riveryogadenver.com,True,False,KEEP_PLAUSIBLE
+MODERATE,JL Desserts,jldesserts,,jldesserts.com,True,False,KEEP_PLAUSIBLE
+LOW,Echo Coffee,echocoffee,,echocoffee.com,True,False,KEEP_PLAUSIBLE
+LOW,The Yoga Room,theyogaroom,,theyogaroom.com,True,False,KEEP_PLAUSIBLE
+LOW,Woofs Dog Grooming,woofsdoggrooming,,woofsdoggrooming.com,True,False,KEEP_PLAUSIBLE
+LOW,Baked on 8th,bakedon8th,,bakedon8th.com,True,False,KEEP_PLAUSIBLE
+LOW,Nashville Power Yoga,nashvillepoweryoga,,nashvillepoweryoga.com,True,False,KEEP_PLAUSIBLE
+LOW,Aussie Pet Mobile Denver,aussiepetmobiledenver,,aussiepetmobiledenve.com,True,False,KEEP_PLAUSIBLE
+LOW,Grateful Bread Bakery,gratefulbreadbakery,,gratefulbreadbakery.com,True,False,KEEP_PLAUSIBLE
+LOW,Woof Gang Bakery Charlotte,woofgangbakerycharlotte,,woofgangbakerycharlo.com,True,False,KEEP_PLAUSIBLE
+LOW,Queen City Grounds,queencitygrounds,,queencitygrounds.com,True,False,KEEP_PLAUSIBLE
+LOW,Studio 108 Yoga,studio108yoga,,studio108yoga.com,True,False,KEEP_PLAUSIBLE
+LOW,Blue Lotus Yoga,bluelotusyoga,,bluelotusyoga.com,True,False,KEEP_PLAUSIBLE
+LOW,Bark Avenue Scottsdale,barkavenuescottsdale,,barkavenuescottsdale.com,True,False,KEEP_PLAUSIBLE
+LOW,Bongo Java,bongojava,,bongojava.com,True,False,KEEP_PLAUSIBLE
+LOW,Sift Bake Shop,siftbakeshop,,siftbakeshop.com,True,False,KEEP_PLAUSIBLE
+LOW,Desserts By Helen,dessertsbyhelen,,dessertsbyhelen.com,True,False,KEEP_PLAUSIBLE
+LOW,Suarez Bakery,suarezbakery,,suarezbakery.com,True,False,KEEP_PLAUSIBLE
+LOW,The Detail Shop Austin,thedetailshopaustin,,thedetailshopaustin.com,True,False,KEEP_PLAUSIBLE
+LOW,Dharma Yoga Austin,dharmayogaaustin,,dharmayogaaustin.com,True,False,KEEP_PLAUSIBLE
+LOW,The Detail Shop Nashville,thedetailshopnashville,,thedetailshopnashvil.com,True,False,KEEP_PLAUSIBLE
+LOW,The Detailing Company,thedetailingcompany,,thedetailingcompany.com,True,False,KEEP_PLAUSIBLE
+LOW,The Detail Shop Charlotte,thedetailshopcharlotte,,thedetailshopcharlot.com,True,False,KEEP_PLAUSIBLE

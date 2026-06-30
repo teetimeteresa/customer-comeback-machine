@@ -1,0 +1,178 @@
+{
+  "generatedAt": "2026-06-12T20:40:23.332Z",
+  "totalLeads": 125,
+  "highPriority": 49,
+  "mediumPriority": 76,
+  "lowPriority": 0,
+  "top10HighIntent": [
+    {
+      "business": "Superior Auto Body Austin",
+      "city": "Austin",
+      "niche": "Auto",
+      "rating": 3.8,
+      "score": 100,
+      "reason": "High opportunity: low rating + missing booking system",
+      "signals": [
+        "Rating 3.8 — below average for Auto in Austin",
+        "No online booking — automation opportunity",
+        "Low rating + no booking = strong retention opportunity"
+      ]
+    },
+    {
+      "business": "Austin Detailing Specialists",
+      "city": "Austin",
+      "niche": "Auto",
+      "rating": 3.9,
+      "score": 100,
+      "reason": "High opportunity: low rating + missing booking system",
+      "signals": [
+        "Rating 3.9 — below average for Auto in Austin",
+        "32 reviews — moderate feedback",
+        "No online booking — automation opportunity",
+        "Low rating + no booking = strong retention opportunity"
+      ]
+    },
+    {
+      "business": "Texas French Bread",
+      "city": "Austin",
+      "niche": "Bakery",
+      "rating": 3.9,
+      "score": 100,
+      "reason": "High opportunity: low rating + missing booking system",
+      "signals": [
+        "Rating 3.9 — below average for Bakery in Austin",
+        "45 reviews — moderate feedback",
+        "No online booking — automation opportunity",
+        "Low rating + no booking = strong retention opportunity"
+      ]
+    },
+    {
+      "business": "Radiant Yoga Austin",
+      "city": "Austin",
+      "niche": "Yoga",
+      "rating": 3.8,
+      "score": 100,
+      "reason": "High opportunity: low rating + low review volume",
+      "signals": [
+        "Rating 3.8 — below average for Yoga in Austin",
+        "Only 28 reviews — low feedback generation",
+        "No online booking — automation opportunity",
+        "Low rating + no booking = strong retention opportunity",
+        "Low rating + few reviews = needs review generation"
+      ]
+    },
+    {
+      "business": "Pride & Groom Scottsdale",
+      "city": "Scottsdale",
+      "niche": "Pet",
+      "rating": 3.7,
+      "score": 100,
+      "reason": "High opportunity: low rating + low review volume",
+      "signals": [
+        "Rating 3.7 — below average for Pet in Scottsdale",
+        "Only 22 reviews — low feedback generation",
+        "No online booking — automation opportunity",
+        "Low rating + no booking = strong retention opportunity",
+        "Low rating + few reviews = needs review generation"
+      ]
+    },
+    {
+      "business": "Culvers Auto Body",
+      "city": "Scottsdale",
+      "niche": "Auto",
+      "rating": 3.6,
+      "score": 100,
+      "reason": "High opportunity: low rating + missing booking system",
+      "signals": [
+        "Rating 3.6 — below average for Auto in Scottsdale",
+        "No online booking — automation opportunity",
+        "Low rating + no booking = strong retention opportunity"
+      ]
+    },
+    {
+      "business": "Sun Devil Auto Scottsdale",
+      "city": "Scottsdale",
+      "niche": "Auto",
+      "rating": 3.9,
+      "score": 100,
+      "reason": "High opportunity: low rating + missing booking system",
+      "signals": [
+        "Rating 3.9 — below average for Auto in Scottsdale",
+        "No online booking — automation opportunity",
+        "Low rating + no booking = strong retention opportunity"
+      ]
+    },
+    {
+      "business": "Scottdale Auto Repair",
+      "city": "Scottsdale",
+      "niche": "Auto",
+      "rating": 3.5,
+      "score": 100,
+      "reason": "High opportunity: low rating + missing booking system",
+      "signals": [
+        "Rating 3.5 — below average for Auto in Scottsdale",
+        "No online booking — automation opportunity",
+        "Low rating + no booking = strong retention opportunity"
+      ]
+    },
+    {
+      "business": "The Bakery At Scottsdale",
+      "city": "Scottsdale",
+      "niche": "Bakery",
+      "rating": 3.8,
+      "score": 100,
+      "reason": "High opportunity: low rating + low review volume",
+      "signals": [
+        "Rating 3.8 — below average for Bakery in Scottsdale",
+        "Only 28 reviews — low feedback generation",
+        "No online booking — automation opportunity",
+        "Low rating + no booking = strong retention opportunity",
+        "Low rating + few reviews = needs review generation"
+      ]
+    },
+    {
+      "business": "True Hot Yoga",
+      "city": "Scottsdale",
+      "niche": "Yoga",
+      "rating": 3.9,
+      "score": 100,
+      "reason": "High opportunity: low rating + missing booking system",
+      "signals": [
+        "Rating 3.9 — below average for Yoga in Scottsdale",
+        "45 reviews — moderate feedback",
+        "No online booking — automation opportunity",
+        "Low rating + no booking = strong retention opportunity"
+      ]
+    }
+  ],
+  "topAutoRepair": [
+    "Superior Auto Body Austin",
+    "Austin Detailing Specialists",
+    "Culvers Auto Body",
+    "Sun Devil Auto Scottsdale",
+    "Scottdale Auto Repair",
+    "Elite Auto Werks",
+    "Music City Auto Repair",
+    "Exotic Motors Denver",
+    "Colorado Auto Repair",
+    "Elite Finish Auto",
+    "Superior Auto Charlotte",
+    "AutoWerks Charlotte",
+    "The Detail Shop Austin",
+    "The Detail Shop Nashville",
+    "The Detailing Company",
+    "The Detail Shop Charlotte"
+  ],
+  "topPetGrooming": [
+    "Pride & Groom Scottsdale",
+    "Pawsitively Groomed",
+    "Paw Works Denver",
+    "Denver Dog Grooming",
+    "Paw Pleasers Grooming",
+    "Woofs Dog Grooming",
+    "Aussie Pet Mobile Denver",
+    "Woof Gang Bakery Charlotte",
+    "Bark Avenue Scottsdale"
+  ],
+  "nicheWithMostOpportunity": "Auto Repair (5 cities have low-rated shops)"
+}

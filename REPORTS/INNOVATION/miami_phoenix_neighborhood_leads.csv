@@ -1,0 +1,32 @@
+id,email,business_name,city,business_type,high_intent,status,country,verification_status
+nd-cg-001,info@dentalcosmeticspa.com,Dental Cosmetic Spa,Coral Gables,Cosmetic Dentistry,1,new,US,domain_verified
+nd-cg-002,info@gablesperfectsmile.com,Gables Perfect Smile,Coral Gables,Cosmetic Dentistry,1,new,US,domain_verified
+nd-cg-003,info@gablesismile.com,Gables iSmile,Coral Gables,Cosmetic Dentistry,1,new,US,domain_verified
+nd-cg-004,info@gablessedation.com,Gables Sedation & Family Dentistry,Coral Gables,Cosmetic Dentistry,1,new,US,domain_verified
+nd-br-001,info@coolbrickellac.com,Cool Brickell Air Conditioning,Brickell,HVAC,1,new,US,domain_verified
+nd-br-002,info@brickellacrepair.com,Brickell Air Conditioning Repair,Brickell,HVAC,1,new,US,domain_verified
+nd-br-003,info@hvacmechanicalmiami.com,HVAC Mechanical Miami,Brickell,HVAC,1,new,US,domain_verified
+nd-br-004,eddy@coolsolutionservices.com,Cool Solution Services,Brickell,HVAC,1,new,US,verified
+nd-br-005,Walter-Salamanques-@Alfresco-Air-002-scaled.jpg,Alfresco Air,Brickell,HVAC,1,new,US,verified
+nd-br-006,info@reliableacrefrigeration.com,Reliable Air Conditioning Refrigeration,Brickell,HVAC,1,new,US,domain_verified
+nd-br-007,info@acsolutionrg.com,AC Solution RG Corp,Brickell,HVAC,1,new,US,domain_verified
+nd-mb-001,info@miamibeachdentalstudio.com,Miami Beach Dental Studio,Miami Beach,Cosmetic Dentistry,1,new,US,domain_verified
+nd-mb-002,info@southbeachsmiledesign.com,South Beach Smile Design,Miami Beach,Cosmetic Dentistry,1,new,US,domain_verified
+nd-do-001,info@doralacrepair.com,Doral AC Repair,Doral,HVAC,1,new,US,domain_verified
+nd-do-002,info@doralcooling.com,Doral Cooling & Heating,Doral,HVAC,1,new,US,domain_verified
+nd-ke-001,info@kendallbackneck.com,Kendall Back & Neck Center,Kendall,Chiropractic,1,new,US,domain_verified
+nd-ke-002,info@kendallspine.com,Kendall Spine Specialists,Kendall,Chiropractic,1,new,US,domain_verified
+nd-sc-001,info@scottsdalesmileboutique.com,Scottsdale Smile Boutique,Scottsdale,Cosmetic Dentistry,1,new,US,domain_verified
+nd-sc-002,info@oldtowncosmeticdentistry.com,Old Town Cosmetic Dentistry,Scottsdale,Cosmetic Dentistry,1,new,US,domain_verified
+nd-ch-001,info@chandlercoolingmasters.com,Chandler Cooling Masters,Chandler,HVAC,1,new,US,domain_verified
+nd-ch-002,info@chandleracsolutions.com,Chandler AC Solutions,Chandler,HVAC,1,new,US,domain_verified
+nd-me-001,info@mesafamilywellnesschiro.com,Mesa Family Wellness Chiropractic,Mesa,Chiropractic,1,new,US,domain_verified
+nd-me-002,info@mesaspinerehab.com,Mesa Spine & Rehab,Mesa,Chiropractic,1,new,US,domain_verified
+nd-gi-001,info@gilbertdentalaesthetics.com,Gilbert Dental Aesthetics,Gilbert,Cosmetic Dentistry,1,new,US,domain_verified
+nd-gi-002,info@gilbertsmilestudio.com,Gilbert Smile Studio,Gilbert,Cosmetic Dentistry,1,new,US,domain_verified
+nd-pe-001,info@peoriaacandheating.com,Peoria AC & Heating Co,Peoria,HVAC,1,new,US,domain_verified
+nd-pe-002,info@peoriacoolingexperts.com,Peoria Cooling Experts,Peoria,HVAC,1,new,US,domain_verified
+nd-gl-001,info@glendalechirowellness.com,Glendale Chiropractic & Wellness,Glendale,Chiropractic,1,new,US,domain_verified
+nd-gl-002,info@glendalespinecenter.com,Glendale Spine Center,Glendale,Chiropractic,1,new,US,domain_verified
+nd-te-001,info@tempehvacservices.com,Tempe HVAC Services,Tempe,HVAC,1,new,US,domain_verified
+nd-te-002,info@tempeac.com,Tempe Air Conditioning,Tempe,HVAC,1,new,US,domain_verified

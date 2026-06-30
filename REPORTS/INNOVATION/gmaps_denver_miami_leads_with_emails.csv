@@ -1,0 +1,21 @@
+Business,City,State,Niche,Rating,Address,Has_Online_Booking,Priority,Instagram_Needed,Notes,Email,Phone,Website
+Cherry Medical,Denver,CO,Med Spa,4.9,2200 W 29th Ave #102,NO,HIGH,Yes,No booking = needs automation. High rating = quality biz.,reception@cherrymedispa.com,105.0098204,cherrymedispa.com
+VIVE Med Spa,Denver,CO,Med Spa,4.9,2353 15th St,NO,HIGH,Yes,No booking = needs automation. Premium niche.,info@vivemedspadenver.com,1662541855,vivemedspadenver.com
+Rejuvenate MedSpa,Denver,CO,Med Spa,5.0,501 S Cherry St #900,YES,MEDIUM,Yes,Has booking. Pitch CCM for retention layer on top.,,,rejuvenatemedspadenver.com
+NakedMD Med Spa Denver,Denver,CO,Med Spa,4.9,125 Rampart Way Ste 150B,NO,HIGH,Yes,No booking. Chain location - pitch multi-location.,concierge@nakedmd.com,1091111603,nakedmd.com
+RESTOR Medical Spa | Central Park,Denver,CO,Med Spa,4.9,2373 Central Park Blvd #103,YES,MEDIUM,Yes,Has booking. Pitch retention + review automation.,info@restormedicalspa.com,2147483647,restormedicalspa.com
+The Denver Dentists,Denver,CO,Dental,4.4,2190 E 17th Ave,YES,MEDIUM,Yes,Has booking. 4.4 rating = room for review improvement.,email@address.com,(720) 821-7514,thedenverdentists.com
+Downtown Denver Dental,Denver,CO,Dental,4.9,1050 17th St b-190,YES,MEDIUM,Yes,Top-rated. Has booking. Pitch VIP retention.,,1395212837,downtowndenverdental.com
+Icon Dental,Denver,CO,Dental,4.6,1425 Market St Ste. 100,YES,MEDIUM,Yes,Has booking. Pitch recall automation.,,,icondentaldenver.com
+Denver Place Dentistry,Denver,CO,Dental,4.8,999 18th St #1300,YES,MEDIUM,Yes,Has booking. High-end location. Pitch loyalty.,,,denverplacedentistry.com
+38th Modern Dental,Denver,CO,Dental,4.8,3550 W 38th Ave #50,YES,MEDIUM,Yes,Has booking. Modern branding = tech-forward audience.,,,38thmoderndental.com
+Monaco MedSpa,Miami,FL,Med Spa,5.0,2930 NE 2nd Ct,NO,HIGH,Yes,No booking! Perfect CCM prospect. 5★ rating.,officemanager@monacomedspa.com,3280865582,monacomedspa.com
+Med Aesthetics Miami,Miami,FL,Med Spa,4.8,"2020 Ponce de Leon Suite 106, Coral Gables",YES,MEDIUM,Yes,Has booking. Upsell CCM retention.,info@medaestheticsmiami.com,1193153215,medaestheticsmiami.com
+Deluxe Med Spa Beauty,Miami,FL,Med Spa,4.9,30 SW 1st St #1001,NO,HIGH,Yes,No booking = needs automation. Premium location.,,1781193197,deluxemedspabeauty.com
+Arviv Medical Aesthetics Miami,Miami,FL,Med Spa,4.8,3250 NE 1st Ave #504,YES,MEDIUM,Yes,Has booking. High-end. Pitch loyalty program.,,,arvivmedspa.com
+Brickell Cosmetic Center,Miami,FL,Med Spa,4.6,2730 SW 3rd Ave Ste 100,NO,HIGH,Yes,No booking. Lower rating = opportunity for review help.,,9999999999,brickellcosmetic.com
+Super Dentist Miami,Miami,FL,Dental,4.9,1660 SW 1st St,YES,MEDIUM,Yes,Has booking. 4.9★. Pitch automated recall.,,,superdentistmiami.com
+Relax and Smile Dental Care,Miami,FL,Dental,4.9,271 NE 2nd St,YES,MEDIUM,Yes,Has booking. Brand = gentle care. Pitch follow-up.,,1445369713,relaxandsmiledental.com
+Miami Modern Dental,Miami,FL,Dental,4.9,7155 W Flagler St,NO,HIGH,Yes,No booking! Top-rated. PERFECT CCM fit.,,1177817227,miamimoderndental.com
+Ultra Smile Miami,Miami,FL,Dental,4.8,168 SE 1st St,YES,MEDIUM,Yes,Has booking. Pitch review generation.,info@ultrasmilemiami.com,1685647828,ultrasmilemiami.com
+Midtown Dental Miami,Miami,FL,Dental,4.3,3915 Biscayne Blvd Unit 306,NO,HIGH,Yes,No booking + 4.3★ = big opportunity for improvement.,,,midtowndentalmiami.com

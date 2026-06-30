@@ -1,0 +1,21 @@
+id,email,business_name,city,business_type,high_intent,signal,reactive_score
+rt-mia-cd-01,Miami,Biscayne Dental & Facial Aesthetics,Miami,Cosmetic Dentistry,1,"High competition area, low review count vs established peers",85
+rt-mia-cd-02,Miami,Royal Dentistry Studio,Miami,Cosmetic Dentistry,1,"New studio, building reputation, no booking online",85
+rt-mia-cd-03,Miami,High Cosmetic Dentist,Miami,Cosmetic Dentistry,1,"Small practice, limited digital presence",85
+rt-mia-cd-04,Miami,My Smile Miami,Miami,Cosmetic Dentistry,1,Has booking link but low review count,85
+rt-mia-hv-01,Brickell,Cool Brickell Air Conditioning,Brickell,HVAC,1,"New market entrant, building customer base",85
+rt-mia-hv-02,Miami,Alfresco Air,Miami,HVAC,1,"Small operator, needs reputation system",85
+rt-mia-hv-03,Brickell,Brickell Air Conditioning Repair,Brickell,HVAC,1,"Low online footprint, no review management",85
+rt-mia-hv-04,Miami Beach,South Beach AC Repair,Miami Beach,HVAC,1,"Tourist-heavy area, seasonal business needs retention",85
+rt-mia-ch-01,Key Biscayne,Key Biscayne Chiropractic,Key Biscayne,Chiropractic,1,"Isolated market, low patient volume signals",85
+rt-mia-ch-02,Coral Gables,Coral Way Chiropractic,Coral Gables,Chiropractic,1,"Busy corridor, losing patients to competitors",85
+rt-mia-ch-03,Hialeah,Hialeah Back Pain Center,Hialeah,Chiropractic,1,"Underserved market, high Spanish-speaking population",85
+rt-mia-ch-04,North Miami,North Miami Rehab & Chiropractic,North Miami,Chiropractic,1,Low digital maturity for rehab niche,85
+rt-phx-cd-01,Phoenix,Biltmore Cosmetic & Restorative Dentistry,Phoenix,Cosmetic Dentistry,1,Premium area but possibly inconsistent reviews,85
+rt-phx-cd-02,Phoenix,Harris Dental,Phoenix,Cosmetic Dentistry,1,"Family practice, low review count for Phoenix market",85
+rt-phx-cd-03,Phoenix,Radiant Smiles Phoenix,Phoenix,Cosmetic Dentistry,1,Newer practice building digital presence,85
+rt-phx-hv-01,Phoenix,Heating Maintenance Pros,Phoenix,HVAC,1,"Military/veteran focus, niche retention opportunity",85
+rt-phx-hv-02,Phoenix,Desert Diamond Air Cooling & Heating,Phoenix,HVAC,1,Established but low review responsiveness,85
+rt-phx-hv-03,Scottsdale,Scottsdale Air Heating & Cooling,Scottsdale,HVAC,1,"Affluent area, high-value contracts at risk",85
+rt-phx-ch-01,Phoenix,Phoenix Spine & Wellness,Phoenix,Chiropractic,1,"Urban chiro practice, competitive market",85
+rt-phx-ch-02,Surprise,Surprise Chiropractic,Surprise,Chiropractic,1,"Growing suburb, first-mover retention opportunity",85

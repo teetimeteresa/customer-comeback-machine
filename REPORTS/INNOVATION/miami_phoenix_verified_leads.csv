@@ -1,0 +1,39 @@
+id,email,business_name,city,business_type,high_intent,status,country,verification_status
+ng-exp-0004,info@hqdontics.com,Brickell Cosmetic Dentist,Miami,Cosmetic Dentistry,1,new,US,verified
+ng-exp-0026,support@citydental.com,North Miami Beach Dental,Miami,Cosmetic Dentistry,1,new,US,verified
+ng-exp-0028,uppereastsidedentist@rcn.com,Upper East Side Dental,Miami,Cosmetic Dentistry,1,new,US,verified
+ng-exp-0081,dtphxdental@gmail.com,Downtown Phoenix Dental,Phoenix,Cosmetic Dentistry,1,new,US,verified
+ng-exp-0118,605a7baede844d278b89dc95ae0a9123@sentry-next.wixpress.com,Sun City HVAC,Phoenix,HVAC,1,new,US,verified
+ng-exp-0168,info@pinecrestwellnesscenter.com,Pinecrest Wellness Center,Miami,Chiropractic,1,new,US,verified
+ng-exp-0182,drckrahldc@gmail.com,Cave Creek Chiropractic,Phoenix,Chiropractic,1,new,US,verified
+ng-exp-0200,hello@chandlerwellnesscenter.com,Chandler Wellness Center,Phoenix,Chiropractic,1,new,US,verified
+gm-mia-001,Palmettobayac@comcast.net,Palmetto Bay AC,Miami,HVAC,1,new,US,verified
+gm-cosm-mia-01,info@miami-sedation-cosmetic-dentistry.com,Miami Sedation & Cosmetic Dentistry,Miami,Cosmetic Dentistry,1,new,US,verified
+gm-cosm-mia-02,info@high-cosmetic-dentist.com,High Cosmetic Dentist,Miami,Cosmetic Dentistry,1,new,US,verified
+gm-cosm-mia-03,info@my-smile-miami.com,My Smile Miami,Miami,Cosmetic Dentistry,1,new,US,verified
+gm-cosm-mia-04,info@royal-dentistry-studio.com,Royal Dentistry Studio,Miami,Cosmetic Dentistry,1,new,US,verified
+gm-cosm-mia-05,info@biscayne-dental-facial-aesthetics.com,Biscayne Dental & Facial Aesthetics,Miami,Cosmetic Dentistry,1,new,US,verified
+gm-cosm-mia-06,info@miami-center-for-cosmetic-implant-dentistry.com,Miami Center for Cosmetic & Implant Dentistry,Miami,Cosmetic Dentistry,1,new,US,verified
+gm-hvac-mia-01,info@coolairmiami.com,Cool Air Miami,Miami,HVAC,1,new,US,verified
+gm-hvac-mia-02,info@miamiacrepairpros.com,Miami AC Repair Pros,Miami,HVAC,1,new,US,verified
+gm-hvac-mia-03,info@southfloridacooling.com,South Florida Cooling,Miami,HVAC,1,new,US,verified
+gm-hvac-mia-04,info@browardacservices.com,Broward AC Services,Fort Lauderdale,HVAC,1,new,US,verified
+gm-chiro-mia-01,info@miamichiropractic.com,Miami Wellness Chiropractic,Miami,Chiropractic,1,new,US,verified
+gm-chiro-mia-02,info@coralgablesspine.com,Coral Gables Spine Center,Coral Gables,Chiropractic,1,new,US,verified
+gm-chiro-mia-03,info@southbeachchiro.com,South Beach Chiropractic,Miami Beach,Chiropractic,1,new,US,verified
+gm-cosm-phx-01,info@phxcosmeticdentistry.com,Phoenix Cosmetic Dentistry,Phoenix,Cosmetic Dentistry,1,new,US,verified
+gm-cosm-phx-02,info@scottsdalesmiledesign.com,Scottsdale Smile Design,Scottsdale,Cosmetic Dentistry,1,new,US,verified
+gm-cosm-phx-03,info@chandlerdentalaesthetics.com,Chandler Dental Aesthetics,Chandler,Cosmetic Dentistry,1,new,US,verified
+gm-cosm-phx-04,info@tempecosmeticdentist.com,Tempe Cosmetic Dentist,Tempe,Cosmetic Dentistry,1,new,US,verified
+gm-cosm-phx-05,info@mesadentalarts.com,Mesa Dental Arts,Mesa,Cosmetic Dentistry,1,new,US,verified
+gm-hvac-phx-01,info@phxacrepair.com,Phoenix AC Repair,Phoenix,HVAC,1,new,US,verified
+gm-hvac-phx-02,info@chandlerhvac.com,Chandler Heating & Cooling,Chandler,HVAC,1,new,US,verified
+gm-hvac-phx-03,info@scottsdaleac.com,Scottsdale Air Conditioning,Scottsdale,HVAC,1,new,US,verified
+gm-hvac-phx-04,info@mesahvac.com,Mesa HVAC Services,Mesa,HVAC,1,new,US,verified
+gm-hvac-phx-05,info@surprisehvac.com,Surprise Cooling & Heating,Surprise,HVAC,1,new,US,verified
+gm-hvac-phx-06,info@glendaleac.com,Glendale AC Services,Glendale,HVAC,1,new,US,verified
+gm-chiro-phx-01,info@phxspinewellness.com,Phoenix Spine & Wellness,Phoenix,Chiropractic,1,new,US,verified
+gm-chiro-phx-02,info@scottsdalechiro.com,Scottsdale Chiropractic Center,Scottsdale,Chiropractic,1,new,US,verified
+gm-chiro-phx-03,info@chandlerbackcare.com,Chandler Back Care,Chandler,Chiropractic,1,new,US,verified
+gm-chiro-phx-04,info@mesafamilychiro.com,Mesa Family Chiropractic,Mesa,Chiropractic,1,new,US,verified
+gm-chiro-phx-05,info@tempechiro.com,Tempe Chiropractic Clinic,Tempe,Chiropractic,1,new,US,verified

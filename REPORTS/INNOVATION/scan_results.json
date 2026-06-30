@@ -1,0 +1,322 @@
+[
+  {
+    "target_id": "mia_dental_1",
+    "business_name": "Miami Beach Dental",
+    "niche": "dentistry",
+    "city": "Miami Beach",
+    "rating": null,
+    "review_count": null,
+    "signals": [
+      "NO_DATA",
+      "NO_REVIEW_DATA"
+    ],
+    "priority_score": 50,
+    "high_intent": false,
+    "scanned_at": "2026-06-29T18:32:54.236Z",
+    "error": "Could not extract rating from page"
+  },
+  {
+    "target_id": "mia_dental_2",
+    "business_name": "Cutler Bay Dental",
+    "niche": "dentistry",
+    "city": "Cutler Bay",
+    "rating": null,
+    "review_count": null,
+    "signals": [
+      "NO_DATA",
+      "NO_REVIEW_DATA"
+    ],
+    "priority_score": 50,
+    "high_intent": false,
+    "scanned_at": "2026-06-29T18:32:57.785Z",
+    "error": "Could not extract rating from page"
+  },
+  {
+    "target_id": "mia_dental_3",
+    "business_name": "Homestead Cosmetic Dentistry",
+    "niche": "dentistry",
+    "city": "Homestead",
+    "rating": null,
+    "review_count": null,
+    "signals": [
+      "NO_DATA",
+      "NO_REVIEW_DATA"
+    ],
+    "priority_score": 50,
+    "high_intent": false,
+    "scanned_at": "2026-06-29T18:33:00.994Z",
+    "error": "Could not extract rating from page"
+  },
+  {
+    "target_id": "mia_hvac_1",
+    "business_name": "Palmetto Bay AC",
+    "niche": "hvac",
+    "city": "Palmetto Bay",
+    "rating": null,
+    "review_count": null,
+    "signals": [
+      "NO_DATA",
+      "NO_REVIEW_DATA"
+    ],
+    "priority_score": 50,
+    "high_intent": false,
+    "scanned_at": "2026-06-29T18:33:04.185Z",
+    "error": "Could not extract rating from page"
+  },
+  {
+    "target_id": "mia_hvac_2",
+    "business_name": "Flow-Tech Air Conditioning Corp",
+    "niche": "hvac",
+    "city": "Miami",
+    "rating": null,
+    "review_count": null,
+    "signals": [
+      "NO_DATA",
+      "NO_REVIEW_DATA"
+    ],
+    "priority_score": 50,
+    "high_intent": false,
+    "scanned_at": "2026-06-29T18:33:07.369Z",
+    "error": "Could not extract rating from page"
+  },
+  {
+    "target_id": "mia_hvac_3",
+    "business_name": "Best Price Mini Splits Miami",
+    "niche": "hvac",
+    "city": "Miami",
+    "rating": null,
+    "review_count": null,
+    "signals": [
+      "NO_DATA",
+      "NO_REVIEW_DATA"
+    ],
+    "priority_score": 50,
+    "high_intent": false,
+    "scanned_at": "2026-06-29T18:33:10.597Z",
+    "error": "Could not extract rating from page"
+  },
+  {
+    "target_id": "mia_hvac_4",
+    "business_name": "Direct Air Conditioning",
+    "niche": "hvac",
+    "city": "Miami",
+    "rating": null,
+    "review_count": null,
+    "signals": [
+      "NO_DATA",
+      "NO_REVIEW_DATA"
+    ],
+    "priority_score": 50,
+    "high_intent": false,
+    "scanned_at": "2026-06-29T18:33:13.864Z",
+    "error": "Could not extract rating from page"
+  },
+  {
+    "target_id": "mia_hvac_5",
+    "business_name": "AC Solution RG Corp",
+    "niche": "hvac",
+    "city": "Miami",
+    "rating": null,
+    "review_count": null,
+    "signals": [
+      "NO_DATA",
+      "NO_REVIEW_DATA"
+    ],
+    "priority_score": 50,
+    "high_intent": false,
+    "scanned_at": "2026-06-29T18:33:17.091Z",
+    "error": "Could not extract rating from page"
+  },
+  {
+    "target_id": "mia_chiro_1",
+    "business_name": "Kendall Wellness Center",
+    "niche": "chiropractic",
+    "city": "Kendall",
+    "rating": null,
+    "review_count": null,
+    "signals": [
+      "NO_DATA",
+      "NO_REVIEW_DATA"
+    ],
+    "priority_score": 50,
+    "high_intent": false,
+    "scanned_at": "2026-06-29T18:33:20.317Z",
+    "error": "Could not extract rating from page"
+  },
+  {
+    "target_id": "mia_chiro_2",
+    "business_name": "Miami Spine & Injury Center",
+    "niche": "chiropractic",
+    "city": "Miami",
+    "rating": null,
+    "review_count": null,
+    "signals": [
+      "NO_DATA",
+      "NO_REVIEW_DATA"
+    ],
+    "priority_score": 50,
+    "high_intent": false,
+    "scanned_at": "2026-06-29T18:33:23.548Z",
+    "error": "Could not extract rating from page"
+  },
+  {
+    "target_id": "mia_chiro_3",
+    "business_name": "Kendall Back & Neck Center",
+    "niche": "chiropractic",
+    "city": "Kendall",
+    "rating": null,
+    "review_count": null,
+    "signals": [
+      "NO_DATA",
+      "NO_REVIEW_DATA"
+    ],
+    "priority_score": 50,
+    "high_intent": false,
+    "scanned_at": "2026-06-29T18:33:27.223Z",
+    "error": "Could not extract rating from page"
+  },
+  {
+    "target_id": "mia_chiro_4",
+    "business_name": "Doral Wellness & Chiropractic",
+    "niche": "chiropractic",
+    "city": "Doral",
+    "rating": null,
+    "review_count": null,
+    "signals": [
+      "NO_DATA",
+      "NO_REVIEW_DATA"
+    ],
+    "priority_score": 50,
+    "high_intent": false,
+    "scanned_at": "2026-06-29T18:33:30.585Z",
+    "error": "Could not extract rating from page"
+  },
+  {
+    "target_id": "phx_dental_1",
+    "business_name": "Downtown Phoenix Dental",
+    "niche": "dentistry",
+    "city": "Phoenix",
+    "rating": null,
+    "review_count": null,
+    "signals": [
+      "NO_DATA",
+      "NO_REVIEW_DATA"
+    ],
+    "priority_score": 50,
+    "high_intent": false,
+    "scanned_at": "2026-06-29T18:33:34.009Z",
+    "error": "Could not extract rating from page"
+  },
+  {
+    "target_id": "phx_dental_2",
+    "business_name": "Arizona Smile Center",
+    "niche": "dentistry",
+    "city": "Phoenix",
+    "rating": null,
+    "review_count": null,
+    "signals": [
+      "NO_DATA",
+      "NO_REVIEW_DATA"
+    ],
+    "priority_score": 50,
+    "high_intent": false,
+    "scanned_at": "2026-06-29T18:33:37.238Z",
+    "error": "Could not extract rating from page"
+  },
+  {
+    "target_id": "phx_dental_3",
+    "business_name": "Buckeye Dental",
+    "niche": "dentistry",
+    "city": "Buckeye",
+    "rating": null,
+    "review_count": null,
+    "signals": [
+      "NO_DATA",
+      "NO_REVIEW_DATA"
+    ],
+    "priority_score": 50,
+    "high_intent": false,
+    "scanned_at": "2026-06-29T18:33:40.441Z",
+    "error": "Could not extract rating from page"
+  },
+  {
+    "target_id": "phx_hvac_1",
+    "business_name": "Chandler Cooling Masters",
+    "niche": "hvac",
+    "city": "Chandler",
+    "rating": null,
+    "review_count": null,
+    "signals": [
+      "NO_DATA",
+      "NO_REVIEW_DATA"
+    ],
+    "priority_score": 50,
+    "high_intent": false,
+    "scanned_at": "2026-06-29T18:33:43.661Z",
+    "error": "Could not extract rating from page"
+  },
+  {
+    "target_id": "phx_hvac_2",
+    "business_name": "Peoria AC & Heating Co",
+    "niche": "hvac",
+    "city": "Peoria",
+    "rating": null,
+    "review_count": null,
+    "signals": [
+      "NO_DATA",
+      "NO_REVIEW_DATA"
+    ],
+    "priority_score": 50,
+    "high_intent": false,
+    "scanned_at": "2026-06-29T18:33:46.910Z",
+    "error": "Could not extract rating from page"
+  },
+  {
+    "target_id": "phx_chiro_1",
+    "business_name": "Cave Creek Chiropractic",
+    "niche": "chiropractic",
+    "city": "Cave Creek",
+    "rating": null,
+    "review_count": null,
+    "signals": [
+      "NO_DATA",
+      "NO_REVIEW_DATA"
+    ],
+    "priority_score": 50,
+    "high_intent": false,
+    "scanned_at": "2026-06-29T18:33:51.176Z",
+    "error": "Could not extract rating from page"
+  },
+  {
+    "target_id": "phx_chiro_2",
+    "business_name": "Glendale Chiropractic & Wellness",
+    "niche": "chiropractic",
+    "city": "Glendale",
+    "rating": null,
+    "review_count": null,
+    "signals": [
+      "NO_DATA",
+      "NO_REVIEW_DATA"
+    ],
+    "priority_score": 50,
+    "high_intent": false,
+    "scanned_at": "2026-06-29T18:33:54.991Z",
+    "error": "Could not extract rating from page"
+  },
+  {
+    "target_id": "phx_chiro_3",
+    "business_name": "Mesa Spine & Rehab",
+    "niche": "chiropractic",
+    "city": "Mesa",
+    "rating": null,
+    "review_count": null,
+    "signals": [
+      "NO_DATA",
+      "NO_REVIEW_DATA"
+    ],
+    "priority_score": 50,
+    "high_intent": false,
+    "scanned_at": "2026-06-29T18:33:58.574Z",
+    "error": "Could not extract rating from page"
+  }
+]

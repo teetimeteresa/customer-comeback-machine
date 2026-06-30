@@ -1,0 +1,122 @@
+{
+  "mia_dental_1": {
+    "name": "Miami Beach Dental",
+    "last_rating": null,
+    "last_reviews": null,
+    "last_scanned": "2026-06-29T18:32:54.236Z"
+  },
+  "mia_dental_2": {
+    "name": "Cutler Bay Dental",
+    "last_rating": null,
+    "last_reviews": null,
+    "last_scanned": "2026-06-29T18:32:57.785Z"
+  },
+  "mia_dental_3": {
+    "name": "Homestead Cosmetic Dentistry",
+    "last_rating": null,
+    "last_reviews": null,
+    "last_scanned": "2026-06-29T18:33:00.994Z"
+  },
+  "mia_hvac_1": {
+    "name": "Palmetto Bay AC",
+    "last_rating": null,
+    "last_reviews": null,
+    "last_scanned": "2026-06-29T18:33:04.186Z"
+  },
+  "mia_hvac_2": {
+    "name": "Flow-Tech Air Conditioning Corp",
+    "last_rating": null,
+    "last_reviews": null,
+    "last_scanned": "2026-06-29T18:33:07.369Z"
+  },
+  "mia_hvac_3": {
+    "name": "Best Price Mini Splits Miami",
+    "last_rating": null,
+    "last_reviews": null,
+    "last_scanned": "2026-06-29T18:33:10.597Z"
+  },
+  "mia_hvac_4": {
+    "name": "Direct Air Conditioning",
+    "last_rating": null,
+    "last_reviews": null,
+    "last_scanned": "2026-06-29T18:33:13.864Z"
+  },
+  "mia_hvac_5": {
+    "name": "AC Solution RG Corp",
+    "last_rating": null,
+    "last_reviews": null,
+    "last_scanned": "2026-06-29T18:33:17.091Z"
+  },
+  "mia_chiro_1": {
+    "name": "Kendall Wellness Center",
+    "last_rating": null,
+    "last_reviews": null,
+    "last_scanned": "2026-06-29T18:33:20.317Z"
+  },
+  "mia_chiro_2": {
+    "name": "Miami Spine & Injury Center",
+    "last_rating": null,
+    "last_reviews": null,
+    "last_scanned": "2026-06-29T18:33:23.549Z"
+  },
+  "mia_chiro_3": {
+    "name": "Kendall Back & Neck Center",
+    "last_rating": null,
+    "last_reviews": null,
+    "last_scanned": "2026-06-29T18:33:27.224Z"
+  },
+  "mia_chiro_4": {
+    "name": "Doral Wellness & Chiropractic",
+    "last_rating": null,
+    "last_reviews": null,
+    "last_scanned": "2026-06-29T18:33:30.586Z"
+  },
+  "phx_dental_1": {
+    "name": "Downtown Phoenix Dental",
+    "last_rating": null,
+    "last_reviews": null,
+    "last_scanned": "2026-06-29T18:33:34.009Z"
+  },
+  "phx_dental_2": {
+    "name": "Arizona Smile Center",
+    "last_rating": null,
+    "last_reviews": null,
+    "last_scanned": "2026-06-29T18:33:37.238Z"
+  },
+  "phx_dental_3": {
+    "name": "Buckeye Dental",
+    "last_rating": null,
+    "last_reviews": null,
+    "last_scanned": "2026-06-29T18:33:40.441Z"
+  },
+  "phx_hvac_1": {
+    "name": "Chandler Cooling Masters",
+    "last_rating": null,
+    "last_reviews": null,
+    "last_scanned": "2026-06-29T18:33:43.662Z"
+  },
+  "phx_hvac_2": {
+    "name": "Peoria AC & Heating Co",
+    "last_rating": null,
+    "last_reviews": null,
+    "last_scanned": "2026-06-29T18:33:46.910Z"
+  },
+  "phx_chiro_1": {
+    "name": "Cave Creek Chiropractic",
+    "last_rating": null,
+    "last_reviews": null,
+    "last_scanned": "2026-06-29T18:33:51.193Z"
+  },
+  "phx_chiro_2": {
+    "name": "Glendale Chiropractic & Wellness",
+    "last_rating": null,
+    "last_reviews": null,
+    "last_scanned": "2026-06-29T18:33:54.994Z"
+  },
+  "phx_chiro_3": {
+    "name": "Mesa Spine & Rehab",
+    "last_rating": null,
+    "last_reviews": null,
+    "last_scanned": "2026-06-29T18:33:58.591Z"
+  }
+}

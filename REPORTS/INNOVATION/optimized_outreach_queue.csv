@@ -1,0 +1,110 @@
+id,email,business_name,business_type,city,priority
+rt-b4-18,drckrahldc@gmail.com,Cave Creek Chiropractic,Chiropractic,Cave Creek,1,HIGH
+gm-chiro-phx-03,info@chandlerbackcare.com,Chandler Back Care,Chiropractic,Chandler,1,HIGH
+gm-chiro-mia-02,info@coralgablesspine.com,Coral Gables Spine Center,Chiropractic,Coral Gables,1,HIGH
+rt-mia-ch-02,Coral Gables,Coral Way Chiropractic,Chiropractic,Coral Gables,1,HIGH
+rt-b4-12,info@doralwellness.com,Doral Wellness & Chiropractic,Chiropractic,Doral,1,HIGH
+nd-gl-001,info@glendalechirowellness.com,Glendale Chiropractic & Wellness,Chiropractic,Glendale,1,HIGH
+nd-gl-002,info@glendalespinecenter.com,Glendale Spine Center,Chiropractic,Glendale,1,HIGH
+rt-b4-19,info@glendalechirowellness.com,Glendale Chiropractic & Wellness,Chiropractic,Glendale,1,HIGH
+rt-mia-ch-03,Hialeah,Hialeah Back Pain Center,Chiropractic,Hialeah,1,HIGH
+nd-ke-001,info@kendallbackneck.com,Kendall Back & Neck Center,Chiropractic,Kendall,1,HIGH
+nd-ke-002,info@kendallspine.com,Kendall Spine Specialists,Chiropractic,Kendall,1,HIGH
+rt-b4-09,info@kendallwellnesscenter.com,Kendall Wellness Center,Chiropractic,Kendall,1,HIGH
+rt-b4-11,info@kendallbackneck.com,Kendall Back & Neck Center,Chiropractic,Kendall,1,HIGH
+rt-mia-ch-01,Key Biscayne,Key Biscayne Chiropractic,Chiropractic,Key Biscayne,1,HIGH
+gm-chiro-phx-04,info@mesafamilychiro.com,Mesa Family Chiropractic,Chiropractic,Mesa,1,HIGH
+nd-me-001,info@mesafamilywellnesschiro.com,Mesa Family Wellness Chiropractic,Chiropractic,Mesa,1,HIGH
+nd-me-002,info@mesaspinerehab.com,Mesa Spine & Rehab,Chiropractic,Mesa,1,HIGH
+rt-b4-20,info@mesaspinerehab.com,Mesa Spine & Rehab,Chiropractic,Mesa,1,HIGH
+ng-exp-0168,info@pinecrestwellnesscenter.com,Pinecrest Wellness Center,Chiropractic,Miami,1,HIGH
+gm-chiro-mia-01,info@miamichiropractic.com,Miami Wellness Chiropractic,Chiropractic,Miami,1,HIGH
+rt-b4-10,info@miamispinecenter.com,Miami Spine & Injury Center,Chiropractic,Miami,1,HIGH
+gm-chiro-mia-03,info@southbeachchiro.com,South Beach Chiropractic,Chiropractic,Miami Beach,1,HIGH
+rt-mia-ch-04,North Miami,North Miami Rehab & Chiropractic,Chiropractic,North Miami,1,HIGH
+ng-exp-0182,drckrahldc@gmail.com,Cave Creek Chiropractic,Chiropractic,Phoenix,1,HIGH
+ng-exp-0200,hello@chandlerwellnesscenter.com,Chandler Wellness Center,Chiropractic,Phoenix,1,HIGH
+gm-chiro-phx-01,info@phxspinewellness.com,Phoenix Spine & Wellness,Chiropractic,Phoenix,1,HIGH
+rt-phx-ch-01,Phoenix,Phoenix Spine & Wellness,Chiropractic,Phoenix,1,HIGH
+gm-chiro-phx-02,info@scottsdalechiro.com,Scottsdale Chiropractic Center,Chiropractic,Scottsdale,1,HIGH
+rt-phx-ch-02,Surprise,Surprise Chiropractic,Chiropractic,Surprise,1,HIGH
+gm-chiro-phx-05,info@tempechiro.com,Tempe Chiropractic Clinic,Chiropractic,Tempe,1,HIGH
+rt-b4-15,info@buckeyedental.com,Buckeye Dental,Cosmetic Dentistry,Buckeye,1,HIGH
+gm-cosm-phx-03,info@chandlerdentalaesthetics.com,Chandler Dental Aesthetics,Cosmetic Dentistry,Chandler,1,HIGH
+nd-cg-001,info@dentalcosmeticspa.com,Dental Cosmetic Spa,Cosmetic Dentistry,Coral Gables,1,HIGH
+nd-cg-002,info@gablesperfectsmile.com,Gables Perfect Smile,Cosmetic Dentistry,Coral Gables,1,HIGH
+nd-cg-003,info@gablesismile.com,Gables iSmile,Cosmetic Dentistry,Coral Gables,1,HIGH
+nd-cg-004,info@gablessedation.com,Gables Sedation & Family Dentistry,Cosmetic Dentistry,Coral Gables,1,HIGH
+rt-b4-02,info@cutlerbaydental.com,Cutler Bay Dental,Cosmetic Dentistry,Cutler Bay,1,HIGH
+nd-gi-001,info@gilbertdentalaesthetics.com,Gilbert Dental Aesthetics,Cosmetic Dentistry,Gilbert,1,HIGH
+nd-gi-002,info@gilbertsmilestudio.com,Gilbert Smile Studio,Cosmetic Dentistry,Gilbert,1,HIGH
+rt-b4-03,info@homesteadcosmeticdentistry.com,Homestead Cosmetic Dentistry,Cosmetic Dentistry,Homestead,1,HIGH
+gm-cosm-phx-05,info@mesadentalarts.com,Mesa Dental Arts,Cosmetic Dentistry,Mesa,1,HIGH
+ng-exp-0004,info@hqdontics.com,Brickell Cosmetic Dentist,Cosmetic Dentistry,Miami,1,HIGH
+ng-exp-0026,support@citydental.com,North Miami Beach Dental,Cosmetic Dentistry,Miami,1,HIGH
+ng-exp-0028,uppereastsidedentist@rcn.com,Upper East Side Dental,Cosmetic Dentistry,Miami,1,HIGH
+gm-cosm-mia-01,info@miami-sedation-cosmetic-dentistry.com,Miami Sedation & Cosmetic Dentistry,Cosmetic Dentistry,Miami,1,HIGH
+gm-cosm-mia-02,info@high-cosmetic-dentist.com,High Cosmetic Dentist,Cosmetic Dentistry,Miami,1,HIGH
+gm-cosm-mia-03,info@my-smile-miami.com,My Smile Miami,Cosmetic Dentistry,Miami,1,HIGH
+gm-cosm-mia-04,info@royal-dentistry-studio.com,Royal Dentistry Studio,Cosmetic Dentistry,Miami,1,HIGH
+gm-cosm-mia-05,info@biscayne-dental-facial-aesthetics.com,Biscayne Dental & Facial Aesthetics,Cosmetic Dentistry,Miami,1,HIGH
+gm-cosm-mia-06,info@miami-center-for-cosmetic-implant-dentistry.com,Miami Center for Cosmetic & Implant Dentistry,Cosmetic Dentistry,Miami,1,HIGH
+rt-mia-cd-01,Miami,Biscayne Dental & Facial Aesthetics,Cosmetic Dentistry,Miami,1,HIGH
+rt-mia-cd-02,Miami,Royal Dentistry Studio,Cosmetic Dentistry,Miami,1,HIGH
+rt-mia-cd-03,Miami,High Cosmetic Dentist,Cosmetic Dentistry,Miami,1,HIGH
+rt-mia-cd-04,Miami,My Smile Miami,Cosmetic Dentistry,Miami,1,HIGH
+nd-mb-001,info@miamibeachdentalstudio.com,Miami Beach Dental Studio,Cosmetic Dentistry,Miami Beach,1,HIGH
+nd-mb-002,info@southbeachsmiledesign.com,South Beach Smile Design,Cosmetic Dentistry,Miami Beach,1,HIGH
+rt-b4-01,info@miamibeachdental.com,Miami Beach Dental,Cosmetic Dentistry,Miami Beach,1,HIGH
+ng-exp-0081,dtphxdental@gmail.com,Downtown Phoenix Dental,Cosmetic Dentistry,Phoenix,1,HIGH
+gm-cosm-phx-01,info@phxcosmeticdentistry.com,Phoenix Cosmetic Dentistry,Cosmetic Dentistry,Phoenix,1,HIGH
+rt-phx-cd-01,Phoenix,Biltmore Cosmetic & Restorative Dentistry,Cosmetic Dentistry,Phoenix,1,HIGH
+rt-phx-cd-02,Phoenix,Harris Dental,Cosmetic Dentistry,Phoenix,1,HIGH
+rt-phx-cd-03,Phoenix,Radiant Smiles Phoenix,Cosmetic Dentistry,Phoenix,1,HIGH
+rt-b4-13,dtphxdental@gmail.com,Downtown Phoenix Dental,Cosmetic Dentistry,Phoenix,1,HIGH
+rt-b4-14,info@arizonasmilecenter.com,Arizona Smile Center,Cosmetic Dentistry,Phoenix,1,HIGH
+gm-cosm-phx-02,info@scottsdalesmiledesign.com,Scottsdale Smile Design,Cosmetic Dentistry,Scottsdale,1,HIGH
+nd-sc-001,info@scottsdalesmileboutique.com,Scottsdale Smile Boutique,Cosmetic Dentistry,Scottsdale,1,HIGH
+nd-sc-002,info@oldtowncosmeticdentistry.com,Old Town Cosmetic Dentistry,Cosmetic Dentistry,Scottsdale,1,HIGH
+gm-cosm-phx-04,info@tempecosmeticdentist.com,Tempe Cosmetic Dentist,Cosmetic Dentistry,Tempe,1,HIGH
+nd-br-001,info@coolbrickellac.com,Cool Brickell Air Conditioning,HVAC,Brickell,1,HIGH
+nd-br-002,info@brickellacrepair.com,Brickell Air Conditioning Repair,HVAC,Brickell,1,HIGH
+nd-br-003,info@hvacmechanicalmiami.com,HVAC Mechanical Miami,HVAC,Brickell,1,HIGH
+nd-br-004,eddy@coolsolutionservices.com,Cool Solution Services,HVAC,Brickell,1,HIGH
+nd-br-005,Walter-Salamanques-@Alfresco-Air-002-scaled.jpg,Alfresco Air,HVAC,Brickell,1,HIGH
+nd-br-006,info@reliableacrefrigeration.com,Reliable Air Conditioning Refrigeration,HVAC,Brickell,1,HIGH
+nd-br-007,info@acsolutionrg.com,AC Solution RG Corp,HVAC,Brickell,1,HIGH
+rt-mia-hv-01,Brickell,Cool Brickell Air Conditioning,HVAC,Brickell,1,HIGH
+rt-mia-hv-03,Brickell,Brickell Air Conditioning Repair,HVAC,Brickell,1,HIGH
+gm-hvac-phx-02,info@chandlerhvac.com,Chandler Heating & Cooling,HVAC,Chandler,1,HIGH
+nd-ch-001,info@chandlercoolingmasters.com,Chandler Cooling Masters,HVAC,Chandler,1,HIGH
+nd-ch-002,info@chandleracsolutions.com,Chandler AC Solutions,HVAC,Chandler,1,HIGH
+rt-b4-16,info@chandlercoolingmasters.com,Chandler Cooling Masters,HVAC,Chandler,1,HIGH
+nd-do-001,info@doralacrepair.com,Doral AC Repair,HVAC,Doral,1,HIGH
+nd-do-002,info@doralcooling.com,Doral Cooling & Heating,HVAC,Doral,1,HIGH
+gm-hvac-mia-04,info@browardacservices.com,Broward AC Services,HVAC,Fort Lauderdale,1,HIGH
+gm-hvac-phx-06,info@glendaleac.com,Glendale AC Services,HVAC,Glendale,1,HIGH
+gm-hvac-phx-04,info@mesahvac.com,Mesa HVAC Services,HVAC,Mesa,1,HIGH
+gm-mia-001,Palmettobayac@comcast.net,Palmetto Bay AC,HVAC,Miami,1,HIGH
+gm-hvac-mia-01,info@coolairmiami.com,Cool Air Miami,HVAC,Miami,1,HIGH
+gm-hvac-mia-02,info@miamiacrepairpros.com,Miami AC Repair Pros,HVAC,Miami,1,HIGH
+gm-hvac-mia-03,info@southfloridacooling.com,South Florida Cooling,HVAC,Miami,1,HIGH
+rt-mia-hv-02,Miami,Alfresco Air,HVAC,Miami,1,HIGH
+rt-b4-05,info@flowtechac.com,Flow-Tech Air Conditioning Corp.,HVAC,Miami,1,HIGH
+rt-b4-06,info@bestpriceminisplits.com,Best Price Mini Splits Miami,HVAC,Miami,1,HIGH
+rt-b4-07,info@directacmiami.com,Direct Air Conditioning,HVAC,Miami,1,HIGH
+rt-b4-08,info@acsolutionrg.com,AC Solution RG Corp,HVAC,Miami,1,HIGH
+rt-mia-hv-04,Miami Beach,South Beach AC Repair,HVAC,Miami Beach,1,HIGH
+rt-b4-04,Palmettobayac@comcast.net,Palmetto Bay AC,HVAC,Palmetto Bay,1,HIGH
+nd-pe-001,info@peoriaacandheating.com,Peoria AC & Heating Co,HVAC,Peoria,1,HIGH
+nd-pe-002,info@peoriacoolingexperts.com,Peoria Cooling Experts,HVAC,Peoria,1,HIGH
+rt-b4-17,info@peoriaacandheating.com,Peoria AC & Heating Co,HVAC,Peoria,1,HIGH
+ng-exp-0118,605a7baede844d278b89dc95ae0a9123@sentry-next.wixpress.com,Sun City HVAC,HVAC,Phoenix,1,HIGH
+gm-hvac-phx-01,info@phxacrepair.com,Phoenix AC Repair,HVAC,Phoenix,1,HIGH
+rt-phx-hv-01,Phoenix,Heating Maintenance Pros,HVAC,Phoenix,1,HIGH
+rt-phx-hv-02,Phoenix,Desert Diamond Air Cooling & Heating,HVAC,Phoenix,1,HIGH
+gm-hvac-phx-03,info@scottsdaleac.com,Scottsdale Air Conditioning,HVAC,Scottsdale,1,HIGH
+rt-phx-hv-03,Scottsdale,Scottsdale Air Heating & Cooling,HVAC,Scottsdale,1,HIGH
+gm-hvac-phx-05,info@surprisehvac.com,Surprise Cooling & Heating,HVAC,Surprise,1,HIGH
+nd-te-001,info@tempehvacservices.com,Tempe HVAC Services,HVAC,Tempe,1,HIGH
+nd-te-002,info@tempeac.com,Tempe Air Conditioning,HVAC,Tempe,1,HIGH

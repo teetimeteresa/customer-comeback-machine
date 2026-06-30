@@ -1,0 +1,226 @@
+[
+  {
+    "business_type": "Auto",
+    "count": 155
+  },
+  {
+    "business_type": "BAKERY",
+    "count": 460
+  },
+  {
+    "business_type": "Bakery",
+    "count": 14840
+  },
+  {
+    "business_type": "Barbershop",
+    "count": 3250
+  },
+  {
+    "business_type": "Boutique",
+    "count": 14848
+  },
+  {
+    "business_type": "CAFE",
+    "count": 670
+  },
+  {
+    "business_type": "COFFEE",
+    "count": 488
+  },
+  {
+    "business_type": "Cafe",
+    "count": 14558
+  },
+  {
+    "business_type": "Chiropractor",
+    "count": 2000
+  },
+  {
+    "business_type": "Coffee",
+    "count": 139
+  },
+  {
+    "business_type": "Coffee Shop",
+    "count": 126
+  },
+  {
+    "business_type": "Dealer In Products For The Disabled",
+    "count": 4
+  },
+  {
+    "business_type": "Debt Collection Agency",
+    "count": 1
+  },
+  {
+    "business_type": "Downtown Retailer",
+    "count": 120
+  },
+  {
+    "business_type": "Electronic & Home Appliance Service Dealer",
+    "count": 5
+  },
+  {
+    "business_type": "Electronic Cigarette Dealer",
+    "count": 18
+  },
+  {
+    "business_type": "Electronics Store",
+    "count": 29
+  },
+  {
+    "business_type": "Family Dentistry",
+    "count": 30327
+  },
+  {
+    "business_type": "Fitness Studio",
+    "count": 128
+  },
+  {
+    "business_type": "Florist",
+    "count": 119
+  },
+  {
+    "business_type": "Garage & Parking Lot",
+    "count": 1
+  },
+  {
+    "business_type": "Gift Shop",
+    "count": 125
+  },
+  {
+    "business_type": "HVAC Maintenance",
+    "count": 1000
+  },
+  {
+    "business_type": "Home Improvement Contractor",
+    "count": 6
+  },
+  {
+    "business_type": "Industrial Laundry Delivery",
+    "count": 1
+  },
+  {
+    "business_type": "Local Service",
+    "count": 120
+  },
+  {
+    "business_type": "Med Spa",
+    "count": 30490
+  },
+  {
+    "business_type": "Optical",
+    "count": 15303
+  },
+  {
+    "business_type": "Optical Shop",
+    "count": 220
+  },
+  {
+    "business_type": "Orthodontist",
+    "count": 10700
+  },
+  {
+    "business_type": "PASTRY",
+    "count": 38
+  },
+  {
+    "business_type": "Pest Control",
+    "count": 5000
+  },
+  {
+    "business_type": "Pet",
+    "count": 158
+  },
+  {
+    "business_type": "Pet Groomer",
+    "count": 1000
+  },
+  {
+    "business_type": "Photographer",
+    "count": 121
+  },
+  {
+    "business_type": "Pool Maintenance",
+    "count": 1300
+  },
+  {
+    "business_type": "SWEETS",
+    "count": 51
+  },
+  {
+    "business_type": "Salon",
+    "count": 14864
+  },
+  {
+    "business_type": "Secondhand Dealer - Auto",
+    "count": 2
+  },
+  {
+    "business_type": "Secondhand Dealer - General",
+    "count": 27
+  },
+  {
+    "business_type": "Specialty Hair Salon",
+    "count": 1000
+  },
+  {
+    "business_type": "Stoop Line Stand",
+    "count": 18
+  },
+  {
+    "business_type": "Test",
+    "count": 3
+  },
+  {
+    "business_type": "Tobacco Retail Dealer",
+    "count": 181
+  },
+  {
+    "business_type": "Veterinary Clinic",
+    "count": 1000
+  },
+  {
+    "business_type": "Yoga",
+    "count": 120
+  },
+  {
+    "business_type": "Yoga Studio",
+    "count": 2000
+  },
+  {
+    "business_type": "bakery",
+    "count": 41
+  },
+  {
+    "business_type": "boutique",
+    "count": 120
+  },
+  {
+    "business_type": "coffee_shop",
+    "count": 364
+  },
+  {
+    "business_type": "downtown_retailer",
+    "count": 9
+  },
+  {
+    "business_type": "florist",
+    "count": 31
+  },
+  {
+    "business_type": "gift_shop",
+    "count": 117
+  },
+  {
+    "business_type": "local_service",
+    "count": 18
+  },
+  {
+    "business_type": "med_spa",
+    "count": 10
+  },
+  {
+    "business_type": "salon",
+    "count": 1
+  }
+]

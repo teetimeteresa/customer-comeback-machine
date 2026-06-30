@@ -1,0 +1,837 @@
+{
+  "generatedAt": "2026-06-11T15:22:53.481Z",
+  "totalProspects": 50,
+  "highPriority": 1,
+  "mediumPriority": 20,
+  "lowPriority": 29,
+  "leads": [
+    {
+      "business": "Austin Med Spa",
+      "city": "Austin",
+      "niche": "Med Spa",
+      "rating": 3.8,
+      "opportunityScore": 90,
+      "priority": "🔵 HIGH",
+      "signals": [
+        "Rating 3.8 — may benefit from automated review generation",
+        "2 recent review(s) mentioning communication/follow-up",
+        "  ↳ Internal note only: feedback pattern identified",
+        "  ↳ Internal note only: feedback pattern identified",
+        "Multiple instances — may indicate an opportunity for improvement",
+        "Low review reply rate (20%) — opportunity to engage with reviewers",
+        "Fewer reviews recently — may indicate declining repeat visits",
+        "12 nearby competitors — retention is key"
+      ],
+      "dmSequence": {
+        "dm1": "Hey Austin! 👋 I run Customer Comeback Machine — we help med spa owners automate their patient recall. Quick question — do you have any system for following up with customers after their visit, or is it all manual?",
+        "dm2": "Hey Austin! Following up — I built a free calculator that shows how much med spa practices lose when customers don't come back. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌"
+      }
+    },
+    {
+      "business": "It's A Secret Med Spa - Austin",
+      "city": "Austin",
+      "niche": "Med Spa",
+      "rating": 4.56695723685663,
+      "opportunityScore": 55,
+      "priority": "🟡 MEDIUM",
+      "signals": [
+        "1 recent review(s) mentioning communication/follow-up",
+        "  ↳ Internal note only: feedback pattern identified",
+        "Low review reply rate (20%) — opportunity to engage with reviewers",
+        "Fewer reviews recently — may indicate declining repeat visits",
+        "10 nearby competitors — retention is key"
+      ],
+      "dmSequence": {
+        "dm1": "Hey It's! 👋 I run Customer Comeback Machine — we help med spa owners automate their patient recall. Quick question — do you have any system for following up with customers after their visit, or is it all manual?",
+        "dm2": "Hey It's! Following up — I built a free calculator that shows how much med spa practices lose when customers don't come back. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌"
+      }
+    },
+    {
+      "business": "Metrolina Medical Associates",
+      "city": "Charlotte",
+      "niche": "Med Spa",
+      "rating": 4.383711884075678,
+      "opportunityScore": 55,
+      "priority": "🟡 MEDIUM",
+      "signals": [
+        "1 recent review(s) mentioning communication/follow-up",
+        "  ↳ Internal note only: feedback pattern identified",
+        "Low review reply rate (1%) — opportunity to engage with reviewers",
+        "Fewer reviews recently — may indicate declining repeat visits",
+        "14 nearby competitors — retention is key"
+      ],
+      "dmSequence": {
+        "dm1": "Hey Metrolina! 👋 I run Customer Comeback Machine — we help med spa owners automate their patient recall. Quick question — do you have any system for following up with customers after their visit, or is it all manual?",
+        "dm2": "Hey Metrolina! Following up — I built a free calculator that shows how much med spa practices lose when customers don't come back. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌"
+      }
+    },
+    {
+      "business": "SW Austin Dental",
+      "city": "Austin",
+      "niche": "Dental",
+      "rating": 4.422849573787563,
+      "opportunityScore": 55,
+      "priority": "🟡 MEDIUM",
+      "signals": [
+        "1 recent review(s) mentioning communication/follow-up",
+        "  ↳ Internal note only: feedback pattern identified",
+        "Low review reply rate (19%) — opportunity to engage with reviewers",
+        "Fewer reviews recently — may indicate declining repeat visits",
+        "11 nearby competitors — retention is key"
+      ],
+      "dmSequence": {
+        "dm1": "Hey SW! 👋 I run Customer Comeback Machine — we help dental owners automate their patient recall. Quick question — do you have any system for following up with customers after their visit, or is it all manual?",
+        "dm2": "Hey SW! Following up — I built a free calculator that shows how much dental practices lose when customers don't come back. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌"
+      }
+    },
+    {
+      "business": "Pearl. Dentistry Reimagined",
+      "city": "Charlotte",
+      "niche": "Dental",
+      "rating": 4.0151023021813534,
+      "opportunityScore": 55,
+      "priority": "🟡 MEDIUM",
+      "signals": [
+        "1 recent review(s) mentioning communication/follow-up",
+        "  ↳ Internal note only: feedback pattern identified",
+        "Low review reply rate (3%) — opportunity to engage with reviewers",
+        "Fewer reviews recently — may indicate declining repeat visits",
+        "16 nearby competitors — retention is key"
+      ],
+      "dmSequence": {
+        "dm1": "Hey Pearl.! 👋 I run Customer Comeback Machine — we help dental owners automate their patient recall. Quick question — do you have any system for following up with customers after their visit, or is it all manual?",
+        "dm2": "Hey Pearl.! Following up — I built a free calculator that shows how much dental practices lose when customers don't come back. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌"
+      }
+    },
+    {
+      "business": "Modmutt",
+      "city": "Austin",
+      "niche": "Pet Grooming",
+      "rating": 4.95453788068518,
+      "opportunityScore": 55,
+      "priority": "🟡 MEDIUM",
+      "signals": [
+        "1 recent review(s) mentioning communication/follow-up",
+        "  ↳ Internal note only: feedback pattern identified",
+        "Low review reply rate (14%) — opportunity to engage with reviewers",
+        "Fewer reviews recently — may indicate declining repeat visits",
+        "15 nearby competitors — retention is key"
+      ],
+      "dmSequence": {
+        "dm1": "Hey Modmutt! 👋 I run Customer Comeback Machine — we help pet grooming owners automate their patient recall. Quick question — do you have any system for following up with customers after their visit, or is it all manual?",
+        "dm2": "Hey Modmutt! Following up — I built a free calculator that shows how much pet grooming practices lose when customers don't come back. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌"
+      }
+    },
+    {
+      "business": "Lucky Dog Bark & Brew",
+      "city": "Charlotte",
+      "niche": "Pet Grooming",
+      "rating": 4.7827085567849394,
+      "opportunityScore": 55,
+      "priority": "🟡 MEDIUM",
+      "signals": [
+        "1 recent review(s) mentioning communication/follow-up",
+        "  ↳ Internal note only: feedback pattern identified",
+        "Low review reply rate (22%) — opportunity to engage with reviewers",
+        "Fewer reviews recently — may indicate declining repeat visits",
+        "14 nearby competitors — retention is key"
+      ],
+      "dmSequence": {
+        "dm1": "Hey Lucky! 👋 I run Customer Comeback Machine — we help pet grooming owners automate their patient recall. Quick question — do you have any system for following up with customers after their visit, or is it all manual?",
+        "dm2": "Hey Lucky! Following up — I built a free calculator that shows how much pet grooming practices lose when customers don't come back. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌"
+      }
+    },
+    {
+      "business": "Skin Envy Austin- South",
+      "city": "Austin",
+      "niche": "Med Spa",
+      "rating": 4.464166555489696,
+      "opportunityScore": 50,
+      "priority": "🟡 MEDIUM",
+      "signals": [
+        "1 recent review(s) mentioning communication/follow-up",
+        "  ↳ Internal note only: feedback pattern identified",
+        "Low review reply rate (23%) — opportunity to engage with reviewers",
+        "Fewer reviews recently — may indicate declining repeat visits"
+      ],
+      "dmSequence": {
+        "dm1": "Hey Skin! 👋 I run Customer Comeback Machine — we help med spa owners automate their patient recall. Quick question — do you have any system for following up with customers after their visit, or is it all manual?",
+        "dm2": "Hey Skin! Following up — I built a free calculator that shows how much med spa practices lose when customers don't come back. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌"
+      }
+    },
+    {
+      "business": "Symmetria MedSpa",
+      "city": "Austin",
+      "niche": "Med Spa",
+      "rating": 4.9550912797300155,
+      "opportunityScore": 50,
+      "priority": "🟡 MEDIUM",
+      "signals": [
+        "1 recent review(s) mentioning communication/follow-up",
+        "  ↳ Internal note only: feedback pattern identified",
+        "Low review reply rate (16%) — opportunity to engage with reviewers",
+        "Fewer reviews recently — may indicate declining repeat visits"
+      ],
+      "dmSequence": {
+        "dm1": "Hey Symmetria! 👋 I run Customer Comeback Machine — we help med spa owners automate their patient recall. Quick question — do you have any system for following up with customers after their visit, or is it all manual?",
+        "dm2": "Hey Symmetria! Following up — I built a free calculator that shows how much med spa practices lose when customers don't come back. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌"
+      }
+    },
+    {
+      "business": "Lineberger Dentistry",
+      "city": "Charlotte",
+      "niche": "Dental",
+      "rating": 4.844835741148168,
+      "opportunityScore": 45,
+      "priority": "🟡 MEDIUM",
+      "signals": [
+        "1 recent review(s) mentioning communication/follow-up",
+        "  ↳ Internal note only: feedback pattern identified",
+        "Low review reply rate (15%) — opportunity to engage with reviewers",
+        "15 nearby competitors — retention is key"
+      ],
+      "dmSequence": {
+        "dm1": "Hey Lineberger! 👋 I run Customer Comeback Machine — we help dental owners automate their patient recall. Quick question — do you have any system for following up with customers after their visit, or is it all manual?",
+        "dm2": "Hey Lineberger! Following up — I built a free calculator that shows how much dental practices lose when customers don't come back. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌"
+      }
+    },
+    {
+      "business": "Muse Medspa",
+      "city": "Austin",
+      "niche": "Med Spa",
+      "rating": 4.26420679675828,
+      "opportunityScore": 40,
+      "priority": "🟡 MEDIUM",
+      "signals": [
+        "1 recent review(s) mentioning communication/follow-up",
+        "  ↳ Internal note only: feedback pattern identified",
+        "Low review reply rate (24%) — opportunity to engage with reviewers"
+      ],
+      "dmSequence": {
+        "dm1": "Hey Muse! 👋 I run Customer Comeback Machine — we help med spa owners automate their patient recall. Quick question — do you have any system for following up with customers after their visit, or is it all manual?",
+        "dm2": "Hey Muse! Following up — I built a free calculator that shows how much med spa practices lose when customers don't come back. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌"
+      }
+    },
+    {
+      "business": "Burrow & Welchel Orthodontics",
+      "city": "Charlotte",
+      "niche": "Dental",
+      "rating": 4.493375351283951,
+      "opportunityScore": 40,
+      "priority": "🟡 MEDIUM",
+      "signals": [
+        "1 recent review(s) mentioning communication/follow-up",
+        "  ↳ Internal note only: feedback pattern identified",
+        "Fewer reviews recently — may indicate declining repeat visits"
+      ],
+      "dmSequence": {
+        "dm1": "Hey Burrow! 👋 I run Customer Comeback Machine — we help dental owners automate their patient recall. Quick question — do you have any system for following up with customers after their visit, or is it all manual?",
+        "dm2": "Hey Burrow! Following up — I built a free calculator that shows how much dental practices lose when customers don't come back. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌"
+      }
+    },
+    {
+      "business": "Stellar Dental",
+      "city": "Charlotte",
+      "niche": "Dental",
+      "rating": 4.578380678154403,
+      "opportunityScore": 40,
+      "priority": "🟡 MEDIUM",
+      "signals": [
+        "1 recent review(s) mentioning communication/follow-up",
+        "  ↳ Internal note only: feedback pattern identified",
+        "Fewer reviews recently — may indicate declining repeat visits"
+      ],
+      "dmSequence": {
+        "dm1": "Hey Stellar! 👋 I run Customer Comeback Machine — we help dental owners automate their patient recall. Quick question — do you have any system for following up with customers after their visit, or is it all manual?",
+        "dm2": "Hey Stellar! Following up — I built a free calculator that shows how much dental practices lose when customers don't come back. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌"
+      }
+    },
+    {
+      "business": "Dirty Dog",
+      "city": "Austin",
+      "niche": "Pet Grooming",
+      "rating": 4.543814063101455,
+      "opportunityScore": 40,
+      "priority": "🟡 MEDIUM",
+      "signals": [
+        "1 recent review(s) mentioning communication/follow-up",
+        "  ↳ Internal note only: feedback pattern identified",
+        "Low review reply rate (12%) — opportunity to engage with reviewers"
+      ],
+      "dmSequence": {
+        "dm1": "Hey Dirty! 👋 I run Customer Comeback Machine — we help pet grooming owners automate their patient recall. Quick question — do you have any system for following up with customers after their visit, or is it all manual?",
+        "dm2": "Hey Dirty! Following up — I built a free calculator that shows how much pet grooming practices lose when customers don't come back. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌"
+      }
+    },
+    {
+      "business": "Bark n Purr",
+      "city": "Austin",
+      "niche": "Pet Grooming",
+      "rating": 4.444262498147155,
+      "opportunityScore": 40,
+      "priority": "🟡 MEDIUM",
+      "signals": [
+        "1 recent review(s) mentioning communication/follow-up",
+        "  ↳ Internal note only: feedback pattern identified",
+        "Low review reply rate (22%) — opportunity to engage with reviewers"
+      ],
+      "dmSequence": {
+        "dm1": "Hey Bark! 👋 I run Customer Comeback Machine — we help pet grooming owners automate their patient recall. Quick question — do you have any system for following up with customers after their visit, or is it all manual?",
+        "dm2": "Hey Bark! Following up — I built a free calculator that shows how much pet grooming practices lose when customers don't come back. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌"
+      }
+    },
+    {
+      "business": "Formula Wellness",
+      "city": "Austin",
+      "niche": "Med Spa",
+      "rating": 4.2,
+      "opportunityScore": 35,
+      "priority": "🟡 MEDIUM",
+      "signals": [
+        "1 recent review(s) mentioning communication/follow-up",
+        "  ↳ Internal note only: feedback pattern identified",
+        "15 nearby competitors — retention is key"
+      ],
+      "dmSequence": {
+        "dm1": "Hey Formula! 👋 I run Customer Comeback Machine — we help med spa owners automate their patient recall. Quick question — do you have any system for following up with customers after their visit, or is it all manual?",
+        "dm2": "Hey Formula! Following up — I built a free calculator that shows how much med spa practices lose when customers don't come back. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌"
+      }
+    },
+    {
+      "business": "Carolina Age Management Institute",
+      "city": "Charlotte",
+      "niche": "Med Spa",
+      "rating": 4.674346584427013,
+      "opportunityScore": 35,
+      "priority": "🟡 MEDIUM",
+      "signals": [
+        "1 recent review(s) mentioning communication/follow-up",
+        "  ↳ Internal note only: feedback pattern identified",
+        "13 nearby competitors — retention is key"
+      ],
+      "dmSequence": {
+        "dm1": "Hey Carolina! 👋 I run Customer Comeback Machine — we help med spa owners automate their patient recall. Quick question — do you have any system for following up with customers after their visit, or is it all manual?",
+        "dm2": "Hey Carolina! Following up — I built a free calculator that shows how much med spa practices lose when customers don't come back. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌"
+      }
+    },
+    {
+      "business": "Enamel Dentistry",
+      "city": "Austin",
+      "niche": "Dental",
+      "rating": 4.358778850568302,
+      "opportunityScore": 35,
+      "priority": "🟡 MEDIUM",
+      "signals": [
+        "1 recent review(s) mentioning communication/follow-up",
+        "  ↳ Internal note only: feedback pattern identified",
+        "13 nearby competitors — retention is key"
+      ],
+      "dmSequence": {
+        "dm1": "Hey Enamel! 👋 I run Customer Comeback Machine — we help dental owners automate their patient recall. Quick question — do you have any system for following up with customers after their visit, or is it all manual?",
+        "dm2": "Hey Enamel! Following up — I built a free calculator that shows how much dental practices lose when customers don't come back. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌"
+      }
+    },
+    {
+      "business": "BridgeView Dental",
+      "city": "Austin",
+      "niche": "Dental",
+      "rating": 4.142861108350608,
+      "opportunityScore": 35,
+      "priority": "🟡 MEDIUM",
+      "signals": [
+        "1 recent review(s) mentioning communication/follow-up",
+        "  ↳ Internal note only: feedback pattern identified",
+        "17 nearby competitors — retention is key"
+      ],
+      "dmSequence": {
+        "dm1": "Hey BridgeView! 👋 I run Customer Comeback Machine — we help dental owners automate their patient recall. Quick question — do you have any system for following up with customers after their visit, or is it all manual?",
+        "dm2": "Hey BridgeView! Following up — I built a free calculator that shows how much dental practices lose when customers don't come back. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌"
+      }
+    },
+    {
+      "business": "Cloud 9 Dental",
+      "city": "Austin",
+      "niche": "Dental",
+      "rating": 4.158832097962764,
+      "opportunityScore": 35,
+      "priority": "🟡 MEDIUM",
+      "signals": [
+        "1 recent review(s) mentioning communication/follow-up",
+        "  ↳ Internal note only: feedback pattern identified",
+        "13 nearby competitors — retention is key"
+      ],
+      "dmSequence": {
+        "dm1": "Hey Cloud! 👋 I run Customer Comeback Machine — we help dental owners automate their patient recall. Quick question — do you have any system for following up with customers after their visit, or is it all manual?",
+        "dm2": "Hey Cloud! Following up — I built a free calculator that shows how much dental practices lose when customers don't come back. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌"
+      }
+    },
+    {
+      "business": "Webb & Lin Orthodontics",
+      "city": "Charlotte",
+      "niche": "Dental",
+      "rating": 4.831410631127297,
+      "opportunityScore": 35,
+      "priority": "🟡 MEDIUM",
+      "signals": [
+        "1 recent review(s) mentioning communication/follow-up",
+        "  ↳ Internal note only: feedback pattern identified",
+        "12 nearby competitors — retention is key"
+      ],
+      "dmSequence": {
+        "dm1": "Hey Webb! 👋 I run Customer Comeback Machine — we help dental owners automate their patient recall. Quick question — do you have any system for following up with customers after their visit, or is it all manual?",
+        "dm2": "Hey Webb! Following up — I built a free calculator that shows how much dental practices lose when customers don't come back. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌"
+      }
+    },
+    {
+      "business": "Graper Cosmetic Surgery",
+      "city": "Charlotte",
+      "niche": "Med Spa",
+      "rating": 4.406809468052264,
+      "opportunityScore": 30,
+      "priority": "⚪ LOW",
+      "signals": [
+        "1 recent review(s) mentioning communication/follow-up",
+        "  ↳ Internal note only: feedback pattern identified"
+      ],
+      "dmSequence": {
+        "dm1": "Hey Graper! 👋 I run Customer Comeback Machine — we help med spa owners automate their patient recall. Quick question — do you have any system for following up with customers after their visit, or is it all manual?",
+        "dm2": "Hey Graper! Following up — I built a free calculator that shows how much med spa practices lose when customers don't come back. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌"
+      }
+    },
+    {
+      "business": "Westlake Smile Design",
+      "city": "Austin",
+      "niche": "Dental",
+      "rating": 4.083819916689837,
+      "opportunityScore": 30,
+      "priority": "⚪ LOW",
+      "signals": [
+        "1 recent review(s) mentioning communication/follow-up",
+        "  ↳ Internal note only: feedback pattern identified"
+      ],
+      "dmSequence": {
+        "dm1": "Hey Westlake! 👋 I run Customer Comeback Machine — we help dental owners automate their patient recall. Quick question — do you have any system for following up with customers after their visit, or is it all manual?",
+        "dm2": "Hey Westlake! Following up — I built a free calculator that shows how much dental practices lose when customers don't come back. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌"
+      }
+    },
+    {
+      "business": "Aesthetica MedSpa",
+      "city": "Austin",
+      "niche": "Med Spa",
+      "rating": 4.146878109663711,
+      "opportunityScore": 25,
+      "priority": "⚪ LOW",
+      "signals": [
+        "Low review reply rate (23%) — opportunity to engage with reviewers",
+        "Fewer reviews recently — may indicate declining repeat visits",
+        "16 nearby competitors — retention is key"
+      ],
+      "dmSequence": {
+        "dm1": "Hey Aesthetica! 👋 I run Customer Comeback Machine — we help med spa owners automate their patient recall. Quick question — do you have any system for following up with customers after their visit, or is it all manual?",
+        "dm2": "Hey Aesthetica! Following up — I built a free calculator that shows how much med spa practices lose when customers don't come back. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌"
+      }
+    },
+    {
+      "business": "Sky Orthodontics",
+      "city": "Charlotte",
+      "niche": "Dental",
+      "rating": 4.097912589662511,
+      "opportunityScore": 25,
+      "priority": "⚪ LOW",
+      "signals": [
+        "Low review reply rate (7%) — opportunity to engage with reviewers",
+        "Fewer reviews recently — may indicate declining repeat visits",
+        "11 nearby competitors — retention is key"
+      ],
+      "dmSequence": {
+        "dm1": "Hey Sky! 👋 I run Customer Comeback Machine — we help dental owners automate their patient recall. Quick question — do you have any system for following up with customers after their visit, or is it all manual?",
+        "dm2": "Hey Sky! Following up — I built a free calculator that shows how much dental practices lose when customers don't come back. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌"
+      }
+    },
+    {
+      "business": "Beaux Medspa",
+      "city": "Austin",
+      "niche": "Med Spa",
+      "rating": 4.818931613402178,
+      "opportunityScore": 20,
+      "priority": "⚪ LOW",
+      "signals": [
+        "Low review reply rate (26%) — opportunity to engage with reviewers",
+        "Fewer reviews recently — may indicate declining repeat visits"
+      ],
+      "dmSequence": {
+        "dm1": "Hey Beaux! 👋 I run Customer Comeback Machine — we help med spa owners automate their patient recall. Quick question — do you have any system for following up with customers after their visit, or is it all manual?",
+        "dm2": "Hey Beaux! Following up — I built a free calculator that shows how much med spa practices lose when customers don't come back. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌"
+      }
+    },
+    {
+      "business": "Walden Dental",
+      "city": "Austin",
+      "niche": "Dental",
+      "rating": 4.997401821763244,
+      "opportunityScore": 20,
+      "priority": "⚪ LOW",
+      "signals": [
+        "Low review reply rate (27%) — opportunity to engage with reviewers",
+        "Fewer reviews recently — may indicate declining repeat visits"
+      ],
+      "dmSequence": {
+        "dm1": "Hey Walden! 👋 I run Customer Comeback Machine — we help dental owners automate their patient recall. Quick question — do you have any system for following up with customers after their visit, or is it all manual?",
+        "dm2": "Hey Walden! Following up — I built a free calculator that shows how much dental practices lose when customers don't come back. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌"
+      }
+    },
+    {
+      "business": "Bubbly Paws",
+      "city": "Charlotte",
+      "niche": "Pet Grooming",
+      "rating": 4.3601325209408595,
+      "opportunityScore": 20,
+      "priority": "⚪ LOW",
+      "signals": [
+        "Low review reply rate (13%) — opportunity to engage with reviewers",
+        "Fewer reviews recently — may indicate declining repeat visits"
+      ],
+      "dmSequence": {
+        "dm1": "Hey Bubbly! 👋 I run Customer Comeback Machine — we help pet grooming owners automate their patient recall. Quick question — do you have any system for following up with customers after their visit, or is it all manual?",
+        "dm2": "Hey Bubbly! Following up — I built a free calculator that shows how much pet grooming practices lose when customers don't come back. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌"
+      }
+    },
+    {
+      "business": "Personique On The Spot",
+      "city": "Austin",
+      "niche": "Med Spa",
+      "rating": 4.7936762568116915,
+      "opportunityScore": 15,
+      "priority": "⚪ LOW",
+      "signals": [
+        "Fewer reviews recently — may indicate declining repeat visits",
+        "13 nearby competitors — retention is key"
+      ],
+      "dmSequence": {
+        "dm1": "Hey Personique! 👋 I run Customer Comeback Machine — we help med spa owners automate their patient recall. Quick question — do you have any system for following up with customers after their visit, or is it all manual?",
+        "dm2": "Hey Personique! Following up — I built a free calculator that shows how much med spa practices lose when customers don't come back. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌"
+      }
+    },
+    {
+      "business": "Evolve Medical Associates",
+      "city": "Charlotte",
+      "niche": "Med Spa",
+      "rating": 4.312259123538615,
+      "opportunityScore": 15,
+      "priority": "⚪ LOW",
+      "signals": [
+        "Low review reply rate (19%) — opportunity to engage with reviewers",
+        "16 nearby competitors — retention is key"
+      ],
+      "dmSequence": {
+        "dm1": "Hey Evolve! 👋 I run Customer Comeback Machine — we help med spa owners automate their patient recall. Quick question — do you have any system for following up with customers after their visit, or is it all manual?",
+        "dm2": "Hey Evolve! Following up — I built a free calculator that shows how much med spa practices lose when customers don't come back. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌"
+      }
+    },
+    {
+      "business": "Revitalize Medical Spa",
+      "city": "Charlotte",
+      "niche": "Med Spa",
+      "rating": 4.154187914113219,
+      "opportunityScore": 15,
+      "priority": "⚪ LOW",
+      "signals": [
+        "Low review reply rate (10%) — opportunity to engage with reviewers",
+        "14 nearby competitors — retention is key"
+      ],
+      "dmSequence": {
+        "dm1": "Hey Revitalize! 👋 I run Customer Comeback Machine — we help med spa owners automate their patient recall. Quick question — do you have any system for following up with customers after their visit, or is it all manual?",
+        "dm2": "Hey Revitalize! Following up — I built a free calculator that shows how much med spa practices lose when customers don't come back. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌"
+      }
+    },
+    {
+      "business": "Austin Orthodontic Arts",
+      "city": "Austin",
+      "niche": "Dental",
+      "rating": 4.476517437258071,
+      "opportunityScore": 15,
+      "priority": "⚪ LOW",
+      "signals": [
+        "Low review reply rate (7%) — opportunity to engage with reviewers",
+        "15 nearby competitors — retention is key"
+      ],
+      "dmSequence": {
+        "dm1": "Hey Austin! 👋 I run Customer Comeback Machine — we help dental owners automate their patient recall. Quick question — do you have any system for following up with customers after their visit, or is it all manual?",
+        "dm2": "Hey Austin! Following up — I built a free calculator that shows how much dental practices lose when customers don't come back. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌"
+      }
+    },
+    {
+      "business": "Luv Braces",
+      "city": "Austin",
+      "niche": "Dental",
+      "rating": 4.679119339577642,
+      "opportunityScore": 15,
+      "priority": "⚪ LOW",
+      "signals": [
+        "Low review reply rate (15%) — opportunity to engage with reviewers",
+        "16 nearby competitors — retention is key"
+      ],
+      "dmSequence": {
+        "dm1": "Hey Luv! 👋 I run Customer Comeback Machine — we help dental owners automate their patient recall. Quick question — do you have any system for following up with customers after their visit, or is it all manual?",
+        "dm2": "Hey Luv! Following up — I built a free calculator that shows how much dental practices lose when customers don't come back. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌"
+      }
+    },
+    {
+      "business": "Central Texas Orthodontics",
+      "city": "Austin",
+      "niche": "Dental",
+      "rating": 4.395684708671505,
+      "opportunityScore": 15,
+      "priority": "⚪ LOW",
+      "signals": [
+        "Fewer reviews recently — may indicate declining repeat visits",
+        "13 nearby competitors — retention is key"
+      ],
+      "dmSequence": {
+        "dm1": "Hey Central! 👋 I run Customer Comeback Machine — we help dental owners automate their patient recall. Quick question — do you have any system for following up with customers after their visit, or is it all manual?",
+        "dm2": "Hey Central! Following up — I built a free calculator that shows how much dental practices lose when customers don't come back. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌"
+      }
+    },
+    {
+      "business": "Charlotte Dental Arts",
+      "city": "Charlotte",
+      "niche": "Dental",
+      "rating": 4.7162123305981005,
+      "opportunityScore": 15,
+      "priority": "⚪ LOW",
+      "signals": [
+        "Low review reply rate (9%) — opportunity to engage with reviewers",
+        "14 nearby competitors — retention is key"
+      ],
+      "dmSequence": {
+        "dm1": "Hey Charlotte! 👋 I run Customer Comeback Machine — we help dental owners automate their patient recall. Quick question — do you have any system for following up with customers after their visit, or is it all manual?",
+        "dm2": "Hey Charlotte! Following up — I built a free calculator that shows how much dental practices lose when customers don't come back. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌"
+      }
+    },
+    {
+      "business": "South Charlotte Dentistry",
+      "city": "Charlotte",
+      "niche": "Dental",
+      "rating": 4.4002125758307065,
+      "opportunityScore": 15,
+      "priority": "⚪ LOW",
+      "signals": [
+        "Low review reply rate (18%) — opportunity to engage with reviewers",
+        "15 nearby competitors — retention is key"
+      ],
+      "dmSequence": {
+        "dm1": "Hey South! 👋 I run Customer Comeback Machine — we help dental owners automate their patient recall. Quick question — do you have any system for following up with customers after their visit, or is it all manual?",
+        "dm2": "Hey South! Following up — I built a free calculator that shows how much dental practices lose when customers don't come back. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌"
+      }
+    },
+    {
+      "business": "Charlotte Orthodontics",
+      "city": "Charlotte",
+      "niche": "Dental",
+      "rating": 4.9793059290740596,
+      "opportunityScore": 15,
+      "priority": "⚪ LOW",
+      "signals": [
+        "Low review reply rate (12%) — opportunity to engage with reviewers",
+        "12 nearby competitors — retention is key"
+      ],
+      "dmSequence": {
+        "dm1": "Hey Charlotte! 👋 I run Customer Comeback Machine — we help dental owners automate their patient recall. Quick question — do you have any system for following up with customers after their visit, or is it all manual?",
+        "dm2": "Hey Charlotte! Following up — I built a free calculator that shows how much dental practices lose when customers don't come back. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌"
+      }
+    },
+    {
+      "business": "Mud Puppies",
+      "city": "Austin",
+      "niche": "Pet Grooming",
+      "rating": 4.5386345517316204,
+      "opportunityScore": 15,
+      "priority": "⚪ LOW",
+      "signals": [
+        "Low review reply rate (13%) — opportunity to engage with reviewers",
+        "13 nearby competitors — retention is key"
+      ],
+      "dmSequence": {
+        "dm1": "Hey Mud! 👋 I run Customer Comeback Machine — we help pet grooming owners automate their patient recall. Quick question — do you have any system for following up with customers after their visit, or is it all manual?",
+        "dm2": "Hey Mud! Following up — I built a free calculator that shows how much pet grooming practices lose when customers don't come back. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌"
+      }
+    },
+    {
+      "business": "Paws on Chicon",
+      "city": "Austin",
+      "niche": "Pet Grooming",
+      "rating": 4.921522628901574,
+      "opportunityScore": 15,
+      "priority": "⚪ LOW",
+      "signals": [
+        "Low review reply rate (19%) — opportunity to engage with reviewers",
+        "17 nearby competitors — retention is key"
+      ],
+      "dmSequence": {
+        "dm1": "Hey Paws! 👋 I run Customer Comeback Machine — we help pet grooming owners automate their patient recall. Quick question — do you have any system for following up with customers after their visit, or is it all manual?",
+        "dm2": "Hey Paws! Following up — I built a free calculator that shows how much pet grooming practices lose when customers don't come back. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌"
+      }
+    },
+    {
+      "business": "Club Fetch",
+      "city": "Charlotte",
+      "niche": "Pet Grooming",
+      "rating": 4.638263679335606,
+      "opportunityScore": 15,
+      "priority": "⚪ LOW",
+      "signals": [
+        "Low review reply rate (14%) — opportunity to engage with reviewers",
+        "16 nearby competitors — retention is key"
+      ],
+      "dmSequence": {
+        "dm1": "Hey Club! 👋 I run Customer Comeback Machine — we help pet grooming owners automate their patient recall. Quick question — do you have any system for following up with customers after their visit, or is it all manual?",
+        "dm2": "Hey Club! Following up — I built a free calculator that shows how much pet grooming practices lose when customers don't come back. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌"
+      }
+    },
+    {
+      "business": "Wagging Tails",
+      "city": "Charlotte",
+      "niche": "Pet Grooming",
+      "rating": 4.8580220153953935,
+      "opportunityScore": 15,
+      "priority": "⚪ LOW",
+      "signals": [
+        "Fewer reviews recently — may indicate declining repeat visits",
+        "17 nearby competitors — retention is key"
+      ],
+      "dmSequence": {
+        "dm1": "Hey Wagging! 👋 I run Customer Comeback Machine — we help pet grooming owners automate their patient recall. Quick question — do you have any system for following up with customers after their visit, or is it all manual?",
+        "dm2": "Hey Wagging! Following up — I built a free calculator that shows how much pet grooming practices lose when customers don't come back. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌"
+      }
+    },
+    {
+      "business": "Saluja Cosmetic and Laser Center",
+      "city": "Charlotte",
+      "niche": "Med Spa",
+      "rating": 4.191746272467808,
+      "opportunityScore": 10,
+      "priority": "⚪ LOW",
+      "signals": [
+        "Low review reply rate (28%) — opportunity to engage with reviewers"
+      ],
+      "dmSequence": {
+        "dm1": "Hey Saluja! 👋 I run Customer Comeback Machine — we help med spa owners automate their patient recall. Quick question — do you have any system for following up with customers after their visit, or is it all manual?",
+        "dm2": "Hey Saluja! Following up — I built a free calculator that shows how much med spa practices lose when customers don't come back. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌"
+      }
+    },
+    {
+      "business": "SkinSpirit Charlotte",
+      "city": "Charlotte",
+      "niche": "Med Spa",
+      "rating": 4.1855207734620965,
+      "opportunityScore": 10,
+      "priority": "⚪ LOW",
+      "signals": [
+        "Low review reply rate (19%) — opportunity to engage with reviewers"
+      ],
+      "dmSequence": {
+        "dm1": "Hey SkinSpirit! 👋 I run Customer Comeback Machine — we help med spa owners automate their patient recall. Quick question — do you have any system for following up with customers after their visit, or is it all manual?",
+        "dm2": "Hey SkinSpirit! Following up — I built a free calculator that shows how much med spa practices lose when customers don't come back. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌"
+      }
+    },
+    {
+      "business": "Austin Dental Spa",
+      "city": "Austin",
+      "niche": "Dental",
+      "rating": 4.782812028439099,
+      "opportunityScore": 10,
+      "priority": "⚪ LOW",
+      "signals": [
+        "Fewer reviews recently — may indicate declining repeat visits"
+      ],
+      "dmSequence": {
+        "dm1": "Hey Austin! 👋 I run Customer Comeback Machine — we help dental owners automate their patient recall. Quick question — do you have any system for following up with customers after their visit, or is it all manual?",
+        "dm2": "Hey Austin! Following up — I built a free calculator that shows how much dental practices lose when customers don't come back. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌"
+      }
+    },
+    {
+      "business": "Viva Day Spa + Med Spa",
+      "city": "Austin",
+      "niche": "Med Spa",
+      "rating": 4.972729306641349,
+      "opportunityScore": 5,
+      "priority": "⚪ LOW",
+      "signals": [
+        "10 nearby competitors — retention is key"
+      ],
+      "dmSequence": {
+        "dm1": "Hey Viva! 👋 I run Customer Comeback Machine — we help med spa owners automate their patient recall. Quick question — do you have any system for following up with customers after their visit, or is it all manual?",
+        "dm2": "Hey Viva! Following up — I built a free calculator that shows how much med spa practices lose when customers don't come back. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌"
+      }
+    },
+    {
+      "business": "Dilworth Facial Plastic Surgery",
+      "city": "Charlotte",
+      "niche": "Med Spa",
+      "rating": 4.82836515338045,
+      "opportunityScore": 5,
+      "priority": "⚪ LOW",
+      "signals": [
+        "12 nearby competitors — retention is key"
+      ],
+      "dmSequence": {
+        "dm1": "Hey Dilworth! 👋 I run Customer Comeback Machine — we help med spa owners automate their patient recall. Quick question — do you have any system for following up with customers after their visit, or is it all manual?",
+        "dm2": "Hey Dilworth! Following up — I built a free calculator that shows how much med spa practices lose when customers don't come back. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌"
+      }
+    },
+    {
+      "business": "Criswell & Criswell",
+      "city": "Charlotte",
+      "niche": "Med Spa",
+      "rating": 4.944153872379455,
+      "opportunityScore": 5,
+      "priority": "⚪ LOW",
+      "signals": [
+        "15 nearby competitors — retention is key"
+      ],
+      "dmSequence": {
+        "dm1": "Hey Criswell! 👋 I run Customer Comeback Machine — we help med spa owners automate their patient recall. Quick question — do you have any system for following up with customers after their visit, or is it all manual?",
+        "dm2": "Hey Criswell! Following up — I built a free calculator that shows how much med spa practices lose when customers don't come back. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌"
+      }
+    },
+    {
+      "business": "H/K/B Cosmetic Surgery",
+      "city": "Charlotte",
+      "niche": "Med Spa",
+      "rating": 4.5,
+      "opportunityScore": 0,
+      "priority": "⚪ LOW",
+      "signals": [],
+      "dmSequence": {
+        "dm1": "Hey H/K/B! 👋 I run Customer Comeback Machine — we help med spa owners automate their patient recall. Quick question — do you have any system for following up with customers after their visit, or is it all manual?",
+        "dm2": "Hey H/K/B! Following up — I built a free calculator that shows how much med spa practices lose when customers don't come back. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌"
+      }
+    },
+    {
+      "business": "Promenadescape Dentistry",
+      "city": "Charlotte",
+      "niche": "Dental",
+      "rating": 4.838922424719227,
+      "opportunityScore": 0,
+      "priority": "⚪ LOW",
+      "signals": [],
+      "dmSequence": {
+        "dm1": "Hey Promenadescape! 👋 I run Customer Comeback Machine — we help dental owners automate their patient recall. Quick question — do you have any system for following up with customers after their visit, or is it all manual?",
+        "dm2": "Hey Promenadescape! Following up — I built a free calculator that shows how much dental practices lose when customers don't come back. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌"
+      }
+    },
+    {
+      "business": "The Barker Lounge",
+      "city": "Charlotte",
+      "niche": "Pet Grooming",
+      "rating": 4.951170070050998,
+      "opportunityScore": 0,
+      "priority": "⚪ LOW",
+      "signals": [],
+      "dmSequence": {
+        "dm1": "Hey The! 👋 I run Customer Comeback Machine — we help pet grooming owners automate their patient recall. Quick question — do you have any system for following up with customers after their visit, or is it all manual?",
+        "dm2": "Hey The! Following up — I built a free calculator that shows how much pet grooming practices lose when customers don't come back. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1242 @@
+{
+  "generatedAt": "2026-06-11T16:05:26.891Z",
+  "totalProspects": 50,
+  "withInstagram": 50,
+  "highPriority": 7,
+  "mediumPriority": 39,
+  "lowPriority": 4,
+  "methodology": {
+    "dataSource": "PHYSICAL_OUTREACH_PROSPECTS.csv + simulated follower overlap",
+    "limitation": "True follower scraping requires Apify API key or Instagram login. This prototype demonstrates the pipeline structure using simulated competitor clusters.",
+    "productionUpgrade": "Replace competitorClusters + localInfluencers with real Apify follower data"
+  },
+  "leads": [
+    {
+      "business": "SW Austin Dental",
+      "city": "Austin",
+      "niche": "Dental",
+      "instagram": "swaustindental",
+      "instagramUrl": "https://www.instagram.com/swaustindental/",
+      "opportunityScore": 104,
+      "signals": [
+        "Key player in austin dental cluster",
+        "3 local influencer(s) follow this account",
+        "  ↳ @austinfashionblog (12500 followers, lifestyle)",
+        "  ↳ @atxskincarefan (3400 followers, beauty)",
+        "  ↳ @austindentalscoop (2100 followers, health)",
+        "Shares audience with 3 competitor account(s): @austindentalspa, @enameldentistry, @austinorthodonticarts"
+      ],
+      "overlappingInfluencers": [
+        "austinfashionblog",
+        "atxskincarefan",
+        "austindentalscoop"
+      ],
+      "relatedCompetitors": [
+        "austindentalspa",
+        "enameldentistry",
+        "austinorthodonticarts"
+      ],
+      "priority": "🔵 HIGH",
+      "outreachSuggested": "Yes — personalized DM recommended",
+      "dmSequence": {
+        "dm1": "Hey there! 👋 I run Customer Comeback Machine — we help dental businesses in Austin keep their regulars coming back. Quick question — do you use any automated system for client follow-ups, or is it all manual?",
+        "dm2": "Hey! Following up — I built a free calculator that shows how much dental practices lose when customers don't return. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌",
+        "complianceNote": "MAX 2 DMs. If no reply, STOP. If they say no, log opt-out immediately."
+      }
+    },
+    {
+      "business": "Austin Orthodontic Arts",
+      "city": "Austin",
+      "niche": "Dental",
+      "instagram": "austinorthodonticarts",
+      "instagramUrl": "https://www.instagram.com/austinorthodonticarts/",
+      "opportunityScore": 104,
+      "signals": [
+        "Key player in austin dental cluster",
+        "3 local influencer(s) follow this account",
+        "  ↳ @austinfashionblog (12500 followers, lifestyle)",
+        "  ↳ @atxskincarefan (3400 followers, beauty)",
+        "  ↳ @austindentalscoop (2100 followers, health)",
+        "Shares audience with 3 competitor account(s): @austindentalspa, @enameldentistry, @swaustindental"
+      ],
+      "overlappingInfluencers": [
+        "austinfashionblog",
+        "atxskincarefan",
+        "austindentalscoop"
+      ],
+      "relatedCompetitors": [
+        "austindentalspa",
+        "enameldentistry",
+        "swaustindental"
+      ],
+      "priority": "🔵 HIGH",
+      "outreachSuggested": "Yes — personalized DM recommended",
+      "dmSequence": {
+        "dm1": "Hey there! 👋 I run Customer Comeback Machine — we help dental businesses in Austin keep their regulars coming back. Quick question — do you use any automated system for client follow-ups, or is it all manual?",
+        "dm2": "Hey! Following up — I built a free calculator that shows how much dental practices lose when customers don't return. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌",
+        "complianceNote": "MAX 2 DMs. If no reply, STOP. If they say no, log opt-out immediately."
+      }
+    },
+    {
+      "business": "Austin Dental Spa",
+      "city": "Austin",
+      "niche": "Dental",
+      "instagram": "austindentalspa",
+      "instagramUrl": "https://www.instagram.com/austindentalspa/",
+      "opportunityScore": 99,
+      "signals": [
+        "Key player in austin dental cluster",
+        "2 local influencer(s) follow this account",
+        "  ↳ @austinfashionblog (12500 followers, lifestyle)",
+        "  ↳ @austindentalscoop (2100 followers, health)",
+        "Shares audience with 3 competitor account(s): @enameldentistry, @swaustindental, @austinorthodonticarts"
+      ],
+      "overlappingInfluencers": [
+        "austinfashionblog",
+        "austindentalscoop"
+      ],
+      "relatedCompetitors": [
+        "enameldentistry",
+        "swaustindental",
+        "austinorthodonticarts"
+      ],
+      "priority": "🔵 HIGH",
+      "outreachSuggested": "Yes — personalized DM recommended",
+      "dmSequence": {
+        "dm1": "Hey there! 👋 I run Customer Comeback Machine — we help dental businesses in Austin keep their regulars coming back. Quick question — do you use any automated system for client follow-ups, or is it all manual?",
+        "dm2": "Hey! Following up — I built a free calculator that shows how much dental practices lose when customers don't return. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌",
+        "complianceNote": "MAX 2 DMs. If no reply, STOP. If they say no, log opt-out immediately."
+      }
+    },
+    {
+      "business": "Enamel Dentistry",
+      "city": "Austin",
+      "niche": "Dental",
+      "instagram": "enameldentistry",
+      "instagramUrl": "https://www.instagram.com/enameldentistry/",
+      "opportunityScore": 99,
+      "signals": [
+        "Key player in austin dental cluster",
+        "2 local influencer(s) follow this account",
+        "  ↳ @austinfashionblog (12500 followers, lifestyle)",
+        "  ↳ @atxskincarefan (3400 followers, beauty)",
+        "Shares audience with 3 competitor account(s): @austindentalspa, @swaustindental, @austinorthodonticarts"
+      ],
+      "overlappingInfluencers": [
+        "austinfashionblog",
+        "atxskincarefan"
+      ],
+      "relatedCompetitors": [
+        "austindentalspa",
+        "swaustindental",
+        "austinorthodonticarts"
+      ],
+      "priority": "🔵 HIGH",
+      "outreachSuggested": "Yes — personalized DM recommended",
+      "dmSequence": {
+        "dm1": "Hey there! 👋 I run Customer Comeback Machine — we help dental businesses in Austin keep their regulars coming back. Quick question — do you use any automated system for client follow-ups, or is it all manual?",
+        "dm2": "Hey! Following up — I built a free calculator that shows how much dental practices lose when customers don't return. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌",
+        "complianceNote": "MAX 2 DMs. If no reply, STOP. If they say no, log opt-out immediately."
+      }
+    },
+    {
+      "business": "Lineberger Dentistry",
+      "city": "Charlotte",
+      "niche": "Dental",
+      "instagram": "linebergerdentistry",
+      "instagramUrl": "https://www.instagram.com/linebergerdentistry/",
+      "opportunityScore": 86,
+      "signals": [
+        "Key player in charlotte dental cluster",
+        "1 local influencer(s) follow this account",
+        "  ↳ @queencityspa (5600 followers, lifestyle)",
+        "Shares audience with 2 competitor account(s): @pearl_dentistry, @charlottedentalarts"
+      ],
+      "overlappingInfluencers": [
+        "queencityspa"
+      ],
+      "relatedCompetitors": [
+        "pearl_dentistry",
+        "charlottedentalarts"
+      ],
+      "priority": "🔵 HIGH",
+      "outreachSuggested": "Yes — personalized DM recommended",
+      "dmSequence": {
+        "dm1": "Hey there! 👋 I run Customer Comeback Machine — we help dental businesses in Charlotte keep their regulars coming back. Quick question — do you use any automated system for client follow-ups, or is it all manual?",
+        "dm2": "Hey! Following up — I built a free calculator that shows how much dental practices lose when customers don't return. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌",
+        "complianceNote": "MAX 2 DMs. If no reply, STOP. If they say no, log opt-out immediately."
+      }
+    },
+    {
+      "business": "Pearl. Dentistry Reimagined",
+      "city": "Charlotte",
+      "niche": "Dental",
+      "instagram": "pearl_dentistry",
+      "instagramUrl": "https://www.instagram.com/pearl_dentistry/",
+      "opportunityScore": 86,
+      "signals": [
+        "Key player in charlotte dental cluster",
+        "1 local influencer(s) follow this account",
+        "  ↳ @queencityspa (5600 followers, lifestyle)",
+        "Shares audience with 2 competitor account(s): @linebergerdentistry, @charlottedentalarts"
+      ],
+      "overlappingInfluencers": [
+        "queencityspa"
+      ],
+      "relatedCompetitors": [
+        "linebergerdentistry",
+        "charlottedentalarts"
+      ],
+      "priority": "🔵 HIGH",
+      "outreachSuggested": "Yes — personalized DM recommended",
+      "dmSequence": {
+        "dm1": "Hey there! 👋 I run Customer Comeback Machine — we help dental businesses in Charlotte keep their regulars coming back. Quick question — do you use any automated system for client follow-ups, or is it all manual?",
+        "dm2": "Hey! Following up — I built a free calculator that shows how much dental practices lose when customers don't return. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌",
+        "complianceNote": "MAX 2 DMs. If no reply, STOP. If they say no, log opt-out immediately."
+      }
+    },
+    {
+      "business": "Charlotte Dental Arts",
+      "city": "Charlotte",
+      "niche": "Dental",
+      "instagram": "charlottedentalarts",
+      "instagramUrl": "https://www.instagram.com/charlottedentalarts/",
+      "opportunityScore": 81,
+      "signals": [
+        "Key player in charlotte dental cluster",
+        "Shares audience with 2 competitor account(s): @linebergerdentistry, @pearl_dentistry"
+      ],
+      "overlappingInfluencers": [],
+      "relatedCompetitors": [
+        "linebergerdentistry",
+        "pearl_dentistry"
+      ],
+      "priority": "🔵 HIGH",
+      "outreachSuggested": "Yes — personalized DM recommended",
+      "dmSequence": {
+        "dm1": "Hey there! 👋 I run Customer Comeback Machine — we help dental businesses in Charlotte keep their regulars coming back. Quick question — do you use any automated system for client follow-ups, or is it all manual?",
+        "dm2": "Hey! Following up — I built a free calculator that shows how much dental practices lose when customers don't return. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌",
+        "complianceNote": "MAX 2 DMs. If no reply, STOP. If they say no, log opt-out immediately."
+      }
+    },
+    {
+      "business": "Skin Envy Austin- South",
+      "city": "Austin",
+      "niche": "Med Spa",
+      "instagram": "skinenvyaustin",
+      "instagramUrl": "https://www.instagram.com/skinenvyaustin/",
+      "opportunityScore": 65,
+      "signals": [
+        "3 local influencer(s) follow this account",
+        "  ↳ @austinfashionblog (12500 followers, lifestyle)",
+        "  ↳ @atxskincarefan (3400 followers, beauty)",
+        "  ↳ @austindentalscoop (2100 followers, health)"
+      ],
+      "overlappingInfluencers": [
+        "austinfashionblog",
+        "atxskincarefan",
+        "austindentalscoop"
+      ],
+      "relatedCompetitors": [],
+      "priority": "🟡 MEDIUM",
+      "outreachSuggested": "Yes — personalized DM recommended",
+      "dmSequence": {
+        "dm1": "Hey there! 👋 I run Customer Comeback Machine — we help med spa businesses in Austin keep their regulars coming back. Quick question — do you use any automated system for client follow-ups, or is it all manual?",
+        "dm2": "Hey! Following up — I built a free calculator that shows how much med spa practices lose when customers don't return. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌",
+        "complianceNote": "MAX 2 DMs. If no reply, STOP. If they say no, log opt-out immediately."
+      }
+    },
+    {
+      "business": "Symmetria MedSpa",
+      "city": "Austin",
+      "niche": "Med Spa",
+      "instagram": "symmetriamedspa",
+      "instagramUrl": "https://www.instagram.com/symmetriamedspa/",
+      "opportunityScore": 65,
+      "signals": [
+        "3 local influencer(s) follow this account",
+        "  ↳ @austinfashionblog (12500 followers, lifestyle)",
+        "  ↳ @atxskincarefan (3400 followers, beauty)",
+        "  ↳ @austindentalscoop (2100 followers, health)"
+      ],
+      "overlappingInfluencers": [
+        "austinfashionblog",
+        "atxskincarefan",
+        "austindentalscoop"
+      ],
+      "relatedCompetitors": [],
+      "priority": "🟡 MEDIUM",
+      "outreachSuggested": "Yes — personalized DM recommended",
+      "dmSequence": {
+        "dm1": "Hey there! 👋 I run Customer Comeback Machine — we help med spa businesses in Austin keep their regulars coming back. Quick question — do you use any automated system for client follow-ups, or is it all manual?",
+        "dm2": "Hey! Following up — I built a free calculator that shows how much med spa practices lose when customers don't return. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌",
+        "complianceNote": "MAX 2 DMs. If no reply, STOP. If they say no, log opt-out immediately."
+      }
+    },
+    {
+      "business": "Walden Dental",
+      "city": "Austin",
+      "niche": "Dental",
+      "instagram": "waldendental",
+      "instagramUrl": "https://www.instagram.com/waldendental/",
+      "opportunityScore": 65,
+      "signals": [
+        "3 local influencer(s) follow this account",
+        "  ↳ @austinfashionblog (12500 followers, lifestyle)",
+        "  ↳ @atxskincarefan (3400 followers, beauty)",
+        "  ↳ @austindentalscoop (2100 followers, health)"
+      ],
+      "overlappingInfluencers": [
+        "austinfashionblog",
+        "atxskincarefan",
+        "austindentalscoop"
+      ],
+      "relatedCompetitors": [],
+      "priority": "🟡 MEDIUM",
+      "outreachSuggested": "Yes — personalized DM recommended",
+      "dmSequence": {
+        "dm1": "Hey there! 👋 I run Customer Comeback Machine — we help dental businesses in Austin keep their regulars coming back. Quick question — do you use any automated system for client follow-ups, or is it all manual?",
+        "dm2": "Hey! Following up — I built a free calculator that shows how much dental practices lose when customers don't return. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌",
+        "complianceNote": "MAX 2 DMs. If no reply, STOP. If they say no, log opt-out immediately."
+      }
+    },
+    {
+      "business": "Cloud 9 Dental",
+      "city": "Austin",
+      "niche": "Dental",
+      "instagram": "cloud9dental",
+      "instagramUrl": "https://www.instagram.com/cloud9dental/",
+      "opportunityScore": 65,
+      "signals": [
+        "3 local influencer(s) follow this account",
+        "  ↳ @austinfashionblog (12500 followers, lifestyle)",
+        "  ↳ @atxskincarefan (3400 followers, beauty)",
+        "  ↳ @austindentalscoop (2100 followers, health)"
+      ],
+      "overlappingInfluencers": [
+        "austinfashionblog",
+        "atxskincarefan",
+        "austindentalscoop"
+      ],
+      "relatedCompetitors": [],
+      "priority": "🟡 MEDIUM",
+      "outreachSuggested": "Yes — personalized DM recommended",
+      "dmSequence": {
+        "dm1": "Hey there! 👋 I run Customer Comeback Machine — we help dental businesses in Austin keep their regulars coming back. Quick question — do you use any automated system for client follow-ups, or is it all manual?",
+        "dm2": "Hey! Following up — I built a free calculator that shows how much dental practices lose when customers don't return. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌",
+        "complianceNote": "MAX 2 DMs. If no reply, STOP. If they say no, log opt-out immediately."
+      }
+    },
+    {
+      "business": "Dirty Dog",
+      "city": "Austin",
+      "niche": "Pet Grooming",
+      "instagram": "dirtydogaustin",
+      "instagramUrl": "https://www.instagram.com/dirtydogaustin/",
+      "opportunityScore": 65,
+      "signals": [
+        "3 local influencer(s) follow this account",
+        "  ↳ @austinfashionblog (12500 followers, lifestyle)",
+        "  ↳ @atxskincarefan (3400 followers, beauty)",
+        "  ↳ @austindentalscoop (2100 followers, health)"
+      ],
+      "overlappingInfluencers": [
+        "austinfashionblog",
+        "atxskincarefan",
+        "austindentalscoop"
+      ],
+      "relatedCompetitors": [],
+      "priority": "🟡 MEDIUM",
+      "outreachSuggested": "Yes — personalized DM recommended",
+      "dmSequence": {
+        "dm1": "Hey there! 👋 I run Customer Comeback Machine — we help pet grooming businesses in Austin keep their regulars coming back. Quick question — do you use any automated system for client follow-ups, or is it all manual?",
+        "dm2": "Hey! Following up — I built a free calculator that shows how much pet grooming practices lose when customers don't return. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌",
+        "complianceNote": "MAX 2 DMs. If no reply, STOP. If they say no, log opt-out immediately."
+      }
+    },
+    {
+      "business": "Austin Med Spa",
+      "city": "Austin",
+      "niche": "Med Spa",
+      "instagram": "austinmedspa",
+      "instagramUrl": "https://www.instagram.com/austinmedspa/",
+      "opportunityScore": 60,
+      "signals": [
+        "2 local influencer(s) follow this account",
+        "  ↳ @atxskincarefan (3400 followers, beauty)",
+        "  ↳ @austindentalscoop (2100 followers, health)"
+      ],
+      "overlappingInfluencers": [
+        "atxskincarefan",
+        "austindentalscoop"
+      ],
+      "relatedCompetitors": [],
+      "priority": "🟡 MEDIUM",
+      "outreachSuggested": "Yes — personalized DM recommended",
+      "dmSequence": {
+        "dm1": "Hey there! 👋 I run Customer Comeback Machine — we help med spa businesses in Austin keep their regulars coming back. Quick question — do you use any automated system for client follow-ups, or is it all manual?",
+        "dm2": "Hey! Following up — I built a free calculator that shows how much med spa practices lose when customers don't return. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌",
+        "complianceNote": "MAX 2 DMs. If no reply, STOP. If they say no, log opt-out immediately."
+      }
+    },
+    {
+      "business": "Formula Wellness",
+      "city": "Austin",
+      "niche": "Med Spa",
+      "instagram": "formulawellness",
+      "instagramUrl": "https://www.instagram.com/formulawellness/",
+      "opportunityScore": 60,
+      "signals": [
+        "2 local influencer(s) follow this account",
+        "  ↳ @austinfashionblog (12500 followers, lifestyle)",
+        "  ↳ @austindentalscoop (2100 followers, health)"
+      ],
+      "overlappingInfluencers": [
+        "austinfashionblog",
+        "austindentalscoop"
+      ],
+      "relatedCompetitors": [],
+      "priority": "🟡 MEDIUM",
+      "outreachSuggested": "Yes — personalized DM recommended",
+      "dmSequence": {
+        "dm1": "Hey there! 👋 I run Customer Comeback Machine — we help med spa businesses in Austin keep their regulars coming back. Quick question — do you use any automated system for client follow-ups, or is it all manual?",
+        "dm2": "Hey! Following up — I built a free calculator that shows how much med spa practices lose when customers don't return. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌",
+        "complianceNote": "MAX 2 DMs. If no reply, STOP. If they say no, log opt-out immediately."
+      }
+    },
+    {
+      "business": "It's A Secret Med Spa - Austin",
+      "city": "Austin",
+      "niche": "Med Spa",
+      "instagram": "itsasecretmedspa",
+      "instagramUrl": "https://www.instagram.com/itsasecretmedspa/",
+      "opportunityScore": 60,
+      "signals": [
+        "2 local influencer(s) follow this account",
+        "  ↳ @austinfashionblog (12500 followers, lifestyle)",
+        "  ↳ @austindentalscoop (2100 followers, health)"
+      ],
+      "overlappingInfluencers": [
+        "austinfashionblog",
+        "austindentalscoop"
+      ],
+      "relatedCompetitors": [],
+      "priority": "🟡 MEDIUM",
+      "outreachSuggested": "Yes — personalized DM recommended",
+      "dmSequence": {
+        "dm1": "Hey there! 👋 I run Customer Comeback Machine — we help med spa businesses in Austin keep their regulars coming back. Quick question — do you use any automated system for client follow-ups, or is it all manual?",
+        "dm2": "Hey! Following up — I built a free calculator that shows how much med spa practices lose when customers don't return. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌",
+        "complianceNote": "MAX 2 DMs. If no reply, STOP. If they say no, log opt-out immediately."
+      }
+    },
+    {
+      "business": "Muse Medspa",
+      "city": "Austin",
+      "niche": "Med Spa",
+      "instagram": "musemedspa",
+      "instagramUrl": "https://www.instagram.com/musemedspa/",
+      "opportunityScore": 60,
+      "signals": [
+        "2 local influencer(s) follow this account",
+        "  ↳ @atxskincarefan (3400 followers, beauty)",
+        "  ↳ @austindentalscoop (2100 followers, health)"
+      ],
+      "overlappingInfluencers": [
+        "atxskincarefan",
+        "austindentalscoop"
+      ],
+      "relatedCompetitors": [],
+      "priority": "🟡 MEDIUM",
+      "outreachSuggested": "Yes — personalized DM recommended",
+      "dmSequence": {
+        "dm1": "Hey there! 👋 I run Customer Comeback Machine — we help med spa businesses in Austin keep their regulars coming back. Quick question — do you use any automated system for client follow-ups, or is it all manual?",
+        "dm2": "Hey! Following up — I built a free calculator that shows how much med spa practices lose when customers don't return. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌",
+        "complianceNote": "MAX 2 DMs. If no reply, STOP. If they say no, log opt-out immediately."
+      }
+    },
+    {
+      "business": "Personique On The Spot",
+      "city": "Austin",
+      "niche": "Med Spa",
+      "instagram": "personique",
+      "instagramUrl": "https://www.instagram.com/personique/",
+      "opportunityScore": 60,
+      "signals": [
+        "2 local influencer(s) follow this account",
+        "  ↳ @atxskincarefan (3400 followers, beauty)",
+        "  ↳ @austindentalscoop (2100 followers, health)"
+      ],
+      "overlappingInfluencers": [
+        "atxskincarefan",
+        "austindentalscoop"
+      ],
+      "relatedCompetitors": [],
+      "priority": "🟡 MEDIUM",
+      "outreachSuggested": "Yes — personalized DM recommended",
+      "dmSequence": {
+        "dm1": "Hey there! 👋 I run Customer Comeback Machine — we help med spa businesses in Austin keep their regulars coming back. Quick question — do you use any automated system for client follow-ups, or is it all manual?",
+        "dm2": "Hey! Following up — I built a free calculator that shows how much med spa practices lose when customers don't return. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌",
+        "complianceNote": "MAX 2 DMs. If no reply, STOP. If they say no, log opt-out immediately."
+      }
+    },
+    {
+      "business": "H/K/B Cosmetic Surgery",
+      "city": "Charlotte",
+      "niche": "Med Spa",
+      "instagram": "hkbcosmeticsurgery",
+      "instagramUrl": "https://www.instagram.com/hkbcosmeticsurgery/",
+      "opportunityScore": 60,
+      "signals": [
+        "2 local influencer(s) follow this account",
+        "  ↳ @cltbeautylife (8900 followers, beauty)",
+        "  ↳ @queencityspa (5600 followers, lifestyle)"
+      ],
+      "overlappingInfluencers": [
+        "cltbeautylife",
+        "queencityspa"
+      ],
+      "relatedCompetitors": [],
+      "priority": "🟡 MEDIUM",
+      "outreachSuggested": "Yes — personalized DM recommended",
+      "dmSequence": {
+        "dm1": "Hey there! 👋 I run Customer Comeback Machine — we help med spa businesses in Charlotte keep their regulars coming back. Quick question — do you use any automated system for client follow-ups, or is it all manual?",
+        "dm2": "Hey! Following up — I built a free calculator that shows how much med spa practices lose when customers don't return. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌",
+        "complianceNote": "MAX 2 DMs. If no reply, STOP. If they say no, log opt-out immediately."
+      }
+    },
+    {
+      "business": "Graper Cosmetic Surgery",
+      "city": "Charlotte",
+      "niche": "Med Spa",
+      "instagram": "grapercosmeticsurgery",
+      "instagramUrl": "https://www.instagram.com/grapercosmeticsurgery/",
+      "opportunityScore": 60,
+      "signals": [
+        "2 local influencer(s) follow this account",
+        "  ↳ @cltbeautylife (8900 followers, beauty)",
+        "  ↳ @queencityspa (5600 followers, lifestyle)"
+      ],
+      "overlappingInfluencers": [
+        "cltbeautylife",
+        "queencityspa"
+      ],
+      "relatedCompetitors": [],
+      "priority": "🟡 MEDIUM",
+      "outreachSuggested": "Yes — personalized DM recommended",
+      "dmSequence": {
+        "dm1": "Hey there! 👋 I run Customer Comeback Machine — we help med spa businesses in Charlotte keep their regulars coming back. Quick question — do you use any automated system for client follow-ups, or is it all manual?",
+        "dm2": "Hey! Following up — I built a free calculator that shows how much med spa practices lose when customers don't return. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌",
+        "complianceNote": "MAX 2 DMs. If no reply, STOP. If they say no, log opt-out immediately."
+      }
+    },
+    {
+      "business": "Saluja Cosmetic and Laser Center",
+      "city": "Charlotte",
+      "niche": "Med Spa",
+      "instagram": "salujacosmetic",
+      "instagramUrl": "https://www.instagram.com/salujacosmetic/",
+      "opportunityScore": 60,
+      "signals": [
+        "2 local influencer(s) follow this account",
+        "  ↳ @cltbeautylife (8900 followers, beauty)",
+        "  ↳ @queencityspa (5600 followers, lifestyle)"
+      ],
+      "overlappingInfluencers": [
+        "cltbeautylife",
+        "queencityspa"
+      ],
+      "relatedCompetitors": [],
+      "priority": "🟡 MEDIUM",
+      "outreachSuggested": "Yes — personalized DM recommended",
+      "dmSequence": {
+        "dm1": "Hey there! 👋 I run Customer Comeback Machine — we help med spa businesses in Charlotte keep their regulars coming back. Quick question — do you use any automated system for client follow-ups, or is it all manual?",
+        "dm2": "Hey! Following up — I built a free calculator that shows how much med spa practices lose when customers don't return. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌",
+        "complianceNote": "MAX 2 DMs. If no reply, STOP. If they say no, log opt-out immediately."
+      }
+    },
+    {
+      "business": "Metrolina Medical Associates",
+      "city": "Charlotte",
+      "niche": "Med Spa",
+      "instagram": "metrolinamedical",
+      "instagramUrl": "https://www.instagram.com/metrolinamedical/",
+      "opportunityScore": 60,
+      "signals": [
+        "2 local influencer(s) follow this account",
+        "  ↳ @cltbeautylife (8900 followers, beauty)",
+        "  ↳ @queencityspa (5600 followers, lifestyle)"
+      ],
+      "overlappingInfluencers": [
+        "cltbeautylife",
+        "queencityspa"
+      ],
+      "relatedCompetitors": [],
+      "priority": "🟡 MEDIUM",
+      "outreachSuggested": "Yes — personalized DM recommended",
+      "dmSequence": {
+        "dm1": "Hey there! 👋 I run Customer Comeback Machine — we help med spa businesses in Charlotte keep their regulars coming back. Quick question — do you use any automated system for client follow-ups, or is it all manual?",
+        "dm2": "Hey! Following up — I built a free calculator that shows how much med spa practices lose when customers don't return. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌",
+        "complianceNote": "MAX 2 DMs. If no reply, STOP. If they say no, log opt-out immediately."
+      }
+    },
+    {
+      "business": "SkinSpirit Charlotte",
+      "city": "Charlotte",
+      "niche": "Med Spa",
+      "instagram": "skinspirit",
+      "instagramUrl": "https://www.instagram.com/skinspirit/",
+      "opportunityScore": 60,
+      "signals": [
+        "2 local influencer(s) follow this account",
+        "  ↳ @cltbeautylife (8900 followers, beauty)",
+        "  ↳ @queencityspa (5600 followers, lifestyle)"
+      ],
+      "overlappingInfluencers": [
+        "cltbeautylife",
+        "queencityspa"
+      ],
+      "relatedCompetitors": [],
+      "priority": "🟡 MEDIUM",
+      "outreachSuggested": "Yes — personalized DM recommended",
+      "dmSequence": {
+        "dm1": "Hey there! 👋 I run Customer Comeback Machine — we help med spa businesses in Charlotte keep their regulars coming back. Quick question — do you use any automated system for client follow-ups, or is it all manual?",
+        "dm2": "Hey! Following up — I built a free calculator that shows how much med spa practices lose when customers don't return. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌",
+        "complianceNote": "MAX 2 DMs. If no reply, STOP. If they say no, log opt-out immediately."
+      }
+    },
+    {
+      "business": "Luv Braces",
+      "city": "Austin",
+      "niche": "Dental",
+      "instagram": "luvbraces",
+      "instagramUrl": "https://www.instagram.com/luvbraces/",
+      "opportunityScore": 60,
+      "signals": [
+        "2 local influencer(s) follow this account",
+        "  ↳ @austinfashionblog (12500 followers, lifestyle)",
+        "  ↳ @austindentalscoop (2100 followers, health)"
+      ],
+      "overlappingInfluencers": [
+        "austinfashionblog",
+        "austindentalscoop"
+      ],
+      "relatedCompetitors": [],
+      "priority": "🟡 MEDIUM",
+      "outreachSuggested": "Yes — personalized DM recommended",
+      "dmSequence": {
+        "dm1": "Hey there! 👋 I run Customer Comeback Machine — we help dental businesses in Austin keep their regulars coming back. Quick question — do you use any automated system for client follow-ups, or is it all manual?",
+        "dm2": "Hey! Following up — I built a free calculator that shows how much dental practices lose when customers don't return. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌",
+        "complianceNote": "MAX 2 DMs. If no reply, STOP. If they say no, log opt-out immediately."
+      }
+    },
+    {
+      "business": "Central Texas Orthodontics",
+      "city": "Austin",
+      "niche": "Dental",
+      "instagram": "centraltexasortho",
+      "instagramUrl": "https://www.instagram.com/centraltexasortho/",
+      "opportunityScore": 60,
+      "signals": [
+        "2 local influencer(s) follow this account",
+        "  ↳ @austinfashionblog (12500 followers, lifestyle)",
+        "  ↳ @atxskincarefan (3400 followers, beauty)"
+      ],
+      "overlappingInfluencers": [
+        "austinfashionblog",
+        "atxskincarefan"
+      ],
+      "relatedCompetitors": [],
+      "priority": "🟡 MEDIUM",
+      "outreachSuggested": "Yes — personalized DM recommended",
+      "dmSequence": {
+        "dm1": "Hey there! 👋 I run Customer Comeback Machine — we help dental businesses in Austin keep their regulars coming back. Quick question — do you use any automated system for client follow-ups, or is it all manual?",
+        "dm2": "Hey! Following up — I built a free calculator that shows how much dental practices lose when customers don't return. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌",
+        "complianceNote": "MAX 2 DMs. If no reply, STOP. If they say no, log opt-out immediately."
+      }
+    },
+    {
+      "business": "BridgeView Dental",
+      "city": "Austin",
+      "niche": "Dental",
+      "instagram": "bridgeviewdental",
+      "instagramUrl": "https://www.instagram.com/bridgeviewdental/",
+      "opportunityScore": 60,
+      "signals": [
+        "2 local influencer(s) follow this account",
+        "  ↳ @austinfashionblog (12500 followers, lifestyle)",
+        "  ↳ @austindentalscoop (2100 followers, health)"
+      ],
+      "overlappingInfluencers": [
+        "austinfashionblog",
+        "austindentalscoop"
+      ],
+      "relatedCompetitors": [],
+      "priority": "🟡 MEDIUM",
+      "outreachSuggested": "Yes — personalized DM recommended",
+      "dmSequence": {
+        "dm1": "Hey there! 👋 I run Customer Comeback Machine — we help dental businesses in Austin keep their regulars coming back. Quick question — do you use any automated system for client follow-ups, or is it all manual?",
+        "dm2": "Hey! Following up — I built a free calculator that shows how much dental practices lose when customers don't return. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌",
+        "complianceNote": "MAX 2 DMs. If no reply, STOP. If they say no, log opt-out immediately."
+      }
+    },
+    {
+      "business": "Westlake Smile Design",
+      "city": "Austin",
+      "niche": "Dental",
+      "instagram": "westlakesmiledesign",
+      "instagramUrl": "https://www.instagram.com/westlakesmiledesign/",
+      "opportunityScore": 60,
+      "signals": [
+        "2 local influencer(s) follow this account",
+        "  ↳ @austinfashionblog (12500 followers, lifestyle)",
+        "  ↳ @atxskincarefan (3400 followers, beauty)"
+      ],
+      "overlappingInfluencers": [
+        "austinfashionblog",
+        "atxskincarefan"
+      ],
+      "relatedCompetitors": [],
+      "priority": "🟡 MEDIUM",
+      "outreachSuggested": "Yes — personalized DM recommended",
+      "dmSequence": {
+        "dm1": "Hey there! 👋 I run Customer Comeback Machine — we help dental businesses in Austin keep their regulars coming back. Quick question — do you use any automated system for client follow-ups, or is it all manual?",
+        "dm2": "Hey! Following up — I built a free calculator that shows how much dental practices lose when customers don't return. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌",
+        "complianceNote": "MAX 2 DMs. If no reply, STOP. If they say no, log opt-out immediately."
+      }
+    },
+    {
+      "business": "Webb & Lin Orthodontics",
+      "city": "Charlotte",
+      "niche": "Dental",
+      "instagram": "webblinortho",
+      "instagramUrl": "https://www.instagram.com/webblinortho/",
+      "opportunityScore": 60,
+      "signals": [
+        "2 local influencer(s) follow this account",
+        "  ↳ @cltbeautylife (8900 followers, beauty)",
+        "  ↳ @queencityspa (5600 followers, lifestyle)"
+      ],
+      "overlappingInfluencers": [
+        "cltbeautylife",
+        "queencityspa"
+      ],
+      "relatedCompetitors": [],
+      "priority": "🟡 MEDIUM",
+      "outreachSuggested": "Yes — personalized DM recommended",
+      "dmSequence": {
+        "dm1": "Hey there! 👋 I run Customer Comeback Machine — we help dental businesses in Charlotte keep their regulars coming back. Quick question — do you use any automated system for client follow-ups, or is it all manual?",
+        "dm2": "Hey! Following up — I built a free calculator that shows how much dental practices lose when customers don't return. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌",
+        "complianceNote": "MAX 2 DMs. If no reply, STOP. If they say no, log opt-out immediately."
+      }
+    },
+    {
+      "business": "Sky Orthodontics",
+      "city": "Charlotte",
+      "niche": "Dental",
+      "instagram": "skyorthodontics",
+      "instagramUrl": "https://www.instagram.com/skyorthodontics/",
+      "opportunityScore": 60,
+      "signals": [
+        "2 local influencer(s) follow this account",
+        "  ↳ @cltbeautylife (8900 followers, beauty)",
+        "  ↳ @queencityspa (5600 followers, lifestyle)"
+      ],
+      "overlappingInfluencers": [
+        "cltbeautylife",
+        "queencityspa"
+      ],
+      "relatedCompetitors": [],
+      "priority": "🟡 MEDIUM",
+      "outreachSuggested": "Yes — personalized DM recommended",
+      "dmSequence": {
+        "dm1": "Hey there! 👋 I run Customer Comeback Machine — we help dental businesses in Charlotte keep their regulars coming back. Quick question — do you use any automated system for client follow-ups, or is it all manual?",
+        "dm2": "Hey! Following up — I built a free calculator that shows how much dental practices lose when customers don't return. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌",
+        "complianceNote": "MAX 2 DMs. If no reply, STOP. If they say no, log opt-out immediately."
+      }
+    },
+    {
+      "business": "Mud Puppies",
+      "city": "Austin",
+      "niche": "Pet Grooming",
+      "instagram": "mudpuppiesatx",
+      "instagramUrl": "https://www.instagram.com/mudpuppiesatx/",
+      "opportunityScore": 60,
+      "signals": [
+        "2 local influencer(s) follow this account",
+        "  ↳ @atxskincarefan (3400 followers, beauty)",
+        "  ↳ @austindentalscoop (2100 followers, health)"
+      ],
+      "overlappingInfluencers": [
+        "atxskincarefan",
+        "austindentalscoop"
+      ],
+      "relatedCompetitors": [],
+      "priority": "🟡 MEDIUM",
+      "outreachSuggested": "Yes — personalized DM recommended",
+      "dmSequence": {
+        "dm1": "Hey there! 👋 I run Customer Comeback Machine — we help pet grooming businesses in Austin keep their regulars coming back. Quick question — do you use any automated system for client follow-ups, or is it all manual?",
+        "dm2": "Hey! Following up — I built a free calculator that shows how much pet grooming practices lose when customers don't return. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌",
+        "complianceNote": "MAX 2 DMs. If no reply, STOP. If they say no, log opt-out immediately."
+      }
+    },
+    {
+      "business": "Modmutt",
+      "city": "Austin",
+      "niche": "Pet Grooming",
+      "instagram": "modmuttatx",
+      "instagramUrl": "https://www.instagram.com/modmuttatx/",
+      "opportunityScore": 60,
+      "signals": [
+        "2 local influencer(s) follow this account",
+        "  ↳ @austinfashionblog (12500 followers, lifestyle)",
+        "  ↳ @austindentalscoop (2100 followers, health)"
+      ],
+      "overlappingInfluencers": [
+        "austinfashionblog",
+        "austindentalscoop"
+      ],
+      "relatedCompetitors": [],
+      "priority": "🟡 MEDIUM",
+      "outreachSuggested": "Yes — personalized DM recommended",
+      "dmSequence": {
+        "dm1": "Hey there! 👋 I run Customer Comeback Machine — we help pet grooming businesses in Austin keep their regulars coming back. Quick question — do you use any automated system for client follow-ups, or is it all manual?",
+        "dm2": "Hey! Following up — I built a free calculator that shows how much pet grooming practices lose when customers don't return. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌",
+        "complianceNote": "MAX 2 DMs. If no reply, STOP. If they say no, log opt-out immediately."
+      }
+    },
+    {
+      "business": "The Barker Lounge",
+      "city": "Charlotte",
+      "niche": "Pet Grooming",
+      "instagram": "thebarkerlounge",
+      "instagramUrl": "https://www.instagram.com/thebarkerlounge/",
+      "opportunityScore": 60,
+      "signals": [
+        "2 local influencer(s) follow this account",
+        "  ↳ @cltbeautylife (8900 followers, beauty)",
+        "  ↳ @queencityspa (5600 followers, lifestyle)"
+      ],
+      "overlappingInfluencers": [
+        "cltbeautylife",
+        "queencityspa"
+      ],
+      "relatedCompetitors": [],
+      "priority": "🟡 MEDIUM",
+      "outreachSuggested": "Yes — personalized DM recommended",
+      "dmSequence": {
+        "dm1": "Hey there! 👋 I run Customer Comeback Machine — we help pet grooming businesses in Charlotte keep their regulars coming back. Quick question — do you use any automated system for client follow-ups, or is it all manual?",
+        "dm2": "Hey! Following up — I built a free calculator that shows how much pet grooming practices lose when customers don't return. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌",
+        "complianceNote": "MAX 2 DMs. If no reply, STOP. If they say no, log opt-out immediately."
+      }
+    },
+    {
+      "business": "Lucky Dog Bark & Brew",
+      "city": "Charlotte",
+      "niche": "Pet Grooming",
+      "instagram": "luckydogcharlotte",
+      "instagramUrl": "https://www.instagram.com/luckydogcharlotte/",
+      "opportunityScore": 60,
+      "signals": [
+        "2 local influencer(s) follow this account",
+        "  ↳ @cltbeautylife (8900 followers, beauty)",
+        "  ↳ @queencityspa (5600 followers, lifestyle)"
+      ],
+      "overlappingInfluencers": [
+        "cltbeautylife",
+        "queencityspa"
+      ],
+      "relatedCompetitors": [],
+      "priority": "🟡 MEDIUM",
+      "outreachSuggested": "Yes — personalized DM recommended",
+      "dmSequence": {
+        "dm1": "Hey there! 👋 I run Customer Comeback Machine — we help pet grooming businesses in Charlotte keep their regulars coming back. Quick question — do you use any automated system for client follow-ups, or is it all manual?",
+        "dm2": "Hey! Following up — I built a free calculator that shows how much pet grooming practices lose when customers don't return. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌",
+        "complianceNote": "MAX 2 DMs. If no reply, STOP. If they say no, log opt-out immediately."
+      }
+    },
+    {
+      "business": "Bubbly Paws",
+      "city": "Charlotte",
+      "niche": "Pet Grooming",
+      "instagram": "bubblypaws",
+      "instagramUrl": "https://www.instagram.com/bubblypaws/",
+      "opportunityScore": 60,
+      "signals": [
+        "2 local influencer(s) follow this account",
+        "  ↳ @cltbeautylife (8900 followers, beauty)",
+        "  ↳ @queencityspa (5600 followers, lifestyle)"
+      ],
+      "overlappingInfluencers": [
+        "cltbeautylife",
+        "queencityspa"
+      ],
+      "relatedCompetitors": [],
+      "priority": "🟡 MEDIUM",
+      "outreachSuggested": "Yes — personalized DM recommended",
+      "dmSequence": {
+        "dm1": "Hey there! 👋 I run Customer Comeback Machine — we help pet grooming businesses in Charlotte keep their regulars coming back. Quick question — do you use any automated system for client follow-ups, or is it all manual?",
+        "dm2": "Hey! Following up — I built a free calculator that shows how much pet grooming practices lose when customers don't return. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌",
+        "complianceNote": "MAX 2 DMs. If no reply, STOP. If they say no, log opt-out immediately."
+      }
+    },
+    {
+      "business": "Club Fetch",
+      "city": "Charlotte",
+      "niche": "Pet Grooming",
+      "instagram": "clubfetch",
+      "instagramUrl": "https://www.instagram.com/clubfetch/",
+      "opportunityScore": 60,
+      "signals": [
+        "2 local influencer(s) follow this account",
+        "  ↳ @cltbeautylife (8900 followers, beauty)",
+        "  ↳ @queencityspa (5600 followers, lifestyle)"
+      ],
+      "overlappingInfluencers": [
+        "cltbeautylife",
+        "queencityspa"
+      ],
+      "relatedCompetitors": [],
+      "priority": "🟡 MEDIUM",
+      "outreachSuggested": "Yes — personalized DM recommended",
+      "dmSequence": {
+        "dm1": "Hey there! 👋 I run Customer Comeback Machine — we help pet grooming businesses in Charlotte keep their regulars coming back. Quick question — do you use any automated system for client follow-ups, or is it all manual?",
+        "dm2": "Hey! Following up — I built a free calculator that shows how much pet grooming practices lose when customers don't return. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌",
+        "complianceNote": "MAX 2 DMs. If no reply, STOP. If they say no, log opt-out immediately."
+      }
+    },
+    {
+      "business": "Wagging Tails",
+      "city": "Charlotte",
+      "niche": "Pet Grooming",
+      "instagram": "waggingtailsclt",
+      "instagramUrl": "https://www.instagram.com/waggingtailsclt/",
+      "opportunityScore": 60,
+      "signals": [
+        "2 local influencer(s) follow this account",
+        "  ↳ @cltbeautylife (8900 followers, beauty)",
+        "  ↳ @queencityspa (5600 followers, lifestyle)"
+      ],
+      "overlappingInfluencers": [
+        "cltbeautylife",
+        "queencityspa"
+      ],
+      "relatedCompetitors": [],
+      "priority": "🟡 MEDIUM",
+      "outreachSuggested": "Yes — personalized DM recommended",
+      "dmSequence": {
+        "dm1": "Hey there! 👋 I run Customer Comeback Machine — we help pet grooming businesses in Charlotte keep their regulars coming back. Quick question — do you use any automated system for client follow-ups, or is it all manual?",
+        "dm2": "Hey! Following up — I built a free calculator that shows how much pet grooming practices lose when customers don't return. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌",
+        "complianceNote": "MAX 2 DMs. If no reply, STOP. If they say no, log opt-out immediately."
+      }
+    },
+    {
+      "business": "Viva Day Spa + Med Spa",
+      "city": "Austin",
+      "niche": "Med Spa",
+      "instagram": "vivadayspa",
+      "instagramUrl": "https://www.instagram.com/vivadayspa/",
+      "opportunityScore": 55,
+      "signals": [
+        "1 local influencer(s) follow this account",
+        "  ↳ @atxskincarefan (3400 followers, beauty)"
+      ],
+      "overlappingInfluencers": [
+        "atxskincarefan"
+      ],
+      "relatedCompetitors": [],
+      "priority": "🟡 MEDIUM",
+      "outreachSuggested": "Yes — personalized DM recommended",
+      "dmSequence": {
+        "dm1": "Hey there! 👋 I run Customer Comeback Machine — we help med spa businesses in Austin keep their regulars coming back. Quick question — do you use any automated system for client follow-ups, or is it all manual?",
+        "dm2": "Hey! Following up — I built a free calculator that shows how much med spa practices lose when customers don't return. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌",
+        "complianceNote": "MAX 2 DMs. If no reply, STOP. If they say no, log opt-out immediately."
+      }
+    },
+    {
+      "business": "Aesthetica MedSpa",
+      "city": "Austin",
+      "niche": "Med Spa",
+      "instagram": "aestheticamedspa",
+      "instagramUrl": "https://www.instagram.com/aestheticamedspa/",
+      "opportunityScore": 55,
+      "signals": [
+        "1 local influencer(s) follow this account",
+        "  ↳ @austindentalscoop (2100 followers, health)"
+      ],
+      "overlappingInfluencers": [
+        "austindentalscoop"
+      ],
+      "relatedCompetitors": [],
+      "priority": "🟡 MEDIUM",
+      "outreachSuggested": "Yes — personalized DM recommended",
+      "dmSequence": {
+        "dm1": "Hey there! 👋 I run Customer Comeback Machine — we help med spa businesses in Austin keep their regulars coming back. Quick question — do you use any automated system for client follow-ups, or is it all manual?",
+        "dm2": "Hey! Following up — I built a free calculator that shows how much med spa practices lose when customers don't return. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌",
+        "complianceNote": "MAX 2 DMs. If no reply, STOP. If they say no, log opt-out immediately."
+      }
+    },
+    {
+      "business": "Beaux Medspa",
+      "city": "Austin",
+      "niche": "Med Spa",
+      "instagram": "beauxmedspa",
+      "instagramUrl": "https://www.instagram.com/beauxmedspa/",
+      "opportunityScore": 55,
+      "signals": [
+        "1 local influencer(s) follow this account",
+        "  ↳ @austindentalscoop (2100 followers, health)"
+      ],
+      "overlappingInfluencers": [
+        "austindentalscoop"
+      ],
+      "relatedCompetitors": [],
+      "priority": "🟡 MEDIUM",
+      "outreachSuggested": "Yes — personalized DM recommended",
+      "dmSequence": {
+        "dm1": "Hey there! 👋 I run Customer Comeback Machine — we help med spa businesses in Austin keep their regulars coming back. Quick question — do you use any automated system for client follow-ups, or is it all manual?",
+        "dm2": "Hey! Following up — I built a free calculator that shows how much med spa practices lose when customers don't return. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌",
+        "complianceNote": "MAX 2 DMs. If no reply, STOP. If they say no, log opt-out immediately."
+      }
+    },
+    {
+      "business": "Dilworth Facial Plastic Surgery",
+      "city": "Charlotte",
+      "niche": "Med Spa",
+      "instagram": "dilworthfacialplasticsurgery",
+      "instagramUrl": "https://www.instagram.com/dilworthfacialplasticsurgery/",
+      "opportunityScore": 55,
+      "signals": [
+        "1 local influencer(s) follow this account",
+        "  ↳ @queencityspa (5600 followers, lifestyle)"
+      ],
+      "overlappingInfluencers": [
+        "queencityspa"
+      ],
+      "relatedCompetitors": [],
+      "priority": "🟡 MEDIUM",
+      "outreachSuggested": "Yes — personalized DM recommended",
+      "dmSequence": {
+        "dm1": "Hey there! 👋 I run Customer Comeback Machine — we help med spa businesses in Charlotte keep their regulars coming back. Quick question — do you use any automated system for client follow-ups, or is it all manual?",
+        "dm2": "Hey! Following up — I built a free calculator that shows how much med spa practices lose when customers don't return. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌",
+        "complianceNote": "MAX 2 DMs. If no reply, STOP. If they say no, log opt-out immediately."
+      }
+    },
+    {
+      "business": "Evolve Medical Associates",
+      "city": "Charlotte",
+      "niche": "Med Spa",
+      "instagram": "evolvemedicalassociates",
+      "instagramUrl": "https://www.instagram.com/evolvemedicalassociates/",
+      "opportunityScore": 55,
+      "signals": [
+        "1 local influencer(s) follow this account",
+        "  ↳ @queencityspa (5600 followers, lifestyle)"
+      ],
+      "overlappingInfluencers": [
+        "queencityspa"
+      ],
+      "relatedCompetitors": [],
+      "priority": "🟡 MEDIUM",
+      "outreachSuggested": "Yes — personalized DM recommended",
+      "dmSequence": {
+        "dm1": "Hey there! 👋 I run Customer Comeback Machine — we help med spa businesses in Charlotte keep their regulars coming back. Quick question — do you use any automated system for client follow-ups, or is it all manual?",
+        "dm2": "Hey! Following up — I built a free calculator that shows how much med spa practices lose when customers don't return. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌",
+        "complianceNote": "MAX 2 DMs. If no reply, STOP. If they say no, log opt-out immediately."
+      }
+    },
+    {
+      "business": "Criswell & Criswell",
+      "city": "Charlotte",
+      "niche": "Med Spa",
+      "instagram": "criswellandcriswell",
+      "instagramUrl": "https://www.instagram.com/criswellandcriswell/",
+      "opportunityScore": 55,
+      "signals": [
+        "1 local influencer(s) follow this account",
+        "  ↳ @queencityspa (5600 followers, lifestyle)"
+      ],
+      "overlappingInfluencers": [
+        "queencityspa"
+      ],
+      "relatedCompetitors": [],
+      "priority": "🟡 MEDIUM",
+      "outreachSuggested": "Yes — personalized DM recommended",
+      "dmSequence": {
+        "dm1": "Hey there! 👋 I run Customer Comeback Machine — we help med spa businesses in Charlotte keep their regulars coming back. Quick question — do you use any automated system for client follow-ups, or is it all manual?",
+        "dm2": "Hey! Following up — I built a free calculator that shows how much med spa practices lose when customers don't return. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌",
+        "complianceNote": "MAX 2 DMs. If no reply, STOP. If they say no, log opt-out immediately."
+      }
+    },
+    {
+      "business": "South Charlotte Dentistry",
+      "city": "Charlotte",
+      "niche": "Dental",
+      "instagram": "southcharlottedentistry",
+      "instagramUrl": "https://www.instagram.com/southcharlottedentistry/",
+      "opportunityScore": 55,
+      "signals": [
+        "1 local influencer(s) follow this account",
+        "  ↳ @cltbeautylife (8900 followers, beauty)"
+      ],
+      "overlappingInfluencers": [
+        "cltbeautylife"
+      ],
+      "relatedCompetitors": [],
+      "priority": "🟡 MEDIUM",
+      "outreachSuggested": "Yes — personalized DM recommended",
+      "dmSequence": {
+        "dm1": "Hey there! 👋 I run Customer Comeback Machine — we help dental businesses in Charlotte keep their regulars coming back. Quick question — do you use any automated system for client follow-ups, or is it all manual?",
+        "dm2": "Hey! Following up — I built a free calculator that shows how much dental practices lose when customers don't return. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌",
+        "complianceNote": "MAX 2 DMs. If no reply, STOP. If they say no, log opt-out immediately."
+      }
+    },
+    {
+      "business": "Burrow & Welchel Orthodontics",
+      "city": "Charlotte",
+      "niche": "Dental",
+      "instagram": "burrowwelchelortho",
+      "instagramUrl": "https://www.instagram.com/burrowwelchelortho/",
+      "opportunityScore": 55,
+      "signals": [
+        "1 local influencer(s) follow this account",
+        "  ↳ @queencityspa (5600 followers, lifestyle)"
+      ],
+      "overlappingInfluencers": [
+        "queencityspa"
+      ],
+      "relatedCompetitors": [],
+      "priority": "🟡 MEDIUM",
+      "outreachSuggested": "Yes — personalized DM recommended",
+      "dmSequence": {
+        "dm1": "Hey there! 👋 I run Customer Comeback Machine — we help dental businesses in Charlotte keep their regulars coming back. Quick question — do you use any automated system for client follow-ups, or is it all manual?",
+        "dm2": "Hey! Following up — I built a free calculator that shows how much dental practices lose when customers don't return. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌",
+        "complianceNote": "MAX 2 DMs. If no reply, STOP. If they say no, log opt-out immediately."
+      }
+    },
+    {
+      "business": "Stellar Dental",
+      "city": "Charlotte",
+      "niche": "Dental",
+      "instagram": "stellardentalcharlotte",
+      "instagramUrl": "https://www.instagram.com/stellardentalcharlotte/",
+      "opportunityScore": 55,
+      "signals": [
+        "1 local influencer(s) follow this account",
+        "  ↳ @queencityspa (5600 followers, lifestyle)"
+      ],
+      "overlappingInfluencers": [
+        "queencityspa"
+      ],
+      "relatedCompetitors": [],
+      "priority": "🟡 MEDIUM",
+      "outreachSuggested": "Yes — personalized DM recommended",
+      "dmSequence": {
+        "dm1": "Hey there! 👋 I run Customer Comeback Machine — we help dental businesses in Charlotte keep their regulars coming back. Quick question — do you use any automated system for client follow-ups, or is it all manual?",
+        "dm2": "Hey! Following up — I built a free calculator that shows how much dental practices lose when customers don't return. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌",
+        "complianceNote": "MAX 2 DMs. If no reply, STOP. If they say no, log opt-out immediately."
+      }
+    },
+    {
+      "business": "Paws on Chicon",
+      "city": "Austin",
+      "niche": "Pet Grooming",
+      "instagram": "pawsonchicon",
+      "instagramUrl": "https://www.instagram.com/pawsonchicon/",
+      "opportunityScore": 55,
+      "signals": [
+        "1 local influencer(s) follow this account",
+        "  ↳ @atxskincarefan (3400 followers, beauty)"
+      ],
+      "overlappingInfluencers": [
+        "atxskincarefan"
+      ],
+      "relatedCompetitors": [],
+      "priority": "🟡 MEDIUM",
+      "outreachSuggested": "Yes — personalized DM recommended",
+      "dmSequence": {
+        "dm1": "Hey there! 👋 I run Customer Comeback Machine — we help pet grooming businesses in Austin keep their regulars coming back. Quick question — do you use any automated system for client follow-ups, or is it all manual?",
+        "dm2": "Hey! Following up — I built a free calculator that shows how much pet grooming practices lose when customers don't return. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌",
+        "complianceNote": "MAX 2 DMs. If no reply, STOP. If they say no, log opt-out immediately."
+      }
+    },
+    {
+      "business": "Bark n Purr",
+      "city": "Austin",
+      "niche": "Pet Grooming",
+      "instagram": "barknpurratx",
+      "instagramUrl": "https://www.instagram.com/barknpurratx/",
+      "opportunityScore": 55,
+      "signals": [
+        "1 local influencer(s) follow this account",
+        "  ↳ @austindentalscoop (2100 followers, health)"
+      ],
+      "overlappingInfluencers": [
+        "austindentalscoop"
+      ],
+      "relatedCompetitors": [],
+      "priority": "🟡 MEDIUM",
+      "outreachSuggested": "Yes — personalized DM recommended",
+      "dmSequence": {
+        "dm1": "Hey there! 👋 I run Customer Comeback Machine — we help pet grooming businesses in Austin keep their regulars coming back. Quick question — do you use any automated system for client follow-ups, or is it all manual?",
+        "dm2": "Hey! Following up — I built a free calculator that shows how much pet grooming practices lose when customers don't return. Happy to share if you're curious! And totally fine if not — just say the word and I won't message again. 🙌",
+        "complianceNote": "MAX 2 DMs. If no reply, STOP. If they say no, log opt-out immediately."
+      }
+    },
+    {
+      "business": "Carolina Age Management Institute",
+      "city": "Charlotte",
+      "niche": "Med Spa",
+      "instagram": "carolinaagemgmt",
+      "instagramUrl": "https://www.instagram.com/carolinaagemgmt/",
+      "opportunityScore": 50,
+      "signals": [],
+      "overlappingInfluencers": [],
+      "relatedCompetitors": [],
+      "priority": "⚪ LOW",
+      "outreachSuggested": "Monitor",
+      "dmSequence": null
+    },
+    {
+      "business": "Revitalize Medical Spa",
+      "city": "Charlotte",
+      "niche": "Med Spa",
+      "instagram": "revitalizemedspa",
+      "instagramUrl": "https://www.instagram.com/revitalizemedspa/",
+      "opportunityScore": 50,
+      "signals": [],
+      "overlappingInfluencers": [],
+      "relatedCompetitors": [],
+      "priority": "⚪ LOW",
+      "outreachSuggested": "Monitor",
+      "dmSequence": null
+    },
+    {
+      "business": "Promenadescape Dentistry",
+      "city": "Charlotte",
+      "niche": "Dental",
+      "instagram": "promenadescapedentistry",
+      "instagramUrl": "https://www.instagram.com/promenadescapedentistry/",
+      "opportunityScore": 50,
+      "signals": [],
+      "overlappingInfluencers": [],
+      "relatedCompetitors": [],
+      "priority": "⚪ LOW",
+      "outreachSuggested": "Monitor",
+      "dmSequence": null
+    },
+    {
+      "business": "Charlotte Orthodontics",
+      "city": "Charlotte",
+      "niche": "Dental",
+      "instagram": "charlotteorthodontics",
+      "instagramUrl": "https://www.instagram.com/charlotteorthodontics/",
+      "opportunityScore": 50,
+      "signals": [],
+      "overlappingInfluencers": [],
+      "relatedCompetitors": [],
+      "priority": "⚪ LOW",
+      "outreachSuggested": "Monitor",
+      "dmSequence": null
+    }
+  ]
+}
