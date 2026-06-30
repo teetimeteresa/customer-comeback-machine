@@ -87,9 +87,15 @@ async function scrapeBusinessRating(query) {
     // Build the Google Maps search URL
     const searchUrl = `https://www.google.com/maps/search/${encodeURIComponent(query)}`;
     
-    // Use agent-browser via the CLI
-    const cmd = `agent-browser goto "${searchUrl}" 2>/dev/null`;
-    const output = execSync(cmd, { encoding: 'utf8', timeout: 30000, maxBuffer: 1024 * 1024 });
+    // Step 1: Navigate to Google Maps
+    execSync(`agent-browser goto "${searchUrl}"`, { encoding: 'utf8', timeout: 15000, stdio: 'pipe' });
+    
+    // Step 2: Wait for page to render 
+    await sleep(3000);
+    
+    // Step 3: Get full page text content
+    const cmd = `agent-browser snapshot --format text 2>/dev/null`;
+    const output = execSync(cmd, { encoding: 'utf8', timeout: 15000, maxBuffer: 5 * 1024 * 1024 });
     
     // Try common patterns for rating/review extraction
     // Pattern 1: "★ X.X (N reviews)" 
@@ -99,18 +105,24 @@ async function scrapeBusinessRating(query) {
     }
     
     // Pattern 2: "X.X ★  · N reviews"
-    const ratingMatch2 = output.match(/([\d.]+)\s*★\s*·\s*(\d+)\s*reviews?/i);
+    const ratingMatch2 = output.match(/([\d.]+)\s*★\s*[·\s]\s*(\d+)\s*reviews?/i);
     if (ratingMatch2) {
       return { rating: parseFloat(ratingMatch2[1]), reviews: parseInt(ratingMatch2[2]), error: null };
     }
     
-    // Pattern 3: JSON-LD structured data
+    // Pattern 3: JSON-LD structured data  
     const jsonLdMatch = output.match(/"ratingValue":\s*([\d.]+)[^}]*"reviewCount":\s*(\d+)/i);
     if (jsonLdMatch) {
       return { rating: parseFloat(jsonLdMatch[1]), reviews: parseInt(jsonLdMatch[2]), error: null };
     }
     
-    return { rating: null, reviews: null, error: 'Could not extract rating from page' };
+    // Pattern 4: Accessibility tree format - "X.X stars N reviews"
+    const a11yMatch = output.match(/([\d.]+)\s*stars?\s*[\.,]?\s*(\d+)\s*reviews?/i);
+    if (a11yMatch) {
+      return { rating: parseFloat(a11yMatch[1]), reviews: parseInt(a11yMatch[2]), error: null };
+    }
+    
+    return { rating: null, reviews: null, error: 'Could not extract rating from page - no pattern matched' };
   } catch (e) {
     return { rating: null, reviews: null, error: e.message };
   }
